@@ -1,0 +1,40 @@
+{
+  "name": "vscode-mdx-content-mapper",
+  "publisher": "remcohaszing",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onLanguage:mdx"
+  ],
+  "bugs": {
+    "url": "https://github.com/remcohaszing/mdx-content-mapper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcohaszing/mdx-content-mapper.git"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/remcohaszing"
+  },
+  "scripts": {
+    "vscode:prepublish": "rolldown -c"
+  },
+  "engines": {
+    "vscode": "^1.132.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "mdx",
+        "extensions": [
+          ".mdx"
+        ],
+        "aliases": [
+          "MDX"
+        ]
+      }
+    ]
+  }
+}

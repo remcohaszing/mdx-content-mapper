@@ -1,0 +1,4 @@
+rolldown.config.ts
+src/
+../
+*.vsix
