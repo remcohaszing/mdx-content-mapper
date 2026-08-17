@@ -1,5 +1,7 @@
 # `mdx-content-mapper`
 
+A TypeScript content mapper for MDX content.
+
 ## Installation
 
 ```sh
