@@ -54,11 +54,13 @@ export default function MDXContent(props) {
 
 ```
 
-## Mappings
+## Verbatim mappings
 
 ```jsx 88 37 0 37 0 1048575
 import { Planet } from './planet.js'
 
 ```
+
+## Non-verbatim mappings
 
 ## Diagnostics

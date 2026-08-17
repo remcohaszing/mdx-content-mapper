@@ -74,7 +74,7 @@ export default function MDXContent(props) {
 
 ```
 
-## Mappings
+## Verbatim mappings
 
 ```jsx 115 65 0 65 0 1048575
 export const arrow = async () => {
@@ -108,5 +108,7 @@ export async function named() {
 ```jsx 1382 54 298 54 0 1048575
 {async function local() { await Promise.resolve(42) }}
 ```
+
+## Non-verbatim mappings
 
 ## Diagnostics

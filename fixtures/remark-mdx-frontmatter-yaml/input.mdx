@@ -9,7 +9,7 @@ multiline: |
   a
   string
 number: 42
-object: &one
+object: &on=e
   key: value
   nested:
     key: value
@@ -22,7 +22,9 @@ array: &two
   - no
   -
 alsoArray: [1, 0xbeef, '3']
-first: *one
+first: *on=e
 second: *two
 : null
 ---
+
+{frontmatter}

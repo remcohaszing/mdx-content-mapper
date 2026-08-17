@@ -56,10 +56,12 @@ export default function MDXContent(props) {
 
 ```
 
-## Mappings
+## Verbatim mappings
 
 ```jsx 954 32 4 32 0 1048575
 {await Promise.resolve(Math.PI)}
 ```
+
+## Non-verbatim mappings
 
 ## Diagnostics

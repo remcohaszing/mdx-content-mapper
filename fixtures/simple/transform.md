@@ -56,10 +56,12 @@ export default function MDXContent(props) {
 
 ```
 
-## Mappings
+## Verbatim mappings
 
 ```jsx 940 12 8 12 0 1048575
 {props.name}
 ```
+
+## Non-verbatim mappings
 
 ## Diagnostics

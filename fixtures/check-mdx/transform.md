@@ -52,6 +52,8 @@ export default function MDXContent(props) {
 
 ```
 
-## Mappings
+## Verbatim mappings
+
+## Non-verbatim mappings
 
 ## Diagnostics

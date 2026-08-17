@@ -72,7 +72,7 @@ Injected
 
 ```
 
-## Mappings
+## Verbatim mappings
 
 ```jsx 115 27 0 27 0 1048575
 export function Local() {}
@@ -114,5 +114,7 @@ Injected>
 ```jsx 1673 8 95 8 0 1048575
 Injected
 ```
+
+## Non-verbatim mappings
 
 ## Diagnostics

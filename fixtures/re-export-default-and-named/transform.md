@@ -54,7 +54,7 @@ export default function MDXContent(props) {
 
 ```
 
-## Mappings
+## Verbatim mappings
 
 ```jsx 115 9 0 9 0 1048575
 export { 
@@ -64,5 +64,7 @@ export {
  named } from './layout.js'
 
 ```
+
+## Non-verbatim mappings
 
 ## Diagnostics

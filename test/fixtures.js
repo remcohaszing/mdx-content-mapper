@@ -42,17 +42,37 @@ testFixturesDirectory({
       })
 
       assert.ok(mappings)
-      let mappingText = ''
+      let verbatimMappingText = ''
+      let nonVerbatimMappingText = ''
       for (const mapping of mappings) {
-        const [generatedStart, generatedLength, originalStart, originalLength] = mapping
+        const [generatedStart, generatedLength, originalStart, originalLength, kind] = mapping
         const generatedSlice = text.slice(generatedStart, generatedStart + generatedLength)
         const originalSlice = original.slice(originalStart, originalStart + originalLength)
-        assertEqual(generatedSlice, originalSlice)
-        mappingText += '\n```jsx '
-        mappingText += mapping.join(' ')
-        mappingText += '\n'
-        mappingText += generatedSlice
-        mappingText += '\n```\n'
+        if (kind === 0) {
+          assertEqual(generatedSlice, originalSlice)
+          verbatimMappingText += '\n```jsx '
+          verbatimMappingText += mapping.join(' ')
+          verbatimMappingText += '\n'
+          verbatimMappingText += generatedSlice
+          verbatimMappingText += '\n```\n'
+        } else {
+          if (nonVerbatimMappingText) {
+            nonVerbatimMappingText += '\n---\n'
+          }
+          nonVerbatimMappingText += '\n```plaintext '
+          nonVerbatimMappingText += originalStart
+          nonVerbatimMappingText += ' '
+          nonVerbatimMappingText += originalLength
+          nonVerbatimMappingText += '\n'
+          nonVerbatimMappingText += originalSlice
+          nonVerbatimMappingText += '\n```\n```jsx '
+          nonVerbatimMappingText += generatedStart
+          nonVerbatimMappingText += ' '
+          nonVerbatimMappingText += generatedLength
+          nonVerbatimMappingText += '\n'
+          nonVerbatimMappingText += generatedSlice
+          nonVerbatimMappingText += '\n```\n'
+        }
       }
 
       const diagnosticsTexts =
@@ -68,8 +88,10 @@ testFixturesDirectory({
         text,
         '```',
         '',
-        '## Mappings',
-        mappingText,
+        '## Verbatim mappings',
+        verbatimMappingText,
+        '## Non-verbatim mappings',
+        nonVerbatimMappingText,
         '## Diagnostics',
         '',
         ...diagnosticsTexts
