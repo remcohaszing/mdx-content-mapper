@@ -1,3 +1,7 @@
+/**
+ * @import { MappedOutput } from '../lib/protocol.js'
+ */
+
 import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
@@ -11,6 +15,62 @@ import { transform } from '../lib/requests/transform.js'
 import pkg from '../package.json' with { type: 'json' }
 
 const directory = new URL('../fixtures/', import.meta.url)
+
+/**
+ * @param {string} original
+ * @param {MappedOutput} output
+ * @returns {string}
+ */
+function mappedOutputToMarkdown(original, output) {
+  const { extension, mappings, text } = output
+
+  assert.ok(mappings)
+  let verbatimMappingText = ''
+  let nonVerbatimMappingText = ''
+  for (const mapping of mappings) {
+    const [generatedStart, generatedLength, originalStart, originalLength, kind] = mapping
+    const generatedSlice = text.slice(generatedStart, generatedStart + generatedLength)
+    const originalSlice = original.slice(originalStart, originalStart + originalLength)
+    if (kind === 0) {
+      assertEqual(generatedSlice, originalSlice)
+      verbatimMappingText += '\n```jsx '
+      verbatimMappingText += mapping.join(' ')
+      verbatimMappingText += '\n'
+      verbatimMappingText += generatedSlice
+      verbatimMappingText += '\n```\n'
+    } else {
+      if (nonVerbatimMappingText) {
+        nonVerbatimMappingText += '\n---\n'
+      }
+      nonVerbatimMappingText += '\n```plaintext '
+      nonVerbatimMappingText += originalStart
+      nonVerbatimMappingText += ' '
+      nonVerbatimMappingText += originalLength
+      nonVerbatimMappingText += '\n'
+      nonVerbatimMappingText += originalSlice
+      nonVerbatimMappingText += '\n```\n```jsx '
+      nonVerbatimMappingText += generatedStart
+      nonVerbatimMappingText += ' '
+      nonVerbatimMappingText += generatedLength
+      nonVerbatimMappingText += '\n'
+      nonVerbatimMappingText += generatedSlice
+      nonVerbatimMappingText += '\n```\n'
+    }
+  }
+
+  return [
+    '## Text',
+    '',
+    `\`\`\`${extension.slice(1)}`,
+    text,
+    '```',
+    '',
+    '## Verbatim mappings',
+    verbatimMappingText,
+    '## Non-verbatim mappings',
+    nonVerbatimMappingText
+  ].join('\n')
+}
 
 testFixturesDirectory({
   directory,
@@ -34,67 +94,27 @@ testFixturesDirectory({
       const mdxContentMapper = /** @type {any[]} */ (raw.contentMappers).find(
         (contentMapper) => contentMapper.package === pkg.name
       )
-      const { diagnostics, mappings, text } = await transform({
+      const result = await transform({
         compilerOptions: includeKeys(options, pkg.typescript.contentMapper.compilerOptions),
         content: original,
         fileName: file.path,
         options: mdxContentMapper.options
       })
 
-      assert.ok(mappings)
-      let verbatimMappingText = ''
-      let nonVerbatimMappingText = ''
-      for (const mapping of mappings) {
-        const [generatedStart, generatedLength, originalStart, originalLength, kind] = mapping
-        const generatedSlice = text.slice(generatedStart, generatedStart + generatedLength)
-        const originalSlice = original.slice(originalStart, originalStart + originalLength)
-        if (kind === 0) {
-          assertEqual(generatedSlice, originalSlice)
-          verbatimMappingText += '\n```jsx '
-          verbatimMappingText += mapping.join(' ')
-          verbatimMappingText += '\n'
-          verbatimMappingText += generatedSlice
-          verbatimMappingText += '\n```\n'
-        } else {
-          if (nonVerbatimMappingText) {
-            nonVerbatimMappingText += '\n---\n'
-          }
-          nonVerbatimMappingText += '\n```plaintext '
-          nonVerbatimMappingText += originalStart
-          nonVerbatimMappingText += ' '
-          nonVerbatimMappingText += originalLength
-          nonVerbatimMappingText += '\n'
-          nonVerbatimMappingText += originalSlice
-          nonVerbatimMappingText += '\n```\n```jsx '
-          nonVerbatimMappingText += generatedStart
-          nonVerbatimMappingText += ' '
-          nonVerbatimMappingText += generatedLength
-          nonVerbatimMappingText += '\n'
-          nonVerbatimMappingText += generatedSlice
-          nonVerbatimMappingText += '\n```\n'
-        }
-      }
-
       const diagnosticsTexts =
-        diagnostics?.map(
+        result.diagnostics?.map(
           (diagnostic) =>
             `- \`${diagnostic.start}:${diagnostic.length}\`: ${diagnostic.messageText}\n`
         ) ?? []
 
       return [
-        '## Text',
-        '',
-        '```jsx',
-        text,
-        '```',
-        '',
-        '## Verbatim mappings',
-        verbatimMappingText,
-        '## Non-verbatim mappings',
-        nonVerbatimMappingText,
+        mappedOutputToMarkdown(original, result),
         '## Diagnostics',
         '',
-        ...diagnosticsTexts
+        ...diagnosticsTexts,
+        ...(result.supplemental?.map((supplemental) =>
+          mappedOutputToMarkdown(original, supplemental)
+        ) ?? [])
       ].join('\n')
     }
   }

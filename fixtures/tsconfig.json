@@ -3,6 +3,8 @@
   "references": [
     { "path": "./async-functions/tsconfig.json" },
     { "path": "./check-mdx/tsconfig.json" },
+    { "path": "./codeblocks-check/tsconfig.json" },
+    { "path": "./codeblocks-nocheck/tsconfig.json" },
     { "path": "./export-default-and-named/tsconfig.json" },
     { "path": "./export-default-arrow-function/tsconfig.json" },
     { "path": "./export-default-constant/tsconfig.json" },
