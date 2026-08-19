@@ -1,11 +1,10 @@
 ## Text
 
 ```jsx
-import 'react/jsx-runtime'
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 
 /**
@@ -30,7 +29,7 @@ function _createMdxContent(props) {
     props
   }
   _components
-  return <>
+  return <_Fragment>
     <pre>
     <code>
     </code>
@@ -73,7 +72,7 @@ function _createMdxContent(props) {
     </code>
     </pre>
     </div>
-  </>
+  </_Fragment>
 }
 
 /**
@@ -95,11 +94,11 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 1142 5 296 5 0 1048575
+```jsx 1172 5 296 5 0 1048575
 <div>
 ```
 
-```jsx 1372 6 695 6 0 1048575
+```jsx 1402 6 695 6 0 1048575
 </div>
 ```
 

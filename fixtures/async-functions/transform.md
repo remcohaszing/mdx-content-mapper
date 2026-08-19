@@ -1,11 +1,10 @@
 ## Text
 
 ```jsx
-import 'react/jsx-runtime'
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 export const arrow = async () => {
   await Promise.resolve(42)
@@ -50,11 +49,11 @@ function _createMdxContent(props) {
     local
   }
   _components
-  return <>
+  return <_Fragment>
     {async () => { await Promise.resolve(42) }}
     {async function() { await Promise.resolve(42) }}
     {async function local() { await Promise.resolve(42) }}
-  </>
+  </_Fragment>
 }
 
 /**
@@ -76,36 +75,36 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 115 65 0 65 0 1048575
+```jsx 136 65 0 65 0 1048575
 export const arrow = async () => {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 181 75 66 75 0 1048575
+```jsx 202 75 66 75 0 1048575
 export const expression = async function() {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 257 62 142 62 0 1048575
+```jsx 278 62 142 62 0 1048575
 export async function named() {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 1281 43 205 43 0 1048575
+```jsx 1311 43 205 43 0 1048575
 {async () => { await Promise.resolve(42) }}
 ```
 
-```jsx 1329 48 249 48 0 1048575
+```jsx 1359 48 249 48 0 1048575
 {async function() { await Promise.resolve(42) }}
 ```
 
-```jsx 1382 54 298 54 0 1048575
+```jsx 1412 54 298 54 0 1048575
 {async function local() { await Promise.resolve(42) }}
 ```
 

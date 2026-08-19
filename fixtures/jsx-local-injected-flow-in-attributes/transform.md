@@ -1,11 +1,10 @@
 ## Text
 
 ```jsx
-import 'react/jsx-runtime'
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 export function Local() {}
 
@@ -34,14 +33,14 @@ function _createMdxContent(props) {
     Local
   }
   _components
-  return <>
+  return <_Fragment>
     <div local={<Local />} injected={<_components.Injected />} string="string" boolean />
     <div local={<Local>{null}</Local>} injected={<_components.Injected>{null}</_components.Injected>} string="string" boolean>
     <p>
     {''}
     </p>
     </div>
-  </>
+  </_Fragment>
 }
 
 /**
@@ -67,40 +66,40 @@ Injected
 
 ## Verbatim mappings
 
-```jsx 115 27 0 27 0 1048575
+```jsx 136 27 0 27 0 1048575
 export function Local() {}
 
 ```
 
-```jsx 986 34 28 34 0 1048575
+```jsx 1016 34 28 34 0 1048575
 <div local={<Local />} injected={<
 ```
 
-```jsx 1032 39 62 39 0 1048575
+```jsx 1062 39 62 39 0 1048575
 Injected />} string="string" boolean />
 ```
 
-```jsx 1076 46 103 46 0 1048575
+```jsx 1106 46 103 46 0 1048575
 <div local={<Local>{null}</Local>} injected={<
 ```
 
-```jsx 1134 17 149 17 0 1048575
+```jsx 1164 17 149 17 0 1048575
 Injected>{null}</
 ```
 
-```jsx 1163 35 166 35 0 1048575
+```jsx 1193 35 166 35 0 1048575
 Injected>} string="string" boolean>
 ```
 
-```jsx 1229 6 214 6 0 1048575
+```jsx 1259 6 214 6 0 1048575
 </div>
 ```
 
-```jsx 1748 8 62 8 0 1048575
+```jsx 1787 8 62 8 0 1048575
 Injected
 ```
 
-```jsx 1771 8 149 8 0 1048575
+```jsx 1810 8 149 8 0 1048575
 Injected
 ```
 

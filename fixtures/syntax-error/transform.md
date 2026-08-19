@@ -4,7 +4,7 @@
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 
 /**
@@ -29,8 +29,8 @@ function _createMdxContent(props) {
     props
   }
   _components
-  return <>
-  </>
+  return <_Fragment>
+  </_Fragment>
 }
 
 /**

@@ -4,7 +4,7 @@
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 import { Planet } from './planet.js'
 
@@ -33,8 +33,8 @@ function _createMdxContent(props) {
     Planet
   }
   _components
-  return <>
-  </>
+  return <_Fragment>
+  </_Fragment>
 }
 
 /**
@@ -56,7 +56,7 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 88 37 0 37 0 1048575
+```jsx 136 37 0 37 0 1048575
 import { Planet } from './planet.js'
 
 ```

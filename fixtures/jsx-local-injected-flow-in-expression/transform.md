@@ -1,11 +1,10 @@
 ## Text
 
 ```jsx
-import 'react/jsx-runtime'
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 export function Local() {}
 
@@ -34,7 +33,7 @@ function _createMdxContent(props) {
     Local
   }
   _components
-  return <>
+  return <_Fragment>
     {<div />}
     {<div>{''}</div>}
     {<_components.Injected />}
@@ -45,7 +44,7 @@ function _createMdxContent(props) {
     {<Local><Local>{''}</Local></Local>}
     {<Local><_components.Injected>{''}</_components.Injected></Local>}
     {<_components.Injected><Local>{''}</Local></_components.Injected>}
-  </>
+  </_Fragment>
 }
 
 /**
@@ -79,116 +78,116 @@ Injected
 
 ## Verbatim mappings
 
-```jsx 115 27 0 27 0 1048575
+```jsx 136 27 0 27 0 1048575
 export function Local() {}
 
 ```
 
-```jsx 986 9 28 9 0 1048575
+```jsx 1016 9 28 9 0 1048575
 {<div />}
 ```
 
-```jsx 1000 17 38 17 0 1048575
+```jsx 1030 17 38 17 0 1048575
 {<div>{''}</div>}
 ```
 
-```jsx 1022 2 56 2 0 1048575
+```jsx 1052 2 56 2 0 1048575
 {<
 ```
 
-```jsx 1036 12 58 12 0 1048575
+```jsx 1066 12 58 12 0 1048575
 Injected />}
 ```
 
-```jsx 1053 2 71 2 0 1048575
+```jsx 1083 2 71 2 0 1048575
 {<
 ```
 
-```jsx 1067 15 73 15 0 1048575
+```jsx 1097 15 73 15 0 1048575
 Injected>{''}</
 ```
 
-```jsx 1094 10 88 10 0 1048575
+```jsx 1124 10 88 10 0 1048575
 Injected>}
 ```
 
-```jsx 1109 2 99 2 0 1048575
+```jsx 1139 2 99 2 0 1048575
 {<
 ```
 
-```jsx 1123 10 101 10 0 1048575
+```jsx 1153 10 101 10 0 1048575
 Injected><
 ```
 
-```jsx 1145 15 111 15 0 1048575
+```jsx 1175 15 111 15 0 1048575
 Injected>{''}</
 ```
 
-```jsx 1172 11 126 11 0 1048575
+```jsx 1202 11 126 11 0 1048575
 Injected></
 ```
 
-```jsx 1195 10 137 10 0 1048575
+```jsx 1225 10 137 10 0 1048575
 Injected>}
 ```
 
-```jsx 1210 11 148 11 0 1048575
+```jsx 1240 11 148 11 0 1048575
 {<Local />}
 ```
 
-```jsx 1226 21 160 21 0 1048575
+```jsx 1256 21 160 21 0 1048575
 {<Local>{''}</Local>}
 ```
 
-```jsx 1252 36 182 36 0 1048575
+```jsx 1282 36 182 36 0 1048575
 {<Local><Local>{''}</Local></Local>}
 ```
 
-```jsx 1293 9 219 9 0 1048575
+```jsx 1323 9 219 9 0 1048575
 {<Local><
 ```
 
-```jsx 1314 15 228 15 0 1048575
+```jsx 1344 15 228 15 0 1048575
 Injected>{''}</
 ```
 
-```jsx 1341 18 243 18 0 1048575
+```jsx 1371 18 243 18 0 1048575
 Injected></Local>}
 ```
 
-```jsx 1364 2 262 2 0 1048575
+```jsx 1394 2 262 2 0 1048575
 {<
 ```
 
-```jsx 1378 30 264 30 0 1048575
+```jsx 1408 30 264 30 0 1048575
 Injected><Local>{''}</Local></
 ```
 
-```jsx 1420 10 294 10 0 1048575
+```jsx 1450 10 294 10 0 1048575
 Injected>}
 ```
 
-```jsx 1943 8 58 8 0 1048575
+```jsx 1982 8 58 8 0 1048575
 Injected
 ```
 
-```jsx 1966 8 73 8 0 1048575
+```jsx 2005 8 73 8 0 1048575
 Injected
 ```
 
-```jsx 1989 8 101 8 0 1048575
+```jsx 2028 8 101 8 0 1048575
 Injected
 ```
 
-```jsx 2012 8 111 8 0 1048575
+```jsx 2051 8 111 8 0 1048575
 Injected
 ```
 
-```jsx 2035 8 228 8 0 1048575
+```jsx 2074 8 228 8 0 1048575
 Injected
 ```
 
-```jsx 2058 8 264 8 0 1048575
+```jsx 2097 8 264 8 0 1048575
 Injected
 ```
 

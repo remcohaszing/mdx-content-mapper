@@ -1,11 +1,10 @@
 ## Text
 
 ```jsx
-import 'react/jsx-runtime'
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
-export {}
+import { Fragment as _Fragment } from 'react/jsx-runtime'
 
 export function Local() {}
 
@@ -34,7 +33,7 @@ function _createMdxContent(props) {
     Local
   }
   _components
-  return <>
+  return <_Fragment>
     <div>
     <p>
     {''}
@@ -50,7 +49,7 @@ function _createMdxContent(props) {
     {''}
     </p>
     </Local>
-  </>
+  </_Fragment>
 }
 
 /**
@@ -74,44 +73,44 @@ Injected
 
 ## Verbatim mappings
 
-```jsx 115 27 0 27 0 1048575
+```jsx 136 27 0 27 0 1048575
 export function Local() {}
 
 ```
 
-```jsx 986 5 28 5 0 1048575
+```jsx 1016 5 28 5 0 1048575
 <div>
 ```
 
-```jsx 1022 6 87 6 0 1048575
+```jsx 1052 6 87 6 0 1048575
 </div>
 ```
 
-```jsx 1033 1 94 1 0 1048575
+```jsx 1063 1 94 1 0 1048575
 <
 ```
 
-```jsx 1046 9 95 9 0 1048575
+```jsx 1076 9 95 9 0 1048575
 Injected>
 ```
 
-```jsx 1086 2 158 2 0 1048575
+```jsx 1116 2 158 2 0 1048575
 </
 ```
 
-```jsx 1100 9 160 9 0 1048575
+```jsx 1130 9 160 9 0 1048575
 Injected>
 ```
 
-```jsx 1114 7 170 7 0 1048575
+```jsx 1144 7 170 7 0 1048575
 <Local>
 ```
 
-```jsx 1152 8 231 8 0 1048575
+```jsx 1182 8 231 8 0 1048575
 </Local>
 ```
 
-```jsx 1673 8 95 8 0 1048575
+```jsx 1712 8 95 8 0 1048575
 Injected
 ```
 
