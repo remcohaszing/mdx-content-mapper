@@ -11,6 +11,7 @@ import { includeKeys } from 'filter-obj'
 import { assertEqual, testFixturesDirectory } from 'snapshot-fixtures'
 import typescript from 'typescript'
 
+import { openProject } from '../lib/requests/open-project.js'
 import { transform } from '../lib/requests/transform.js'
 import pkg from '../package.json' with { type: 'json' }
 
@@ -72,6 +73,8 @@ function mappedOutputToMarkdown(original, output) {
   ].join('\n')
 }
 
+let count = 0
+
 testFixturesDirectory({
   directory,
   write: true,
@@ -94,11 +97,18 @@ testFixturesDirectory({
       const mdxContentMapper = /** @type {any[]} */ (raw.contentMappers).find(
         (contentMapper) => contentMapper.package === pkg.name
       )
-      const result = await transform({
+      count += 1
+      const projectHandle = `${pkg.name}@${pkg.version}:${count}`
+      openProject({
+        configFileName: tsconfigFileName,
         compilerOptions: includeKeys(options, pkg.typescript.contentMapper.compilerOptions),
+        options: mdxContentMapper.options,
+        projectHandle
+      })
+      const result = await transform({
         content: original,
         fileName: file.path,
-        options: mdxContentMapper.options
+        projectHandle
       })
 
       const diagnosticsTexts =

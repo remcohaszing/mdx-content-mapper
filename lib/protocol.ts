@@ -1,6 +1,6 @@
 import type { CompilerOptions } from 'typescript'
 
-type PositionEncoding = 'utf-8' | 'utf-16'
+export type PositionEncoding = 'utf-8' | 'utf-16'
 
 export interface InitializeParams {
   protocolVersion: 1
@@ -22,7 +22,6 @@ export interface InitializeResult {
   diagnosticSource: string
 }
 
-/** This request is sent only to mappers that declare `dynamicConfig: true`. */
 export interface OpenProjectParams {
   /** Absolute tsconfig path, or an empty string for a project without a config file. */
   configFileName: string
@@ -34,30 +33,38 @@ export interface OpenProjectParams {
   compilerOptions: CompilerOptions
 }
 
-/** This response is required only from mappers that declare `dynamicConfig: true`. */
 export interface OpenProjectResult {
   /**
    * Stable fingerprint of all dynamically discovered configuration that can affect transforms.
+   * Required, and only allowed, when the mapper declares `dynamicConfig: true`.
    */
-  configIdentity: string
+  configIdentity?: string
   /**
    * Absolute file names whose changes may alter configIdentity or transform output.
    * May only be returned when the package declares `dynamicConfig: true`. Do not include
    * the files being transformed; those are watched separately.
    */
   watchedFiles?: string[]
+  /** Diagnostics for invalid values in this mapper's contentMappers options object. */
+  optionDiagnostics?: OptionDiagnostic[]
+}
+
+export interface OptionDiagnostic {
+  /**
+   * Property names and nonnegative array indexes relative to the mapper entry's options object.
+   * An empty path reports the diagnostic on the options object itself.
+   */
+  path: (string | number)[]
+  messageText: string
+  code?: number
 }
 
 export interface TransformParams {
   fileName: string
   /** Original content of the file to be transformed. */
   content: string
-  /** Object from the contentMappers entry, when specified. */
-  options?: Record<string, unknown>
-  /** Project handle supplied in openProject. Absent for mappers without `dynamicConfig: true`. */
-  projectHandle?: string
-  /** The subset of compiler options that the mapper requested in its package.json. */
-  compilerOptions: CompilerOptions
+  /** Project handle supplied in openProject. */
+  projectHandle: string
 }
 
 export interface MappedOutput {
@@ -112,7 +119,6 @@ export interface TransformResult extends MappedOutput {
   supplemental?: MappedOutput[]
 }
 
-/** This request is sent only to mappers that declare `dynamicConfig: true`. */
 export interface CloseProjectParams {
   /** Project handle supplied in openProject. */
   projectHandle: string
