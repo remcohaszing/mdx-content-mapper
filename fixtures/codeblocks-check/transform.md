@@ -206,7 +206,7 @@ console.log('Hello TypeScript!')
 
 ## Text
 
-```js
+```ts
 export function getNumber(): number {
   return 'This is not a number'
 }
