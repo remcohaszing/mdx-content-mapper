@@ -11,6 +11,7 @@ import { includeKeys } from 'filter-obj'
 import { assertEqual, testFixturesDirectory } from 'snapshot-fixtures'
 import typescript from 'typescript'
 
+import { closeProject } from '../lib/requests/close-project.js'
 import { openProject } from '../lib/requests/open-project.js'
 import { transform } from '../lib/requests/transform.js'
 import pkg from '../package.json' with { type: 'json' }
@@ -110,6 +111,7 @@ testFixturesDirectory({
         fileName: file.path,
         projectHandle
       })
+      closeProject({ projectHandle })
 
       const diagnosticsTexts =
         result.diagnostics?.map(
