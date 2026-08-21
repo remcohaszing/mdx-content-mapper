@@ -35,6 +35,7 @@
   "dependencies": {
     "estree-util-scope": "^1.0.0",
     "estree-walker": "^3.0.0",
+    "markdown-extensions": "^2.0.0",
     "remark-frontmatter": "^5.0.0",
     "remark-gfm": "^4.0.0",
     "remark-mdx": "^3.0.0",
