@@ -7,7 +7,6 @@ test('initialize', () => {
   const result = initialize()
 
   assert.deepEqual(result, {
-    protocolVersion: 1,
     positionEncoding: 'utf-16',
     diagnosticSource: 'MDX'
   })
