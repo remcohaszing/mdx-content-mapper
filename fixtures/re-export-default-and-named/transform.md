@@ -7,7 +7,7 @@
 import { Fragment as _Fragment } from 'react/jsx-runtime'
 export {  named } from './layout.js'
 
-import {default as MDXLayout} from "./layout.js"
+import {default as MDXLayout} from './layout.js'
 
 /**
  * @internal
@@ -53,6 +53,10 @@ export default function MDXContent(props) {
 ```
 
 ## Verbatim mappings
+
+```jsx 208 13 31 13 0 0
+'./layout.js'
+```
 
 ```jsx 135 9 0 9 0 1048575
 export { 
