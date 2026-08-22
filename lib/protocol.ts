@@ -1,9 +1,8 @@
-import type { CompilerOptions } from 'typescript'
+import { CompilerOptions } from 'typescript'
 
 export type PositionEncoding = 'utf-8' | 'utf-16'
 
 export interface InitializeParams {
-  protocolVersion: 1
   /** The position encodings supported by TypeScript. The mapper must choose one of these encodings. */
   positionEncodings: PositionEncoding[]
   /** BCP 47 locale requested for diagnostics. */
@@ -11,8 +10,6 @@ export interface InitializeParams {
 }
 
 export interface InitializeResult {
-  /** Must match the protocolVersion sent in InitializeParams. */
-  protocolVersion: 1
   /** The position encoding the mapper will use for all span mapping positions and diagnostic positions. */
   positionEncoding: PositionEncoding
   /**
@@ -56,7 +53,7 @@ export interface OptionDiagnostic {
    */
   path: (string | number)[]
   messageText: string
-  code?: number
+  code: number
 }
 
 export interface TransformParams {
@@ -78,7 +75,7 @@ export interface MappedOutput {
   diagnosticDirectives?: DiagnosticDirectives
 }
 
-export enum DiagnosticDirectivePolicy {
+enum DiagnosticDirectivePolicy {
   Ignore = 0,
   Expect = 1
 }
@@ -134,7 +131,7 @@ export type SpanMapping = [
   features?: SpanMapFeature
 ]
 
-export enum SpanMapKind {
+enum SpanMapKind {
   /** Verbatim spans in virtual text have the same length and content as their counterparts in original text. */
   Verbatim = 0,
   /** Atom spans in virtual text may have different length and content than their counterparts in the original text. */
@@ -144,7 +141,7 @@ export enum SpanMapKind {
 }
 
 /** Controls which TypeScript language service features may use a span. */
-export enum SpanMapFeature {
+enum SpanMapFeature {
   None = 0,
   Hover = 1 << 0,
   SignatureHelp = 1 << 1,
@@ -175,5 +172,5 @@ export interface MapperDiagnostic {
   messageText: string
   start: number
   length: number
-  code?: number
+  code: number
 }
