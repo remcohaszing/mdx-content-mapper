@@ -5,7 +5,8 @@ export default defineConfig({
   platform: 'node',
   output: {
     cleanDir: true,
-    minify: true
+    minify: false,
+    sourcemap: true
   },
   input: {
     server: '../lib/server.js',

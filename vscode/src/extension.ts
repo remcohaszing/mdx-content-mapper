@@ -5,33 +5,42 @@ import { extensions } from 'vscode'
 import pkg from '../../package.json' with { type: 'json' }
 
 export async function activate(context: ExtensionContext): Promise<undefined> {
-  const extension = extensions.getExtension('TypeScriptTeam.native-preview')
+  const register = async (): Promise<undefined> => {
+    const extension = extensions.getExtension('TypescriptTeam.vscode-typescript')
 
-  if (!extension) {
-    return
-  }
+    if (!extension) {
+      return
+    }
 
-  const api = await extension.activate()
+    const api = await extension.activate()
 
-  const { name, typescript, version } = pkg
-  const { compilerOptions, dynamicConfig } = typescript.contentMapper
+    if (!api) {
+      return
+    }
 
-  const { packageJSON } = context.extension
+    const { name, typescript, version } = pkg
+    const { compilerOptions, dynamicConfig } = typescript.contentMapper
 
-  api.registerContentMappers(`${packageJSON.publisher}.${packageJSON.name}`, [
-    {
-      extensions: ['.vue'],
-      inferredProjectContribution: {
-        options: {},
-        manifest: {
-          name,
-          version,
-          exec: [process.execPath, context.asAbsolutePath('dist/server.js')],
-          cwd: extension.extensionUri,
-          compilerOptions,
-          dynamicConfig
+    const { packageJSON } = context.extension
+
+    api.registerContentMappers(`${packageJSON.publisher}.${packageJSON.name}`, [
+      {
+        extensions: ['.mdx'],
+        inferredProjectContribution: {
+          options: {},
+          manifest: {
+            name,
+            version,
+            exec: [process.execPath, context.asAbsolutePath('dist/server.js')],
+            cwd: extension.extensionUri,
+            compilerOptions,
+            dynamicConfig
+          }
         }
       }
-    }
-  ])
+    ])
+  }
+
+  extensions.onDidChange(register)
+  await register()
 }
