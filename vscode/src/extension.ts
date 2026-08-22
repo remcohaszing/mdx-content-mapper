@@ -1,14 +1,25 @@
-import type { ExtensionContext } from 'vscode'
+import type { Disposable, ExtensionContext } from 'vscode'
 
 import { extensions } from 'vscode'
 
 import pkg from '../../package.json' with { type: 'json' }
 
 export async function activate(context: ExtensionContext): Promise<undefined> {
+  let disposable: Disposable
+
+  const unregister = (): undefined => {
+    disposable?.dispose()
+  }
+
   const register = async (): Promise<undefined> => {
     const extension = extensions.getExtension('TypescriptTeam.vscode-typescript')
 
     if (!extension) {
+      unregister()
+      return
+    }
+
+    if (disposable) {
       return
     }
 
@@ -23,7 +34,7 @@ export async function activate(context: ExtensionContext): Promise<undefined> {
 
     const { packageJSON } = context.extension
 
-    api.registerContentMappers(`${packageJSON.publisher}.${packageJSON.name}`, [
+    disposable = api.registerContentMappers(`${packageJSON.publisher}.${packageJSON.name}`, [
       {
         extensions: ['.mdx'],
         inferredProjectContribution: {
@@ -41,6 +52,7 @@ export async function activate(context: ExtensionContext): Promise<undefined> {
     ])
   }
 
+  context.subscriptions.push({ dispose: unregister })
   extensions.onDidChange(register)
   await register()
 }
