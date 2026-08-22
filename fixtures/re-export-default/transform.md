@@ -42,7 +42,9 @@ function _createMdxContent(props) {
  *   A JSX element which represents the MDX content.
  */
 export default function MDXContent(props) {
-  return <_createMdxContent {...props} />
+  return <MDXLayout {...props}>
+    <_createMdxContent {...props} />
+  </MDXLayout>
 }
 
 // @ts-ignore
@@ -62,5 +64,12 @@ export {
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 9 7
+default
+```
+```jsx 1287 9
+MDXLayout
+```
 
 ## Diagnostics

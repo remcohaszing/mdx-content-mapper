@@ -16,8 +16,6 @@ import { Fragment as _Fragment } from 'react/jsx-runtime'
  * @param {{readonly [K in keyof MDXLayoutProps]: MDXLayoutProps[K]}} props
  *   The [props](https://mdxjs.com/docs/using-mdx/#props) that have been passed to the MDX component.
  *   In addition, the MDX layout receives the `children` prop, which contains the rendered MDX content.
- * @returns {JSX.Element}
- *   The MDX content wrapped in the layout.
  */
 const MDXLayout = function MDXLayout() {}
 
@@ -57,7 +55,9 @@ function _createMdxContent(props) {
  *   A JSX element which represents the MDX content.
  */
 export default function MDXContent(props) {
-  return <_createMdxContent {...props} />
+  return <MDXLayout {...props}>
+    <_createMdxContent {...props} />
+  </MDXLayout>
 }
 
 // @ts-ignore
@@ -67,11 +67,18 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 805 24 15 24 0 1048575
+```jsx 735 24 15 24 0 1048575
 function MDXLayout() {}
 
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 0 38
+export default function MDXLayout() {}
+```
+```jsx 1875 9
+MDXLayout
+```
 
 ## Diagnostics

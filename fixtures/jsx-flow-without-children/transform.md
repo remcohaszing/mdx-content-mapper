@@ -46,7 +46,9 @@ function _createMdxContent(props) {
  *   A JSX element which represents the MDX content.
  */
 export default function MDXContent(props) {
-  return <_createMdxContent {...props} />
+  return <_Fragment>
+    <_createMdxContent {...props} />
+  </_Fragment>
 }
 
 // @ts-ignore
@@ -79,7 +81,7 @@ Injected />
 <Local />
 ```
 
-```jsx 1476 8 37 8 0 1048575
+```jsx 1507 8 37 8 0 1048575
 Injected
 ```
 
