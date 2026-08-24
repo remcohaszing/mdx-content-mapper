@@ -100,13 +100,13 @@ testFixturesDirectory({
       )
       count += 1
       const projectHandle = `${pkg.name}@${pkg.version}:${count}`
-      openProject({
+      await openProject({
         configFileName: tsconfigFileName,
         compilerOptions: includeKeys(options, pkg.typescript.contentMapper.compilerOptions),
         options: mdxContentMapper.options,
         projectHandle
       })
-      const result = await transform({
+      const result = transform({
         content: original,
         fileName: file.path,
         projectHandle
