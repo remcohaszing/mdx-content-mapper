@@ -1,0 +1,24 @@
+{
+  "include": [".react-router/**/*"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "checkJs": true,
+    "jsx": "react-jsx",
+    "module": "preserve",
+    "noEmit": true,
+    "rootDirs": [".", "./.react-router/types"],
+    "skipLibCheck": true,
+    "target": "esnext",
+    "verbatimModuleSyntax": true
+  },
+  "contentMappers": [
+    {
+      "package": "mdx-content-mapper",
+      "extensions": [".mdx"],
+      "options": {
+        "preset": "@react-router/fs-routes",
+        "providerImportSource": "#mdx-components"
+      }
+    }
+  ]
+}

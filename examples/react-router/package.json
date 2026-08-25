@@ -1,0 +1,21 @@
+{
+  "name": "@examples/react-router",
+  "version": "0.0.0",
+  "type": "module",
+  "imports": {
+    "#mdx-components": "./app/mdx-components.tsx"
+  },
+  "dependencies": {
+    "@mdx-js/rollup": "^3.0.0",
+    "@next/mdx": "^16.0.0",
+    "@react-router/dev": "^8.0.0",
+    "@react-router/fs-routes": "^8.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "isbot": "^5.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^8.0.0",
+    "vite": "^8.0.0"
+  }
+}

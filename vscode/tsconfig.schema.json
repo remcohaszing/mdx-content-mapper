@@ -35,7 +35,7 @@
                   "type": "string"
                 },
                 "preset": {
-                  "enum": ["next"]
+                  "enum": ["@react-router/fs-routes", "next"]
                 },
                 "recmaPlugins": {
                   "type": "array",
