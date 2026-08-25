@@ -4,6 +4,6 @@ const components = {
   Button
 }
 
-export function useMDXComponents() {
+export function useMDXComponents(): typeof components {
   return components
 }

@@ -36,5 +36,8 @@
         ]
       }
     ]
+  },
+  "devDependencies": {
+    "rolldown": "^1.0.0"
   }
 }
