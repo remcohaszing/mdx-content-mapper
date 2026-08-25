@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "contentMappers": {
+      "type": "array",
+      "items": {
+        "if": {
+          "required": ["package"],
+          "properties": {
+            "package": {
+              "const": "mdx-content-mapper"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "options": {
+              "type": "object",
+              "properties": {
+                "checkCodeBlocks": {
+                  "type": "boolean"
+                },
+                "checkMdx": {
+                  "type": "boolean"
+                },
+                "markdownExtensions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "\\.\\w+$"
+                  }
+                },
+                "providerImportSource": {
+                  "type": "string"
+                },
+                "preset": {
+                  "enum": ["next"]
+                },
+                "recmaPlugins": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      { "enum": ["recma-export-filepath"] },
+                      {
+                        "type": "array",
+                        "additionalItems": false,
+                        "items": [{ "const": "recma-export-filepath" }, {}]
+                      }
+                    ]
+                  }
+                },
+                "rehypePlugins": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      { "enum": ["rehype-mdx-title"] },
+                      {
+                        "type": "array",
+                        "additionalItems": false,
+                        "items": [{ "const": "rehype-mdx-title" }, {}]
+                      }
+                    ]
+                  }
+                },
+                "remarkPlugins": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "remark-directives",
+                          "remark-frontmatter",
+                          "remark-gfm",
+                          "remark-mdx-frontmatter"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": [{ "const": "remark-mdx-frontmatter" }, {}]
+                      },
+                      {
+                        "type": "array",
+                        "items": [
+                          {
+                            "enum": ["remark-directives", "remark-frontmatter", "remark-gfm"]
+                          },
+                          {}
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": [
+                          {
+                            "enum": [
+                              "remark-directives",
+                              "remark-frontmatter",
+                              "remark-gfm",
+                              "remark-math"
+                            ]
+                          },
+                          {}
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
