@@ -1,5 +1,4 @@
 {
-  "references": [{ "path": 12 }],
   "compilerOptions": {
     "checkJs": true,
     "noEmit": true,
