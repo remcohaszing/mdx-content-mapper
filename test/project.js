@@ -35,6 +35,7 @@ describe('requests', () => {
         '.ron'
       ],
       plugins: [],
+      preset: undefined,
       providerImportSource: undefined
     })
 
@@ -66,6 +67,7 @@ describe('normalizeOptions', () => {
         '.ron'
       ],
       plugins: [],
+      preset: undefined,
       providerImportSource: undefined
     })
     assert.deepEqual(diagnostics, [])
@@ -98,6 +100,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [])
@@ -128,6 +131,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [
@@ -166,6 +170,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [
@@ -205,6 +210,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [])
@@ -235,6 +241,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [
@@ -270,6 +277,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [])
@@ -297,6 +305,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [])
@@ -328,6 +337,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [])
@@ -357,6 +367,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [])
@@ -389,6 +400,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
 
@@ -434,6 +446,7 @@ describe('normalizeOptions', () => {
         jsxImportSource: 'react',
         markdownExtensions: ['.md'],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [
@@ -478,6 +491,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: './mdx-components.tsx'
       })
       assert.deepEqual(diagnostics, [])
@@ -508,6 +522,7 @@ describe('normalizeOptions', () => {
           '.ron'
         ],
         plugins: [],
+        preset: undefined,
         providerImportSource: undefined
       })
       assert.deepEqual(diagnostics, [
