@@ -27,6 +27,7 @@
     { "path": "./mdx-flow-expression-with-jsx/tsconfig.json" },
     { "path": "./mdx-text-expression/tsconfig.json" },
     { "path": "./mdx-text-expression-async/tsconfig.json" },
+    { "path": "./preact/tsconfig.json" },
     { "path": "./provider-import-source-bare/tsconfig.json" },
     { "path": "./provider-import-source-parent/tsconfig.json" },
     { "path": "./provider-import-source-sibling/tsconfig.json" },
