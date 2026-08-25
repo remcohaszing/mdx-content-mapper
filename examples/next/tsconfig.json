@@ -1,0 +1,29 @@
+{
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", ".next/dev/types/**/*.ts", "**/*.*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "checkJs": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "preserve",
+    "noEmit": true,
+    "plugins": [{ "name": "next" }],
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "contentMappers": [
+    {
+      "package": "mdx-content-mapper",
+      "extensions": [".mdx"],
+      "options": {
+        "preset": "next",
+        "providerImportSource": "./mdx-components.tsx"
+      }
+    }
+  ]
+}

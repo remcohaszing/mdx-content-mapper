@@ -1,0 +1,14 @@
+{
+  "name": "@examples/next",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@mdx-js/loader": "^3.0.0",
+    "@next/mdx": "^16.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

@@ -11,7 +11,8 @@
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "type": "module",
   "workspaces": [
-    "./vscode"
+    "./vscode",
+    "./examples/*"
   ],
   "files": [
     "lib"
@@ -52,7 +53,7 @@
     "@types/estree-jsx": "^1.0.0",
     "@types/mdast": "^4.0.0",
     "@types/node": "^26.0.0",
-    "@types/react": "^19.2.18",
+    "@types/react": "^19.0.0",
     "@types/unist": "^3.0.0",
     "@types/vscode": "^1.0.0",
     "@vscode/vsce": "^3.0.0",

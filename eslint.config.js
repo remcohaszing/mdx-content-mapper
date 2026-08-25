@@ -10,6 +10,7 @@ export default define([
       'jsdoc/require-jsdoc': 'off',
       'jsdoc/require-param-description': 'off',
       'jsdoc/require-returns-description': 'off',
+      'jsdoc/require-template-description': 'off',
       'unicorn/consistent-destructuring': 'off',
       'unicorn/prefer-code-point': 'off'
     }

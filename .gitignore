@@ -1,5 +1,7 @@
+.next/
 dist/
 node_modules/
+*.d.ts
 *.tgz
 *.tsbuildinfo
 *.vsix
