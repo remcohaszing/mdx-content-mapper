@@ -1,5 +1,5 @@
 {
-  "exclude": ["fixtures", "vscode/dist"],
+  "exclude": ["examples", "fixtures", "vscode/dist"],
   "compilerOptions": {
     "checkJs": true,
     "lib": ["esnext"],
