@@ -1,9 +1,9 @@
-import { Button } from "./components/button.tsx";
+import { Button } from './components/button.tsx'
 
 const components = {
-    Button
+  Button
 }
 
 export function useMDXComponents() {
-    return components
+  return components
 }
