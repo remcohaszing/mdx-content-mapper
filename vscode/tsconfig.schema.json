@@ -24,7 +24,7 @@
                 "checkMdx": {
                   "type": "boolean"
                 },
-                "markdownExtensions": {
+                "mdExtensions": {
                   "type": "array",
                   "items": {
                     "type": "string",

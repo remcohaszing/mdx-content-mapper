@@ -24,16 +24,7 @@ describe('requests', () => {
       checkMdx: false,
       configFileName: '/example/tsconfig.json',
       jsxImportSource: 'react',
-      markdownExtensions: [
-        '.md',
-        '.markdown',
-        '.mdown',
-        '.mkdn',
-        '.mkd',
-        '.mdwn',
-        '.mkdown',
-        '.ron'
-      ],
+      mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
       plugins: [],
       preset: undefined,
       providerImportSource: undefined
@@ -56,16 +47,7 @@ describe('normalizeOptions', () => {
       checkMdx: false,
       configFileName: '/test/tsconfig.json',
       jsxImportSource: 'react',
-      markdownExtensions: [
-        '.md',
-        '.markdown',
-        '.mdown',
-        '.mkdn',
-        '.mkd',
-        '.mdwn',
-        '.mkdown',
-        '.ron'
-      ],
+      mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
       plugins: [],
       preset: undefined,
       providerImportSource: undefined
@@ -89,16 +71,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -120,16 +93,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -159,16 +123,7 @@ describe('normalizeOptions', () => {
         checkMdx: true,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -199,16 +154,7 @@ describe('normalizeOptions', () => {
         checkMdx: true,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -230,16 +176,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -266,16 +203,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/path/to/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -294,16 +222,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: undefined,
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -326,16 +245,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'preact',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -356,16 +266,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -374,13 +275,13 @@ describe('normalizeOptions', () => {
     })
   })
 
-  describe('markdownExtensions', () => {
+  describe('mdExtensions', () => {
     test('non-array', async () => {
       const [{ parse, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
-          markdownExtensions: '.md'
+          mdExtensions: '.md'
         }
       })
 
@@ -389,16 +290,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -417,8 +309,8 @@ describe('normalizeOptions', () => {
       assert.deepEqual(diagnostics, [
         {
           code: 1001,
-          messageText: "Content mapper option 'markdownExtensions' requires a value of type Array.",
-          path: ['markdownExtensions']
+          messageText: "Content mapper option 'mdExtensions' requires a value of type Array.",
+          path: ['mdExtensions']
         }
       ])
     })
@@ -428,7 +320,7 @@ describe('normalizeOptions', () => {
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
-          markdownExtensions: ['.md', 'markdown', { ext: '.mkd' }]
+          mdExtensions: ['.md', 'markdown', { ext: '.mkd' }]
         }
       })
 
@@ -444,7 +336,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: ['.md'],
+        mdExtensions: ['.md'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined
@@ -453,13 +345,12 @@ describe('normalizeOptions', () => {
         {
           code: 1003,
           messageText: "File extension 'markdown' must begin with a '.'.",
-          path: ['markdownExtensions', 1]
+          path: ['mdExtensions', 1]
         },
         {
           code: 1001,
-          messageText:
-            "Content mapper option 'markdownExtensions[2]' requires a value of type string.",
-          path: ['markdownExtensions', 2]
+          messageText: "Content mapper option 'mdExtensions[2]' requires a value of type string.",
+          path: ['mdExtensions', 2]
         }
       ])
     })
@@ -480,16 +371,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: './mdx-components.tsx'
@@ -511,16 +393,7 @@ describe('normalizeOptions', () => {
         checkMdx: false,
         configFileName: '/test/tsconfig.json',
         jsxImportSource: 'react',
-        markdownExtensions: [
-          '.md',
-          '.markdown',
-          '.mdown',
-          '.mkdn',
-          '.mkd',
-          '.mdwn',
-          '.mkdown',
-          '.ron'
-        ],
+        mdExtensions: ['.md', '.markdown', '.mdown', '.mkdn', '.mkd', '.mdwn', '.mkdown', '.ron'],
         plugins: [],
         preset: undefined,
         providerImportSource: undefined

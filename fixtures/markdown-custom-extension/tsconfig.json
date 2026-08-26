@@ -9,7 +9,7 @@
       "package": "mdx-content-mapper",
       "extensions": [".custom"],
       "options": {
-        "markdownExtensions": [".custom"]
+        "mdExtensions": [".custom"]
       }
     }
   ]
