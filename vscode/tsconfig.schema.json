@@ -31,11 +31,11 @@
                     "pattern": "\\.\\w+$"
                   }
                 },
-                "providerImportSource": {
-                  "type": "string"
-                },
                 "preset": {
                   "enum": ["@react-router/fs-routes", "next"]
+                },
+                "providerImportSource": {
+                  "type": "string"
                 },
                 "recmaPlugins": {
                   "type": "array",
