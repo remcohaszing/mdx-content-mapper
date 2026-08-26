@@ -24,6 +24,7 @@
         "lib/server.js"
       ],
       "compilerOptions": [
+        "allowJs",
         "jsxImportSource"
       ],
       "dynamicConfig": false
