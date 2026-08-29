@@ -5,7 +5,6 @@
 /** @import { JSX } from 'react/jsx-runtime' */
 
 import { Fragment as _Fragment } from 'react/jsx-runtime'
-import { useMDXComponents as _provideComponents } from "./mdx-components.tsx"
 
 /**
  * @internal
@@ -23,7 +22,6 @@ function _createMdxContent(props) {
    */
   const _components = {
     ...(/** @type {{[K in keyof JSX.IntrinsicElements]: K}} */ ({})),
-    ..._provideComponents(),
     ...props.components,
     /** The [props](https://mdxjs.com/docs/using-mdx/#props) that have been passed to the MDX component. */
     props
@@ -32,10 +30,36 @@ function _createMdxContent(props) {
   return <_Fragment>
     <_components.h1>
     {''}
-    {props.name}
+    {/* @ts-ignore */}
+    </_components.h1>
+    <_components.h2>
+    {''}
+    {/* @ts-ignore */}
+    </_components.h2>
+    <_components.h1>
     {''}
     {/* @ts-ignore */}
     </_components.h1>
+    <_components.h2>
+    {''}
+    {/* @ts-ignore */}
+    </_components.h2>
+    <_components.h3>
+    {''}
+    {/* @ts-ignore */}
+    </_components.h3>
+    <_components.h4>
+    {''}
+    {/* @ts-ignore */}
+    </_components.h4>
+    <_components.h5>
+    {''}
+    {/* @ts-ignore */}
+    </_components.h5>
+    <_components.h6>
+    {''}
+    {/* @ts-ignore */}
+    </_components.h6>
   </_Fragment>
 }
 
@@ -60,26 +84,148 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 1047 12 8 12 0 1048575
-{props.name}
-```
-
 ## Non-verbatim mappings
 
-```plaintext 0 1
-#
+```plaintext 17 16
+================
 ```
-```jsx 1018 11
+```jsx 911 11
 _components
 ```
 
 ---
 
-```plaintext 0 1
+```plaintext 17 16
+================
+```
+```jsx 923 2
+h1
+```
+
+---
+
+```plaintext 52 3
+---
+```
+```jsx 986 11
+_components
+```
+
+---
+
+```plaintext 52 3
+---
+```
+```jsx 998 2
+h2
+```
+
+---
+
+```plaintext 57 1
 #
 ```
-```jsx 1030 2
+```jsx 1061 11
+_components
+```
+
+---
+
+```plaintext 57 1
+#
+```
+```jsx 1073 2
 h1
+```
+
+---
+
+```plaintext 74 2
+##
+```
+```jsx 1136 11
+_components
+```
+
+---
+
+```plaintext 74 2
+##
+```
+```jsx 1148 2
+h2
+```
+
+---
+
+```plaintext 92 3
+###
+```
+```jsx 1211 11
+_components
+```
+
+---
+
+```plaintext 92 3
+###
+```
+```jsx 1223 2
+h3
+```
+
+---
+
+```plaintext 111 4
+####
+```
+```jsx 1286 11
+_components
+```
+
+---
+
+```plaintext 111 4
+####
+```
+```jsx 1298 2
+h4
+```
+
+---
+
+```plaintext 131 5
+#####
+```
+```jsx 1361 11
+_components
+```
+
+---
+
+```plaintext 131 5
+#####
+```
+```jsx 1373 2
+h5
+```
+
+---
+
+```plaintext 152 6
+######
+```
+```jsx 1436 11
+_components
+```
+
+---
+
+```plaintext 152 6
+######
+```
+```jsx 1448 2
+h6
 ```
 
 ## Diagnostics

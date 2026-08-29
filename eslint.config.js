@@ -4,6 +4,7 @@ export default define([
   { ignores: ['fixtures', 'lib/protocol.ts'] },
   {
     rules: {
+      'no-inline-comments': 'off',
       'no-param-reassign': 'off',
       'import-x/no-relative-packages': 'off',
       'jsdoc/reject-any-type': 'off',

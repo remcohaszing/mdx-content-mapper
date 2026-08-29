@@ -12,6 +12,7 @@
     { "path": "./export-default-named-function/tsconfig.json" },
     { "path": "./export-default-named-function-with-arguments/tsconfig.json" },
     { "path": "./export-named-and-default/tsconfig.json" },
+    { "path": "./headings/tsconfig.json" },
     { "path": "./import/tsconfig.json" },
     { "path": "./incomplete-esm/tsconfig.json" },
     { "path": "./jsx-flow-with-child-blockquote/tsconfig.json" },
