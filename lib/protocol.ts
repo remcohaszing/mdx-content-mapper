@@ -75,7 +75,7 @@ export interface MappedOutput {
   diagnosticDirectives?: DiagnosticDirectives
 }
 
-enum DiagnosticDirectivePolicy {
+export enum DiagnosticDirectivePolicy {
   Ignore = 0,
   Expect = 1
 }
@@ -131,7 +131,7 @@ export type SpanMapping = [
   features?: SpanMapFeature
 ]
 
-enum SpanMapKind {
+export enum SpanMapKind {
   /** Verbatim spans in virtual text have the same length and content as their counterparts in original text. */
   Verbatim = 0,
   /** Atom spans in virtual text may have different length and content than their counterparts in the original text. */
@@ -141,7 +141,7 @@ enum SpanMapKind {
 }
 
 /** Controls which TypeScript language service features may use a span. */
-enum SpanMapFeature {
+export enum SpanMapFeature {
   None = 0,
   Hover = 1 << 0,
   SignatureHelp = 1 << 1,
