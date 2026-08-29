@@ -7,6 +7,7 @@
 import { Fragment as _Fragment } from 'react/jsx-runtime'
 import { Planet } from './planet.js'
 
+;
 
 /**
  * @internal
@@ -61,5 +62,13 @@ import { Planet } from './planet.js'
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 36 1
+
+
+```
+```jsx 173 1
+;
+```
 
 ## Diagnostics

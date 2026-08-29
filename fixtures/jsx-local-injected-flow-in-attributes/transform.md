@@ -7,6 +7,7 @@
 import { Fragment as _Fragment } from 'react/jsx-runtime'
 export function Local() {}
 
+;
 
 /**
  * @internal
@@ -70,38 +71,46 @@ export function Local() {}
 
 ```
 
-```jsx 904 34 28 34 0 1048575
+```jsx 906 34 28 34 0 1048575
 <div local={<Local />} injected={<
 ```
 
-```jsx 950 39 62 39 0 1048575
+```jsx 952 39 62 39 0 1048575
 Injected />} string="string" boolean />
 ```
 
-```jsx 994 46 103 46 0 1048575
+```jsx 996 46 103 46 0 1048575
 <div local={<Local>{null}</Local>} injected={<
 ```
 
-```jsx 1052 17 149 17 0 1048575
+```jsx 1054 17 149 17 0 1048575
 Injected>{null}</
 ```
 
-```jsx 1081 35 166 35 0 1048575
+```jsx 1083 35 166 35 0 1048575
 Injected>} string="string" boolean>
 ```
 
-```jsx 1147 6 214 6 0 1048575
+```jsx 1149 6 214 6 0 1048575
 </div>
 ```
 
-```jsx 1706 8 62 8 0 1048575
+```jsx 1708 8 62 8 0 1048575
 Injected
 ```
 
-```jsx 1729 8 149 8 0 1048575
+```jsx 1731 8 149 8 0 1048575
 Injected
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 26 1
+
+
+```
+```jsx 163 1
+;
+```
 
 ## Diagnostics

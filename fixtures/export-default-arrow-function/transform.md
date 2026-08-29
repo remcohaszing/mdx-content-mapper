@@ -19,6 +19,7 @@ import { Fragment as _Fragment } from 'react/jsx-runtime'
  */
 const MDXLayout = () => {}
 
+;
 
 /**
  * @internal
@@ -72,10 +73,20 @@ export default function MDXContent(props) {
 
 ## Non-verbatim mappings
 
+```plaintext 23 1
+
+
+```
+```jsx 745 1
+;
+```
+
+---
+
 ```plaintext 0 23
 export default () => {}
 ```
-```jsx 1816 9
+```jsx 1818 9
 MDXLayout
 ```
 

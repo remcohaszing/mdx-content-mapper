@@ -7,6 +7,7 @@
 import { Fragment as _Fragment } from 'react/jsx-runtime'
 export function Local() {}
 
+;
 
 /**
  * @internal
@@ -65,26 +66,34 @@ export function Local() {}
 
 ```
 
-```jsx 904 7 28 7 0 1048575
+```jsx 906 7 28 7 0 1048575
 <div />
 ```
 
-```jsx 916 1 36 1 0 1048575
+```jsx 918 1 36 1 0 1048575
 <
 ```
 
-```jsx 929 11 37 11 0 1048575
+```jsx 931 11 37 11 0 1048575
 Injected />
 ```
 
-```jsx 945 9 49 9 0 1048575
+```jsx 947 9 49 9 0 1048575
 <Local />
 ```
 
-```jsx 1507 8 37 8 0 1048575
+```jsx 1509 8 37 8 0 1048575
 Injected
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 26 1
+
+
+```
+```jsx 163 1
+;
+```
 
 ## Diagnostics

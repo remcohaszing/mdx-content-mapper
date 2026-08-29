@@ -1,11 +1,12 @@
 ## Text
 
 ```jsx
+// @ts-check
 /* @jsxRuntime automatic */
 /** @import { JSX } from 'react/jsx-runtime' */
 
 import { Fragment as _Fragment } from 'react/jsx-runtime'
-export { named } from './layout.js'
+export const variable =
 
 ;
 
@@ -26,7 +27,9 @@ function _createMdxContent(props) {
   const _components = {
     ...props.components,
     /** The [props](https://mdxjs.com/docs/using-mdx/#props) that have been passed to the MDX component. */
-    props
+    props,
+    /** {@link variable} */
+    variable
   }
   _components
   return <_Fragment>
@@ -54,18 +57,18 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 135 36 0 36 0 1048575
-export { named } from './layout.js'
+```jsx 148 24 0 24 0 1048575
+export const variable =
 
 ```
 
 ## Non-verbatim mappings
 
-```plaintext 35 1
+```plaintext 23 1
 
 
 ```
-```jsx 172 1
+```jsx 173 1
 ;
 ```
 

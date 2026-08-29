@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "contentMappers": [
+    {
+      "package": "mdx-content-mapper",
+      "extensions": [".mdx"],
+      "options": {
+        "checkMdx": true
+      }
+    }
+  ]
+}

@@ -9,14 +9,17 @@ export const arrow = async () => {
   await Promise.resolve(42)
 }
 
+;
 export const expression = async function() {
   await Promise.resolve(42)
 }
 
+;
 export async function named() {
   await Promise.resolve(42)
 }
 
+;
 
 /**
  * @internal
@@ -81,32 +84,60 @@ export const arrow = async () => {
 
 ```
 
-```jsx 201 75 66 75 0 1048575
+```jsx 203 75 66 75 0 1048575
 export const expression = async function() {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 277 62 142 62 0 1048575
+```jsx 281 62 142 62 0 1048575
 export async function named() {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 1199 43 205 43 0 1048575
+```jsx 1205 43 205 43 0 1048575
 {async () => { await Promise.resolve(42) }}
 ```
 
-```jsx 1247 48 249 48 0 1048575
+```jsx 1253 48 249 48 0 1048575
 {async function() { await Promise.resolve(42) }}
 ```
 
-```jsx 1300 54 298 54 0 1048575
+```jsx 1306 54 298 54 0 1048575
 {async function local() { await Promise.resolve(42) }}
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 64 1
+
+
+```
+```jsx 201 1
+;
+```
+
+---
+
+```plaintext 140 1
+
+
+```
+```jsx 279 1
+;
+```
+
+---
+
+```plaintext 203 1
+
+
+```
+```jsx 344 1
+;
+```
 
 ## Diagnostics

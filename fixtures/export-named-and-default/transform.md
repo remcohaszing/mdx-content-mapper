@@ -20,6 +20,7 @@ export function named() {}
  */
 const MDXLayout = function MDXLayout() {}
 
+;
 
 /**
  * @internal
@@ -82,10 +83,20 @@ function MDXLayout() {}
 
 ## Non-verbatim mappings
 
+```plaintext 65 1
+
+
+```
+```jsx 787 1
+;
+```
+
+---
+
 ```plaintext 27 38
 export default function MDXLayout() {}
 ```
-```jsx 1938 9
+```jsx 1940 9
 MDXLayout
 ```
 

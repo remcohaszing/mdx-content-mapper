@@ -8,6 +8,7 @@ import { Fragment as _Fragment } from 'react/jsx-runtime'
 export {  named } from './layout.js'
 
 import {default as MDXLayout} from './layout.js'
+;
 
 /**
  * @internal
@@ -69,10 +70,20 @@ export {
 
 ## Non-verbatim mappings
 
+```plaintext 44 1
+
+
+```
+```jsx 222 1
+;
+```
+
+---
+
 ```plaintext 9 7
 default
 ```
-```jsx 1293 9
+```jsx 1295 9
 MDXLayout
 ```
 
