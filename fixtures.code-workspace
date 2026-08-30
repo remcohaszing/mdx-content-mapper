@@ -1,12 +1,12 @@
 {
-  "extensions": {
-    "recommendations": ["TypeScriptTeam.native-preview"]
-  },
   "settings": {
     "chat.disableAIFeatures": true,
     "js/ts.tsdk.path": "../node_modules/typescript/lib"
   },
   "folders": [
+    {
+      "path": "examples"
+    },
     {
       "path": "fixtures"
     }
