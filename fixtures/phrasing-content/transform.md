@@ -80,6 +80,9 @@ function _createMdxContent(props) {
     <_components.br/>
     {''}
     </p>
+    <_components.hr/>
+    <_components.hr/>
+    <_components.hr/>
   </_Fragment>
 }
 
@@ -358,6 +361,60 @@ _components
 ```
 ```jsx 1539 2
 br
+```
+
+---
+
+```plaintext 297 3
+---
+```
+```jsx 1567 11
+_components
+```
+
+---
+
+```plaintext 297 3
+---
+```
+```jsx 1579 2
+hr
+```
+
+---
+
+```plaintext 302 9
+_________
+```
+```jsx 1589 11
+_components
+```
+
+---
+
+```plaintext 302 9
+_________
+```
+```jsx 1601 2
+hr
+```
+
+---
+
+```plaintext 313 15
+***************
+```
+```jsx 1611 11
+_components
+```
+
+---
+
+```plaintext 313 15
+***************
+```
+```jsx 1623 2
+hr
 ```
 
 ## Diagnostics
