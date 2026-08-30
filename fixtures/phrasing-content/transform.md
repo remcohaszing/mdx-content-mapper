@@ -56,6 +56,20 @@ function _createMdxContent(props) {
     </_components.em>
     {''}
     </p>
+    <p>
+    {''}
+    <_components.del>
+    {''}
+    </_components.del>
+    {''}
+    </p>
+    <p>
+    {''}
+    <_components.del>
+    {''}
+    </_components.del>
+    {''}
+    </p>
   </_Fragment>
 }
 
@@ -222,6 +236,78 @@ _
 ```
 ```jsx 1248 2
 em
+```
+
+---
+
+```plaintext 162 1
+~
+```
+```jsx 1292 11
+_components
+```
+
+---
+
+```plaintext 162 1
+~
+```
+```jsx 1304 3
+del
+```
+
+---
+
+```plaintext 181 1
+~
+```
+```jsx 1324 11
+_components
+```
+
+---
+
+```plaintext 181 1
+~
+```
+```jsx 1336 3
+del
+```
+
+---
+
+```plaintext 203 2
+~~
+```
+```jsx 1381 11
+_components
+```
+
+---
+
+```plaintext 203 2
+~~
+```
+```jsx 1393 3
+del
+```
+
+---
+
+```plaintext 223 2
+~~
+```
+```jsx 1413 11
+_components
+```
+
+---
+
+```plaintext 223 2
+~~
+```
+```jsx 1425 3
+del
 ```
 
 ## Diagnostics
