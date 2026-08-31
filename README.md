@@ -119,7 +119,7 @@ If you are using [`@mdx-js/react`](https://mdxjs.com/packages/react/),
 package. If you only use the provider in one place, you don’t. Instead, you can create a file named
 `mdx-components.tsx` that exports a function named `useMDXComponents`:
 
-```js
+```tsx
 import { Banner } from './components/banner'
 import { Button } from './components/button'
 import { Chart } from './components/chart'
@@ -128,9 +128,9 @@ const components = {
   Banner,
   Button,
   Chart
-}
+} as const
 
-export function useMDXComponents() {
+export function useMDXComponents(): typeof components {
   return components
 }
 ```
