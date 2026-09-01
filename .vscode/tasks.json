@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "npm",
+      "args": ["--workspace", "vscode-mdx-content-mapper", "run", "vscode:prepublish"],
+      "label": "build",
+      "presentation": {
+        "clear": true,
+        "echo": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
