@@ -2,6 +2,7 @@
   "files": [],
   "references": [
     { "path": "./async-functions/tsconfig.json" },
+    { "path": "./blockquote-jsx-expression/tsconfig.json" },
     { "path": "./check-mdx/tsconfig.json" },
     { "path": "./codeblocks-check/tsconfig.json" },
     { "path": "./codeblocks-nocheck/tsconfig.json" },
