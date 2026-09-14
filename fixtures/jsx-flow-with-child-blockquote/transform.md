@@ -29,8 +29,9 @@ function _createMdxContent(props) {
   _components
   return <_Fragment>
     <div>
-    <blockquote>
-    </blockquote>
+    <_components.blockquote>
+    {/* @ts-ignore */}
+    </_components.blockquote>
     </div>
     <p>
     <div>
@@ -65,18 +66,34 @@ export default function MDXContent(props) {
 <div>
 ```
 
-```jsx 955 6 8 6 0 1048575
+```jsx 1002 6 8 6 0 1048575
 </div>
 ```
 
-```jsx 974 5 15 5 0 1048575
+```jsx 1021 5 15 5 0 1048575
 <div>
 ```
 
-```jsx 993 6 21 6 0 1048575
+```jsx 1040 6 21 6 0 1048575
 </div>
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 6 1
+>
+```
+```jsx 921 11
+_components
+```
+
+---
+
+```plaintext 6 1
+>
+```
+```jsx 933 10
+blockquote
+```
 
 ## Diagnostics

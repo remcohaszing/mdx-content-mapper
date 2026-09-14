@@ -5,12 +5,15 @@ declare module 'estree' {
   }
 }
 
-declare module 'mdast' {
-  interface TOML extends Literal {
-    type: 'toml'
-  }
-
-  interface RootContentMap {
-    toml: TOML
+declare module 'micromark-util-types' {
+  interface TokenTypeMap {
+    toml: 'toml'
+    tomlFence: 'tomlFence'
+    tomlFenceSequence: 'tomlFenceSequence'
+    tomlValue: 'tomlValue'
+    yaml: 'yaml'
+    yamlFence: 'yamlFence'
+    yamlFenceSequence: 'yamlFenceSequence'
+    yamlValue: 'yamlValue'
   }
 }

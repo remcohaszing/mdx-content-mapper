@@ -69,6 +69,8 @@ export default function MDXContent(props) {
 /** @typedef {(void extends Props ? {} : Props) & {components?: {}}} MDXContentProps */
 // @ts-ignore
 Injected
+// @ts-ignore
+Injected
 
 ```
 
@@ -115,9 +117,13 @@ Injected>
 Injected
 ```
 
+```jsx 1726 8 160 8 0 1048575
+Injected
+```
+
 ## Non-verbatim mappings
 
-```plaintext 26 1
+```plaintext 27 1
 
 
 ```

@@ -62,6 +62,8 @@ export default function MDXContent(props) {
 Injected
 // @ts-ignore
 Injected
+// @ts-ignore
+Injected
 
 ```
 
@@ -104,9 +106,13 @@ Injected
 Injected
 ```
 
+```jsx 1824 8 166 8 0 1048575
+Injected
+```
+
 ## Non-verbatim mappings
 
-```plaintext 26 1
+```plaintext 27 1
 
 
 ```

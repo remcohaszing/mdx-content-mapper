@@ -18,7 +18,7 @@ describe('requests', () => {
     })
 
     assert.deepEqual(openProjectResult, { optionDiagnostics: [] })
-    const { parse, ...project } = nonNull(projects.get(projectHandle))
+    const { micromarkExtensions, ...project } = nonNull(projects.get(projectHandle))
     assert.deepEqual(project, {
       checkCodeBlocks: false,
       checkMdx: false,
@@ -37,7 +37,7 @@ describe('requests', () => {
 
 describe('normalizeOptions', () => {
   test('default options', async () => {
-    const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+    const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
       configFileName: '/test/tsconfig.json',
       compilerOptions: {}
     })
@@ -53,12 +53,11 @@ describe('normalizeOptions', () => {
       providerImportSource: undefined
     })
     assert.deepEqual(diagnostics, [])
-    assert.equal(typeof parse, 'function')
   })
 
   describe('checkCodeBlocks', () => {
     test('allowJs true', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
@@ -80,7 +79,7 @@ describe('normalizeOptions', () => {
     })
 
     test('non boolean', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
@@ -110,7 +109,7 @@ describe('normalizeOptions', () => {
 
   describe('checkMdx', () => {
     test('allowJs false', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
@@ -139,7 +138,7 @@ describe('normalizeOptions', () => {
     })
 
     test('allowJs true', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {
           allowJs: true
@@ -163,7 +162,7 @@ describe('normalizeOptions', () => {
     })
 
     test('non boolean', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
@@ -193,7 +192,7 @@ describe('normalizeOptions', () => {
 
   describe('configFileName', () => {
     test('non-empty', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/path/to/tsconfig.json',
         compilerOptions: {}
       })
@@ -212,7 +211,7 @@ describe('normalizeOptions', () => {
     })
 
     test('empty', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '',
         compilerOptions: {}
       })
@@ -233,7 +232,7 @@ describe('normalizeOptions', () => {
 
   describe('jsxImportSource', () => {
     test('string', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {
           jsxImportSource: 'preact'
@@ -254,7 +253,7 @@ describe('normalizeOptions', () => {
     })
 
     test('non-string', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {
           jsxImportSource: undefined
@@ -277,7 +276,7 @@ describe('normalizeOptions', () => {
 
   describe('mdExtensions', () => {
     test('non-array', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
@@ -296,16 +295,6 @@ describe('normalizeOptions', () => {
         providerImportSource: undefined
       })
 
-      const content = '{a}'
-      assert.deepEqual(
-        parse({ fileName: '/test/file.mdx', content }).children[0].type,
-        'mdxFlowExpression'
-      )
-      assert.deepEqual(
-        parse({ fileName: '/test/file.markdown', content }).children[0].type,
-        'paragraph'
-      )
-
       assert.deepEqual(diagnostics, [
         {
           code: 1001,
@@ -316,20 +305,13 @@ describe('normalizeOptions', () => {
     })
 
     test('array', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
           mdExtensions: ['.md', 'markdown', { ext: '.mkd' }]
         }
       })
-
-      const content = '{a}'
-      assert.deepEqual(
-        parse({ fileName: '/test/file.markdown', content }).children[0].type,
-        'mdxFlowExpression'
-      )
-      assert.deepEqual(parse({ fileName: '/test/file.md', content }).children[0].type, 'paragraph')
 
       assert.deepEqual(project, {
         checkCodeBlocks: false,
@@ -358,7 +340,7 @@ describe('normalizeOptions', () => {
 
   describe('providerImportSource', () => {
     test('string', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {
@@ -380,7 +362,7 @@ describe('normalizeOptions', () => {
     })
 
     test('non-string', async () => {
-      const [{ parse, ...project }, diagnostics] = await normalizeOptions({
+      const [{ micromarkExtensions, ...project }, diagnostics] = await normalizeOptions({
         configFileName: '/test/tsconfig.json',
         compilerOptions: {},
         options: {

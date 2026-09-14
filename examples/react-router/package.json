@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "@mdx-js/rollup": "^3.0.0",
-    "@next/mdx": "^16.0.0",
     "@react-router/dev": "^8.0.0",
     "@react-router/fs-routes": "^8.0.0",
     "@types/react": "^19.0.0",

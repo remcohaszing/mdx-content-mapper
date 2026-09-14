@@ -28,46 +28,46 @@ function _createMdxContent(props) {
   }
   _components
   return <_Fragment>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
-    <pre>
-    <code>
-    </code>
-    </pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
+    <_components.pre>
+    <_components.code>
+    </_components.code>
+    </_components.pre>
   </_Fragment>
 }
 
@@ -93,5 +93,723 @@ export default function MDXContent(props) {
 ## Verbatim mappings
 
 ## Non-verbatim mappings
+
+```plaintext 0 3
+```
+```
+```jsx 911 11
+_components
+```
+
+---
+
+```plaintext 0 3
+```
+```
+```jsx 923 3
+pre
+```
+
+---
+
+```plaintext 0 3
+```
+```
+```jsx 933 11
+_components
+```
+
+---
+
+```plaintext 0 3
+```
+```
+```jsx 945 4
+code
+```
+
+---
+
+```plaintext 39 3
+```
+```
+```jsx 957 11
+_components
+```
+
+---
+
+```plaintext 39 3
+```
+```
+```jsx 969 4
+code
+```
+
+---
+
+```plaintext 39 3
+```
+```
+```jsx 981 11
+_components
+```
+
+---
+
+```plaintext 39 3
+```
+```
+```jsx 993 3
+pre
+```
+
+---
+
+```plaintext 44 3
+```
+```
+```jsx 1003 11
+_components
+```
+
+---
+
+```plaintext 44 3
+```
+```
+```jsx 1015 3
+pre
+```
+
+---
+
+```plaintext 44 3
+```
+```
+```jsx 1025 11
+_components
+```
+
+---
+
+```plaintext 44 3
+```
+```
+```jsx 1037 4
+code
+```
+
+---
+
+```plaintext 151 3
+```
+```
+```jsx 1049 11
+_components
+```
+
+---
+
+```plaintext 151 3
+```
+```
+```jsx 1061 4
+code
+```
+
+---
+
+```plaintext 151 3
+```
+```
+```jsx 1073 11
+_components
+```
+
+---
+
+```plaintext 151 3
+```
+```
+```jsx 1085 3
+pre
+```
+
+---
+
+```plaintext 156 3
+```
+```
+```jsx 1095 11
+_components
+```
+
+---
+
+```plaintext 156 3
+```
+```
+```jsx 1107 3
+pre
+```
+
+---
+
+```plaintext 156 3
+```
+```
+```jsx 1117 11
+_components
+```
+
+---
+
+```plaintext 156 3
+```
+```
+```jsx 1129 4
+code
+```
+
+---
+
+```plaintext 212 3
+```
+```
+```jsx 1141 11
+_components
+```
+
+---
+
+```plaintext 212 3
+```
+```
+```jsx 1153 4
+code
+```
+
+---
+
+```plaintext 212 3
+```
+```
+```jsx 1165 11
+_components
+```
+
+---
+
+```plaintext 212 3
+```
+```
+```jsx 1177 3
+pre
+```
+
+---
+
+```plaintext 217 3
+```
+```
+```jsx 1187 11
+_components
+```
+
+---
+
+```plaintext 217 3
+```
+```
+```jsx 1199 3
+pre
+```
+
+---
+
+```plaintext 217 3
+```
+```
+```jsx 1209 11
+_components
+```
+
+---
+
+```plaintext 217 3
+```
+```
+```jsx 1221 4
+code
+```
+
+---
+
+```plaintext 252 3
+```
+```
+```jsx 1233 11
+_components
+```
+
+---
+
+```plaintext 252 3
+```
+```
+```jsx 1245 4
+code
+```
+
+---
+
+```plaintext 252 3
+```
+```
+```jsx 1257 11
+_components
+```
+
+---
+
+```plaintext 252 3
+```
+```
+```jsx 1269 3
+pre
+```
+
+---
+
+```plaintext 257 3
+```
+```
+```jsx 1279 11
+_components
+```
+
+---
+
+```plaintext 257 3
+```
+```
+```jsx 1291 3
+pre
+```
+
+---
+
+```plaintext 257 3
+```
+```
+```jsx 1301 11
+_components
+```
+
+---
+
+```plaintext 257 3
+```
+```
+```jsx 1313 4
+code
+```
+
+---
+
+```plaintext 291 3
+```
+```
+```jsx 1325 11
+_components
+```
+
+---
+
+```plaintext 291 3
+```
+```
+```jsx 1337 4
+code
+```
+
+---
+
+```plaintext 291 3
+```
+```
+```jsx 1349 11
+_components
+```
+
+---
+
+```plaintext 291 3
+```
+```
+```jsx 1361 3
+pre
+```
+
+---
+
+```plaintext 296 3
+```
+```
+```jsx 1371 11
+_components
+```
+
+---
+
+```plaintext 296 3
+```
+```
+```jsx 1383 3
+pre
+```
+
+---
+
+```plaintext 296 3
+```
+```
+```jsx 1393 11
+_components
+```
+
+---
+
+```plaintext 296 3
+```
+```
+```jsx 1405 4
+code
+```
+
+---
+
+```plaintext 335 3
+```
+```
+```jsx 1417 11
+_components
+```
+
+---
+
+```plaintext 335 3
+```
+```
+```jsx 1429 4
+code
+```
+
+---
+
+```plaintext 335 3
+```
+```
+```jsx 1441 11
+_components
+```
+
+---
+
+```plaintext 335 3
+```
+```
+```jsx 1453 3
+pre
+```
+
+---
+
+```plaintext 340 3
+```
+```
+```jsx 1463 11
+_components
+```
+
+---
+
+```plaintext 340 3
+```
+```
+```jsx 1475 3
+pre
+```
+
+---
+
+```plaintext 340 3
+```
+```
+```jsx 1485 11
+_components
+```
+
+---
+
+```plaintext 340 3
+```
+```
+```jsx 1497 4
+code
+```
+
+---
+
+```plaintext 426 3
+```
+```
+```jsx 1509 11
+_components
+```
+
+---
+
+```plaintext 426 3
+```
+```
+```jsx 1521 4
+code
+```
+
+---
+
+```plaintext 426 3
+```
+```
+```jsx 1533 11
+_components
+```
+
+---
+
+```plaintext 426 3
+```
+```
+```jsx 1545 3
+pre
+```
+
+---
+
+```plaintext 431 3
+```
+```
+```jsx 1555 11
+_components
+```
+
+---
+
+```plaintext 431 3
+```
+```
+```jsx 1567 3
+pre
+```
+
+---
+
+```plaintext 431 3
+```
+```
+```jsx 1577 11
+_components
+```
+
+---
+
+```plaintext 431 3
+```
+```
+```jsx 1589 4
+code
+```
+
+---
+
+```plaintext 538 3
+```
+```
+```jsx 1601 11
+_components
+```
+
+---
+
+```plaintext 538 3
+```
+```
+```jsx 1613 4
+code
+```
+
+---
+
+```plaintext 538 3
+```
+```
+```jsx 1625 11
+_components
+```
+
+---
+
+```plaintext 538 3
+```
+```
+```jsx 1637 3
+pre
+```
+
+---
+
+```plaintext 543 3
+```
+```
+```jsx 1647 11
+_components
+```
+
+---
+
+```plaintext 543 3
+```
+```
+```jsx 1659 3
+pre
+```
+
+---
+
+```plaintext 543 3
+```
+```
+```jsx 1669 11
+_components
+```
+
+---
+
+```plaintext 543 3
+```
+```
+```jsx 1681 4
+code
+```
+
+---
+
+```plaintext 604 3
+```
+```
+```jsx 1693 11
+_components
+```
+
+---
+
+```plaintext 604 3
+```
+```
+```jsx 1705 4
+code
+```
+
+---
+
+```plaintext 604 3
+```
+```
+```jsx 1717 11
+_components
+```
+
+---
+
+```plaintext 604 3
+```
+```
+```jsx 1729 3
+pre
+```
+
+---
+
+```plaintext 609 3
+```
+```
+```jsx 1739 11
+_components
+```
+
+---
+
+```plaintext 609 3
+```
+```
+```jsx 1751 3
+pre
+```
+
+---
+
+```plaintext 609 3
+```
+```
+```jsx 1761 11
+_components
+```
+
+---
+
+```plaintext 609 3
+```
+```
+```jsx 1773 4
+code
+```
+
+---
+
+```plaintext 643 3
+```
+```
+```jsx 1785 11
+_components
+```
+
+---
+
+```plaintext 643 3
+```
+```
+```jsx 1797 4
+code
+```
+
+---
+
+```plaintext 643 3
+```
+```
+```jsx 1809 11
+_components
+```
+
+---
+
+```plaintext 643 3
+```
+```
+```jsx 1821 3
+pre
+```
 
 ## Diagnostics

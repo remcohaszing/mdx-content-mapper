@@ -6,6 +6,6 @@
     "module": "nodenext",
     "noEmit": true,
     "target": "esnext",
-    "types": ["node"]
+    "types": ["micromark-extension-gfm", "node", "remark-parse"]
   }
 }

@@ -28,7 +28,7 @@ function _createMdxContent(props) {
   }
   _components
   return <_Fragment>
-    <blockquote>
+    <_components.blockquote>
     {props.oneliner}
     {
 props.newlineStart}
@@ -44,8 +44,9 @@ props.value
 props.multipleNewlines
 
 }
-    </blockquote>
-    <blockquote>
+    {/* @ts-ignore */}
+    </_components.blockquote>
+    <_components.blockquote>
     {props.oneliner}
     {
 props.newlineStart}
@@ -61,7 +62,8 @@ props.value
 props.multipleNewlines
 
 }
-    </blockquote>
+    {/* @ts-ignore */}
+    </_components.blockquote>
   </_Fragment>
 }
 
@@ -86,146 +88,180 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 927 16 1 16 0 1048575
+```jsx 939 16 1 16 0 1048575
 {props.oneliner}
 ```
 
-```jsx 948 2 21 2 0 1048575
+```jsx 960 2 21 2 0 1048575
 {
 
 ```
 
-```jsx 950 19 26 19 0 1048575
+```jsx 962 19 26 19 0 1048575
 props.newlineStart}
 ```
 
-```jsx 974 18 49 18 0 1048575
+```jsx 986 18 49 18 0 1048575
 {props.newlineEnd
 
 ```
 
-```jsx 992 1 68 1 0 1048575
+```jsx 1004 1 68 1 0 1048575
 }
 ```
 
-```jsx 998 2 73 2 0 1048575
+```jsx 1010 2 73 2 0 1048575
 {
 
 ```
 
-```jsx 1000 12 78 12 0 1048575
+```jsx 1012 12 78 12 0 1048575
 props.value
 
 ```
 
-```jsx 1012 10 94 10 0 1048575
+```jsx 1024 10 94 10 0 1048575
  ? 'true'
 
 ```
 
-```jsx 1022 11 108 11 0 1048575
+```jsx 1034 11 108 11 0 1048575
  : 'false'
 
 ```
 
-```jsx 1033 1 120 1 0 1048575
+```jsx 1045 1 120 1 0 1048575
 }
 ```
 
-```jsx 1039 2 125 2 0 1048575
+```jsx 1051 2 125 2 0 1048575
 {
 
 ```
 
-```jsx 1041 1 126 1 0 1048575
+```jsx 1053 1 128 1 0 1048575
 
 
 ```
 
-```jsx 1042 23 130 23 0 1048575
+```jsx 1054 23 130 23 0 1048575
 props.multipleNewlines
 
 ```
 
-```jsx 1065 1 152 1 0 1048575
+```jsx 1077 1 154 1 0 1048575
 
 
 ```
 
-```jsx 1066 1 156 1 0 1048575
+```jsx 1078 1 156 1 0 1048575
 }
 ```
 
-```jsx 1107 16 163 16 0 1048575
+```jsx 1166 16 163 16 0 1048575
 {props.oneliner}
 ```
 
-```jsx 1128 2 184 2 0 1048575
+```jsx 1187 2 184 2 0 1048575
 {
 
 ```
 
-```jsx 1130 19 190 19 0 1048575
+```jsx 1189 19 190 19 0 1048575
 props.newlineStart}
 ```
 
-```jsx 1154 18 214 18 0 1048575
+```jsx 1213 18 214 18 0 1048575
 {props.newlineEnd
 
 ```
 
-```jsx 1172 1 234 1 0 1048575
+```jsx 1231 1 234 1 0 1048575
 }
 ```
 
-```jsx 1178 2 240 2 0 1048575
+```jsx 1237 2 240 2 0 1048575
 {
 
 ```
 
-```jsx 1180 12 246 12 0 1048575
+```jsx 1239 12 246 12 0 1048575
 props.value
 
 ```
 
-```jsx 1192 11 262 11 0 1048575
+```jsx 1251 11 262 11 0 1048575
   ? 'true'
 
 ```
 
-```jsx 1203 12 277 12 0 1048575
+```jsx 1262 12 277 12 0 1048575
   : 'false'
 
 ```
 
-```jsx 1215 1 291 1 0 1048575
+```jsx 1274 1 291 1 0 1048575
 }
 ```
 
-```jsx 1221 2 297 2 0 1048575
+```jsx 1280 2 297 2 0 1048575
 {
 
 ```
 
-```jsx 1223 1 298 1 0 1048575
+```jsx 1282 1 300 1 0 1048575
 
 
 ```
 
-```jsx 1224 23 303 23 0 1048575
+```jsx 1283 23 303 23 0 1048575
 props.multipleNewlines
 
 ```
 
-```jsx 1247 1 325 1 0 1048575
+```jsx 1306 1 327 1 0 1048575
 
 
 ```
 
-```jsx 1248 1 330 1 0 1048575
+```jsx 1307 1 330 1 0 1048575
 }
 ```
 
 ## Non-verbatim mappings
+
+```plaintext 0 1
+>
+```
+```jsx 911 11
+_components
+```
+
+---
+
+```plaintext 0 1
+>
+```
+```jsx 923 10
+blockquote
+```
+
+---
+
+```plaintext 161 2
+> 
+```
+```jsx 1138 11
+_components
+```
+
+---
+
+```plaintext 161 2
+> 
+```
+```jsx 1150 10
+blockquote
+```
 
 ## Diagnostics

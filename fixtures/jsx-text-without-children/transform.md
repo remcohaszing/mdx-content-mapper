@@ -37,7 +37,9 @@ function _createMdxContent(props) {
     {''}
     <div />
     {''}
+    {''}
     <_components.Injected />
+    {''}
     {''}
     <Local />
     {''}
@@ -77,25 +79,25 @@ export function Local() {}
 <div />
 ```
 
-```jsx 1014 1 51 1 0 1048575
+```jsx 1023 1 51 1 0 1048575
 <
 ```
 
-```jsx 1027 11 52 11 0 1048575
+```jsx 1036 11 52 11 0 1048575
 Injected />
 ```
 
-```jsx 1052 9 76 9 0 1048575
+```jsx 1070 9 76 9 0 1048575
 <Local />
 ```
 
-```jsx 1632 8 52 8 0 1048575
+```jsx 1650 8 52 8 0 1048575
 Injected
 ```
 
 ## Non-verbatim mappings
 
-```plaintext 26 1
+```plaintext 27 1
 
 
 ```

@@ -113,7 +113,7 @@ export async function named() {
 
 ## Non-verbatim mappings
 
-```plaintext 64 1
+```plaintext 65 1
 
 
 ```
@@ -123,7 +123,7 @@ export async function named() {
 
 ---
 
-```plaintext 140 1
+```plaintext 141 1
 
 
 ```
@@ -133,7 +133,7 @@ export async function named() {
 
 ---
 
-```plaintext 203 1
+```plaintext 204 1
 
 
 ```

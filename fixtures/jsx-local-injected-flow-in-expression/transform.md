@@ -74,6 +74,16 @@ Injected
 Injected
 // @ts-ignore
 Injected
+// @ts-ignore
+Injected
+// @ts-ignore
+Injected
+// @ts-ignore
+Injected
+// @ts-ignore
+Injected
+// @ts-ignore
+Injected
 
 ```
 
@@ -176,25 +186,45 @@ Injected
 Injected
 ```
 
-```jsx 2019 8 101 8 0 1048575
+```jsx 2019 8 88 8 0 1048575
 Injected
 ```
 
-```jsx 2042 8 111 8 0 1048575
+```jsx 2042 8 101 8 0 1048575
 Injected
 ```
 
-```jsx 2065 8 228 8 0 1048575
+```jsx 2065 8 137 8 0 1048575
 Injected
 ```
 
-```jsx 2088 8 264 8 0 1048575
+```jsx 2088 8 111 8 0 1048575
+Injected
+```
+
+```jsx 2111 8 126 8 0 1048575
+Injected
+```
+
+```jsx 2134 8 228 8 0 1048575
+Injected
+```
+
+```jsx 2157 8 243 8 0 1048575
+Injected
+```
+
+```jsx 2180 8 264 8 0 1048575
+Injected
+```
+
+```jsx 2203 8 294 8 0 1048575
 Injected
 ```
 
 ## Non-verbatim mappings
 
-```plaintext 26 1
+```plaintext 27 1
 
 
 ```
