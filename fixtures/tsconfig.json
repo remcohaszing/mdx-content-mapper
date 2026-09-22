@@ -16,6 +16,7 @@
     { "path": "./gfm-autolink-literal/tsconfig.json" },
     { "path": "./gfm-tasklist/tsconfig.json" },
     { "path": "./headings/tsconfig.json" },
+    { "path": "./image/tsconfig.json" },
     { "path": "./import/tsconfig.json" },
     { "path": "./incomplete-esm/tsconfig.json" },
     { "path": "./jsdoc/tsconfig.json" },
