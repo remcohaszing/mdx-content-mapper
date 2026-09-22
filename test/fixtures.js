@@ -80,7 +80,7 @@ testFixturesDirectory({
   directory,
   write: true,
   tests: {
-    async 'transform.md'(file) {
+    async 'readme.md'(file) {
       const original = String(file)
       const dir = dirname(file.path)
       const tsconfigFileName = join(dir, 'tsconfig.json')
