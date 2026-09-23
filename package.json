@@ -53,7 +53,7 @@
     "micromark-extension-gfm-strikethrough": "^2.0.0",
     "micromark-extension-gfm-table": "^2.0.0",
     "micromark-extension-gfm-task-list-item": "^2.0.0",
-    "toml": "^5.0.0",
+    "smol-toml": "^1.0.0",
     "unified": "^11.0.0",
     "vfile-message": "^4.0.0",
     "vscode-jsonrpc": "^9.0.0",
