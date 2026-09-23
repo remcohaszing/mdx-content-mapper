@@ -6,14 +6,6 @@
     "module": "nodenext",
     "noEmit": true,
     "target": "esnext",
-    "types": [
-      "micromark-extension-gfm-autolink-literal",
-      "micromark-extension-gfm-footnote",
-      "micromark-extension-gfm-strikethrough",
-      "micromark-extension-gfm-table",
-      "micromark-extension-gfm-task-list-item",
-      "node",
-      "remark-parse"
-    ]
+    "types": ["node", "remark-parse"]
   }
 }
