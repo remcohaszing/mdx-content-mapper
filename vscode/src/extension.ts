@@ -4,6 +4,12 @@ import { extensions } from 'vscode'
 
 import pkg from '../../package.json' with { type: 'json' }
 
+/**
+ * Activate the VSCode extension.
+ *
+ * @param context
+ *   The VSCode extension context.
+ */
 export async function activate(context: ExtensionContext): Promise<undefined> {
   let disposable: Disposable
 

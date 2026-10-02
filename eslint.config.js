@@ -7,10 +7,6 @@ export default define([
       'no-param-reassign': 'off',
       'import-x/no-relative-packages': 'off',
       'jsdoc/reject-any-type': 'off',
-      'jsdoc/require-jsdoc': 'off',
-      'jsdoc/require-param-description': 'off',
-      'jsdoc/require-returns-description': 'off',
-      'jsdoc/require-template-description': 'off',
       'unicorn/consistent-destructuring': 'off',
       'unicorn/expiring-todo-comments': 'off'
     }

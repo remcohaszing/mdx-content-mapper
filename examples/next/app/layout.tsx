@@ -5,6 +5,9 @@ export const viewport: Viewport = {
   colorScheme: 'light dark'
 }
 
+/**
+ * Render the root layout of the app.
+ */
 export default function RootLayout({ children }: LayoutProps<'/'>): ReactNode {
   return (
     <html lang="en">

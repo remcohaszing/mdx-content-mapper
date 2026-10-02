@@ -19,9 +19,14 @@ import pkg from '../package.json' with { type: 'json' }
 const directory = new URL('../fixtures/', import.meta.url)
 
 /**
+ * Render mapped output to markdown.
+ *
  * @param {string} original
+ *   The original content.
  * @param {MappedOutput} output
+ *   The content provided by the content mapper.
  * @returns {string}
+ *   A string representation of the mapped output.
  */
 function mappedOutputToMarkdown(original, output) {
   const { extension, mappings, text } = output

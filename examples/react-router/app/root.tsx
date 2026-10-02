@@ -2,6 +2,9 @@ import type { ReactNode } from 'react'
 
 import { Outlet, Scripts } from 'react-router'
 
+/**
+ * Render the app.
+ */
 export default function App(): ReactNode {
   return (
     <html lang="en">

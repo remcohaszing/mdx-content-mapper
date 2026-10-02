@@ -4,6 +4,12 @@ const components = {
   Button
 } as const
 
+/**
+ * Provide MDX components.
+ *
+ * @returns
+ *   MDX components.
+ */
 export function useMDXComponents(): typeof components {
   return components
 }
