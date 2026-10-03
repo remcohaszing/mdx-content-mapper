@@ -67,15 +67,17 @@ export default function MDXContent(props) {
 
 
 ```
+
 ```jsx 162 1
 ;
 ```
 
----
+***
 
 ```plaintext 0 21
 export default 'main'
 ```
+
 ```jsx 1305 9
 MDXLayout
 ```

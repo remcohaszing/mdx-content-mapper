@@ -79,15 +79,17 @@ export {
 
 
 ```
+
 ```jsx 216 1
 ;
 ```
 
----
+***
 
 ```plaintext 9 7
 default
 ```
+
 ```jsx 1359 9
 MDXLayout
 ```

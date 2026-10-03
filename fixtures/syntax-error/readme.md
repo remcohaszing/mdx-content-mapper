@@ -54,4 +54,4 @@ export default function MDXContent(props) {
 
 ## Diagnostics
 
-- `1:0`: Unexpected end of file before name, expected a character that can start a name, such as a letter, `$`, or `_`
+- `1:0`: `` Unexpected end of file before name, expected a character that can start a name, such as a letter, `$`, or `_` ``

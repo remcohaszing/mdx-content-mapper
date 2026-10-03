@@ -79,15 +79,17 @@ export { named,
 
 
 ```
+
 ```jsx 223 1
 ;
 ```
 
----
+***
 
 ```plaintext 16 7
 default
 ```
+
 ```jsx 1366 9
 MDXLayout
 ```

@@ -78,15 +78,17 @@ function() {}
 
 
 ```
+
 ```jsx 750 1
 ;
 ```
 
----
+***
 
 ```plaintext 0 28
 export default function() {}
 ```
+
 ```jsx 1893 9
 MDXLayout
 ```

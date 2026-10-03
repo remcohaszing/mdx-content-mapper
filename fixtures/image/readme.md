@@ -69,132 +69,145 @@ export default function MDXContent(props) {
 ```plaintext 0 5
 ![]()
 ```
+
 ```jsx 919 11
 _components
 ```
 
----
+***
 
 ```plaintext 0 5
 ![]()
 ```
+
 ```jsx 931 3
 img
 ```
 
----
+***
 
 ```plaintext 2 0
-
 ```
+
 ```jsx 935 3
 alt
 ```
 
----
+***
 
 ```plaintext 7 13
 ![alt text]()
 ```
+
 ```jsx 974 11
 _components
 ```
 
----
+***
 
 ```plaintext 7 13
 ![alt text]()
 ```
+
 ```jsx 986 3
 img
 ```
 
----
+***
 
 ```plaintext 9 8
 alt text
 ```
+
 ```jsx 990 3
 alt
 ```
 
----
+***
 
 ```plaintext 22 109
 ![](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png)
 ```
+
 ```jsx 1029 11
 _components
 ```
 
----
+***
 
 ```plaintext 22 109
 ![](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png)
 ```
+
 ```jsx 1041 3
 img
 ```
 
----
+***
 
 ```plaintext 24 0
-
 ```
+
 ```jsx 1045 3
 alt
 ```
 
----
+***
 
 ```plaintext 26 104
 https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png
 ```
+
 ```jsx 1052 3
 src
 ```
 
----
+***
 
 ```plaintext 133 125
 ![alt text](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png 'title')
 ```
+
 ```jsx 1084 11
 _components
 ```
 
----
+***
 
 ```plaintext 133 125
 ![alt text](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png 'title')
 ```
+
 ```jsx 1096 3
 img
 ```
 
----
+***
 
 ```plaintext 135 8
 alt text
 ```
+
 ```jsx 1100 3
 alt
 ```
 
----
+***
 
 ```plaintext 145 104
 https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png
 ```
+
 ```jsx 1107 3
 src
 ```
 
----
+***
 
 ```plaintext 250 7
 'title'
 ```
+
 ```jsx 1114 5
 title
 ```

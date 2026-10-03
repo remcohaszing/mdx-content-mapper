@@ -80,15 +80,17 @@ function MDXLayout() {}
 
 
 ```
+
 ```jsx 760 1
 ;
 ```
 
----
+***
 
 ```plaintext 0 38
 export default function MDXLayout() {}
 ```
+
 ```jsx 1947 9
 MDXLayout
 ```

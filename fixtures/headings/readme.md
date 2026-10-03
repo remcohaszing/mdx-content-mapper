@@ -89,141 +89,157 @@ export default function MDXContent(props) {
 ```plaintext 17 16
 ================
 ```
+
 ```jsx 911 11
 _components
 ```
 
----
+***
 
 ```plaintext 17 16
 ================
 ```
+
 ```jsx 923 2
 h1
 ```
 
----
+***
 
 ```plaintext 52 3
 ---
 ```
+
 ```jsx 986 11
 _components
 ```
 
----
+***
 
 ```plaintext 52 3
 ---
 ```
+
 ```jsx 998 2
 h2
 ```
 
----
+***
 
 ```plaintext 57 1
 #
 ```
+
 ```jsx 1061 11
 _components
 ```
 
----
+***
 
 ```plaintext 57 1
 #
 ```
+
 ```jsx 1073 2
 h1
 ```
 
----
+***
 
 ```plaintext 74 2
 ##
 ```
+
 ```jsx 1136 11
 _components
 ```
 
----
+***
 
 ```plaintext 74 2
 ##
 ```
+
 ```jsx 1148 2
 h2
 ```
 
----
+***
 
 ```plaintext 92 3
 ###
 ```
+
 ```jsx 1211 11
 _components
 ```
 
----
+***
 
 ```plaintext 92 3
 ###
 ```
+
 ```jsx 1223 2
 h3
 ```
 
----
+***
 
 ```plaintext 111 4
 ####
 ```
+
 ```jsx 1286 11
 _components
 ```
 
----
+***
 
 ```plaintext 111 4
 ####
 ```
+
 ```jsx 1298 2
 h4
 ```
 
----
+***
 
 ```plaintext 131 5
 #####
 ```
+
 ```jsx 1361 11
 _components
 ```
 
----
+***
 
 ```plaintext 131 5
 #####
 ```
+
 ```jsx 1373 2
 h5
 ```
 
----
+***
 
 ```plaintext 152 6
 ######
 ```
+
 ```jsx 1436 11
 _components
 ```
 
----
+***
 
 ```plaintext 152 6
 ######
 ```
+
 ```jsx 1448 2
 h6
 ```

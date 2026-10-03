@@ -1,5 +1,6 @@
 /**
  * @import { MappedOutput } from '../lib/protocol.js'
+ * @import { Root, RootContent } from 'mdast'
  */
 
 import assert from 'node:assert/strict'
@@ -8,6 +9,7 @@ import { dirname, join } from 'node:path'
 import { test } from 'node:test'
 
 import { includeKeys } from 'filter-obj'
+import { toMarkdown } from 'mdast-util-to-markdown'
 import { assertEqual, testFixturesDirectory } from 'snapshot-fixtures'
 import typescript from 'typescript'
 
@@ -25,58 +27,61 @@ const directory = new URL('../fixtures/', import.meta.url)
  *   The original content.
  * @param {MappedOutput} output
  *   The content provided by the content mapper.
- * @returns {string}
- *   A string representation of the mapped output.
+ * @returns {RootContent[]}
+ *   A markdown representation of the mapped output.
  */
-function mappedOutputToMarkdown(original, output) {
+function mappedOutputToMdast(original, output) {
   const { extension, mappings, text } = output
 
   assert.ok(mappings)
-  let verbatimMappingText = ''
-  let nonVerbatimMappingText = ''
+
+  /** @type {RootContent[]} */
+  const verbatimMappings = []
+
+  /** @type {RootContent[]} */
+  const nonVerbatimMappings = []
+
   for (const mapping of mappings) {
     const [generatedStart, generatedLength, originalStart, originalLength, kind] = mapping
     const generatedSlice = text.slice(generatedStart, generatedStart + generatedLength)
     const originalSlice = original.slice(originalStart, originalStart + originalLength)
     if (kind === 0) {
       assertEqual(generatedSlice, originalSlice)
-      verbatimMappingText += '\n```jsx '
-      verbatimMappingText += mapping.join(' ')
-      verbatimMappingText += '\n'
-      verbatimMappingText += generatedSlice
-      verbatimMappingText += '\n```\n'
+      verbatimMappings.push({
+        type: 'code',
+        lang: 'jsx',
+        meta: mapping.join(' '),
+        value: generatedSlice
+      })
     } else {
-      if (nonVerbatimMappingText) {
-        nonVerbatimMappingText += '\n---\n'
+      if (nonVerbatimMappings.length) {
+        nonVerbatimMappings.push({ type: 'thematicBreak' })
       }
-      nonVerbatimMappingText += '\n```plaintext '
-      nonVerbatimMappingText += originalStart
-      nonVerbatimMappingText += ' '
-      nonVerbatimMappingText += originalLength
-      nonVerbatimMappingText += '\n'
-      nonVerbatimMappingText += originalSlice
-      nonVerbatimMappingText += '\n```\n```jsx '
-      nonVerbatimMappingText += generatedStart
-      nonVerbatimMappingText += ' '
-      nonVerbatimMappingText += generatedLength
-      nonVerbatimMappingText += '\n'
-      nonVerbatimMappingText += generatedSlice
-      nonVerbatimMappingText += '\n```\n'
+      nonVerbatimMappings.push(
+        {
+          type: 'code',
+          lang: 'plaintext',
+          meta: `${originalStart} ${originalLength}`,
+          value: originalSlice
+        },
+        {
+          type: 'code',
+          lang: 'jsx',
+          meta: `${generatedStart} ${generatedLength}`,
+          value: generatedSlice
+        }
+      )
     }
   }
 
   return [
-    '## Text',
-    '',
-    `\`\`\`${extension.slice(1)}`,
-    text,
-    '```',
-    '',
-    '## Verbatim mappings',
-    verbatimMappingText,
-    '## Non-verbatim mappings',
-    nonVerbatimMappingText
-  ].join('\n')
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Text' }] },
+    { type: 'code', lang: extension.slice(1), value: text },
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Verbatim mappings' }] },
+    ...verbatimMappings,
+    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Non-verbatim mappings' }] },
+    ...nonVerbatimMappings
+  ]
 }
 
 let count = 0
@@ -118,21 +123,41 @@ testFixturesDirectory({
       })
       closeProject({ projectHandle })
 
-      const diagnosticsTexts =
-        result.diagnostics?.map(
-          (diagnostic) =>
-            `- \`${diagnostic.start}:${diagnostic.length}\`: ${diagnostic.messageText}\n`
-        ) ?? []
+      /** @type {Root} */
+      const root = {
+        type: 'root',
+        children: [
+          ...mappedOutputToMdast(original, result),
+          { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Diagnostics' }] }
+        ]
+      }
 
-      return [
-        mappedOutputToMarkdown(original, result),
-        '## Diagnostics',
-        '',
-        ...diagnosticsTexts,
-        ...(result.supplemental?.map((supplemental) =>
-          mappedOutputToMarkdown(original, supplemental)
-        ) ?? [])
-      ].join('\n')
+      if (result.diagnostics) {
+        root.children.push({
+          type: 'list',
+          children: result.diagnostics.map((diagnostic) => ({
+            type: 'listItem',
+            children: [
+              {
+                type: 'paragraph',
+                children: [
+                  { type: 'inlineCode', value: `${diagnostic.start}:${diagnostic.length}` },
+                  { type: 'text', value: ': ' },
+                  { type: 'inlineCode', value: diagnostic.messageText }
+                ]
+              }
+            ]
+          }))
+        })
+      }
+
+      if (result.supplemental) {
+        for (const supplemental of result.supplemental) {
+          root.children.push(...mappedOutputToMdast(original, supplemental))
+        }
+      }
+
+      return toMarkdown(root, { bullet: '-', emphasis: '_' })
     }
   }
 })

@@ -233,33 +233,37 @@ props.multipleNewlines
 ```plaintext 0 1
 >
 ```
+
 ```jsx 911 11
 _components
 ```
 
----
+***
 
 ```plaintext 0 1
 >
 ```
+
 ```jsx 923 10
 blockquote
 ```
 
----
+***
 
 ```plaintext 161 2
 > 
 ```
+
 ```jsx 1138 11
 _components
 ```
 
----
+***
 
 ```plaintext 161 2
 > 
 ```
+
 ```jsx 1150 10
 blockquote
 ```

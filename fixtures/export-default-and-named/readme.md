@@ -84,15 +84,17 @@ export function named() {}
 
 
 ```
+
 ```jsx 787 1
 ;
 ```
 
----
+***
 
 ```plaintext 0 38
 export default function MDXLayout() {}
 ```
+
 ```jsx 2010 9
 MDXLayout
 ```
