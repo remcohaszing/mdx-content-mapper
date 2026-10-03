@@ -50,8 +50,6 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-## Non-verbatim mappings
-
 ## Diagnostics
 
 - `1:0`: `` Unexpected end of file before name, expected a character that can start a name, such as a letter, `$`, or `_` ``

@@ -1,6 +1,6 @@
 /**
  * @import { MappedOutput } from '../lib/protocol.js'
- * @import { Root, RootContent } from 'mdast'
+ * @import { Root, RootContent, Table } from 'mdast'
  */
 
 import assert from 'node:assert/strict'
@@ -9,6 +9,7 @@ import { dirname, join } from 'node:path'
 import { test } from 'node:test'
 
 import { includeKeys } from 'filter-obj'
+import { gfmToMarkdown } from 'mdast-util-gfm'
 import { toMarkdown } from 'mdast-util-to-markdown'
 import { assertEqual, testFixturesDirectory } from 'snapshot-fixtures'
 import typescript from 'typescript'
@@ -38,11 +39,11 @@ function mappedOutputToMdast(original, output) {
   /** @type {RootContent[]} */
   const verbatimMappings = []
 
-  /** @type {RootContent[]} */
-  const nonVerbatimMappings = []
+  /** @type {Table | undefined} */
+  let nonVerbatimMappings
 
   for (const mapping of mappings) {
-    const [generatedStart, generatedLength, originalStart, originalLength, kind] = mapping
+    const [generatedStart, generatedLength, originalStart, originalLength, kind, features] = mapping
     const generatedSlice = text.slice(generatedStart, generatedStart + generatedLength)
     const originalSlice = original.slice(originalStart, originalStart + originalLength)
     if (kind === 0) {
@@ -54,34 +55,66 @@ function mappedOutputToMdast(original, output) {
         value: generatedSlice
       })
     } else {
-      if (nonVerbatimMappings.length) {
-        nonVerbatimMappings.push({ type: 'thematicBreak' })
+      nonVerbatimMappings ||= {
+        type: 'table',
+        align: [null, 'right', null, 'right', 'right'],
+        children: [
+          {
+            type: 'tableRow',
+            children: [
+              { type: 'tableCell', children: [{ type: 'text', value: 'Original' }] },
+              { type: 'tableCell', children: [] },
+              { type: 'tableCell', children: [{ type: 'text', value: 'Virtual' }] },
+              { type: 'tableCell', children: [] },
+              { type: 'tableCell', children: [{ type: 'text', value: 'Features' }] }
+            ]
+          }
+        ]
       }
-      nonVerbatimMappings.push(
-        {
-          type: 'code',
-          lang: 'plaintext',
-          meta: `${originalStart} ${originalLength}`,
-          value: originalSlice
-        },
-        {
-          type: 'code',
-          lang: 'jsx',
-          meta: `${generatedStart} ${generatedLength}`,
-          value: generatedSlice
-        }
-      )
+      nonVerbatimMappings.children.push({
+        type: 'tableRow',
+        children: [
+          {
+            type: 'tableCell',
+            children: [{ type: 'inlineCode', value: originalSlice.replaceAll('\n', '⏎') }]
+          },
+          {
+            type: 'tableCell',
+            children: [{ type: 'text', value: String(originalStart) }]
+          },
+          {
+            type: 'tableCell',
+            children: [{ type: 'inlineCode', value: generatedSlice.replaceAll('\n', '⏎') }]
+          },
+          {
+            type: 'tableCell',
+            children: [{ type: 'text', value: String(generatedStart) }]
+          },
+          {
+            type: 'tableCell',
+            children: [{ type: 'text', value: String(features ?? '') }]
+          }
+        ]
+      })
     }
   }
 
-  return [
+  /** @type {RootContent[]} */
+  const result = [
     { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Text' }] },
     { type: 'code', lang: extension.slice(1), value: text },
     { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Verbatim mappings' }] },
-    ...verbatimMappings,
-    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Non-verbatim mappings' }] },
-    ...nonVerbatimMappings
+    ...verbatimMappings
   ]
+
+  if (nonVerbatimMappings) {
+    result.push(
+      { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Non-verbatim mappings' }] },
+      nonVerbatimMappings
+    )
+  }
+
+  return result
 }
 
 let count = 0
@@ -157,7 +190,7 @@ testFixturesDirectory({
         }
       }
 
-      return toMarkdown(root, { bullet: '-', emphasis: '_' })
+      return toMarkdown(root, { bullet: '-', emphasis: '_', extensions: [gfmToMarkdown()] })
     }
   }
 })

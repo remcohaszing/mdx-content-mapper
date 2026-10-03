@@ -104,803 +104,88 @@ export default function MDXContent(props) {
 
 ## Non-verbatim mappings
 
-````plaintext 0 3
-```
-````
-
-```jsx 911 11
-_components
-```
-
-***
-
-````plaintext 0 3
-```
-````
-
-```jsx 923 3
-pre
-```
-
-***
-
-````plaintext 0 3
-```
-````
-
-```jsx 933 11
-_components
-```
-
-***
-
-````plaintext 0 3
-```
-````
-
-```jsx 945 4
-code
-```
-
-***
-
-````plaintext 39 3
-```
-````
-
-```jsx 957 11
-_components
-```
-
-***
-
-````plaintext 39 3
-```
-````
-
-```jsx 969 4
-code
-```
-
-***
-
-````plaintext 39 3
-```
-````
-
-```jsx 981 11
-_components
-```
-
-***
-
-````plaintext 39 3
-```
-````
-
-```jsx 993 3
-pre
-```
-
-***
-
-````plaintext 44 3
-```
-````
-
-```jsx 1003 11
-_components
-```
-
-***
-
-````plaintext 44 3
-```
-````
-
-```jsx 1015 3
-pre
-```
-
-***
-
-````plaintext 44 3
-```
-````
-
-```jsx 1025 11
-_components
-```
-
-***
-
-````plaintext 44 3
-```
-````
-
-```jsx 1037 4
-code
-```
-
-***
-
-````plaintext 151 3
-```
-````
-
-```jsx 1049 11
-_components
-```
-
-***
-
-````plaintext 151 3
-```
-````
-
-```jsx 1061 4
-code
-```
-
-***
-
-````plaintext 151 3
-```
-````
-
-```jsx 1073 11
-_components
-```
-
-***
-
-````plaintext 151 3
-```
-````
-
-```jsx 1085 3
-pre
-```
-
-***
-
-````plaintext 156 3
-```
-````
-
-```jsx 1095 11
-_components
-```
-
-***
-
-````plaintext 156 3
-```
-````
-
-```jsx 1107 3
-pre
-```
-
-***
-
-````plaintext 156 3
-```
-````
-
-```jsx 1117 11
-_components
-```
-
-***
-
-````plaintext 156 3
-```
-````
-
-```jsx 1129 4
-code
-```
-
-***
-
-````plaintext 212 3
-```
-````
-
-```jsx 1141 11
-_components
-```
-
-***
-
-````plaintext 212 3
-```
-````
-
-```jsx 1153 4
-code
-```
-
-***
-
-````plaintext 212 3
-```
-````
-
-```jsx 1165 11
-_components
-```
-
-***
-
-````plaintext 212 3
-```
-````
-
-```jsx 1177 3
-pre
-```
-
-***
-
-````plaintext 217 3
-```
-````
-
-```jsx 1187 11
-_components
-```
-
-***
-
-````plaintext 217 3
-```
-````
-
-```jsx 1199 3
-pre
-```
-
-***
-
-````plaintext 217 3
-```
-````
-
-```jsx 1209 11
-_components
-```
-
-***
-
-````plaintext 217 3
-```
-````
-
-```jsx 1221 4
-code
-```
-
-***
-
-````plaintext 252 3
-```
-````
-
-```jsx 1233 11
-_components
-```
-
-***
-
-````plaintext 252 3
-```
-````
-
-```jsx 1245 4
-code
-```
-
-***
-
-````plaintext 252 3
-```
-````
-
-```jsx 1257 11
-_components
-```
-
-***
-
-````plaintext 252 3
-```
-````
-
-```jsx 1269 3
-pre
-```
-
-***
-
-````plaintext 257 3
-```
-````
-
-```jsx 1279 11
-_components
-```
-
-***
-
-````plaintext 257 3
-```
-````
-
-```jsx 1291 3
-pre
-```
-
-***
-
-````plaintext 257 3
-```
-````
-
-```jsx 1301 11
-_components
-```
-
-***
-
-````plaintext 257 3
-```
-````
-
-```jsx 1313 4
-code
-```
-
-***
-
-````plaintext 291 3
-```
-````
-
-```jsx 1325 11
-_components
-```
-
-***
-
-````plaintext 291 3
-```
-````
-
-```jsx 1337 4
-code
-```
-
-***
-
-````plaintext 291 3
-```
-````
-
-```jsx 1349 11
-_components
-```
-
-***
-
-````plaintext 291 3
-```
-````
-
-```jsx 1361 3
-pre
-```
-
-***
-
-````plaintext 304 3
-```
-````
-
-```jsx 1381 11
-_components
-```
-
-***
-
-````plaintext 304 3
-```
-````
-
-```jsx 1393 3
-pre
-```
-
-***
-
-````plaintext 304 3
-```
-````
-
-```jsx 1403 11
-_components
-```
-
-***
-
-````plaintext 304 3
-```
-````
-
-```jsx 1415 4
-code
-```
-
-***
-
-````plaintext 347 3
-```
-````
-
-```jsx 1427 11
-_components
-```
-
-***
-
-````plaintext 347 3
-```
-````
-
-```jsx 1439 4
-code
-```
-
-***
-
-````plaintext 347 3
-```
-````
-
-```jsx 1451 11
-_components
-```
-
-***
-
-````plaintext 347 3
-```
-````
-
-```jsx 1463 3
-pre
-```
-
-***
-
-````plaintext 354 3
-```
-````
-
-```jsx 1473 11
-_components
-```
-
-***
-
-````plaintext 354 3
-```
-````
-
-```jsx 1485 3
-pre
-```
-
-***
-
-````plaintext 354 3
-```
-````
-
-```jsx 1495 11
-_components
-```
-
-***
-
-````plaintext 354 3
-```
-````
-
-```jsx 1507 4
-code
-```
-
-***
-
-````plaintext 448 3
-```
-````
-
-```jsx 1519 11
-_components
-```
-
-***
-
-````plaintext 448 3
-```
-````
-
-```jsx 1531 4
-code
-```
-
-***
-
-````plaintext 448 3
-```
-````
-
-```jsx 1543 11
-_components
-```
-
-***
-
-````plaintext 448 3
-```
-````
-
-```jsx 1555 3
-pre
-```
-
-***
-
-````plaintext 455 3
-```
-````
-
-```jsx 1565 11
-_components
-```
-
-***
-
-````plaintext 455 3
-```
-````
-
-```jsx 1577 3
-pre
-```
-
-***
-
-````plaintext 455 3
-```
-````
-
-```jsx 1587 11
-_components
-```
-
-***
-
-````plaintext 455 3
-```
-````
-
-```jsx 1599 4
-code
-```
-
-***
-
-````plaintext 572 3
-```
-````
-
-```jsx 1611 11
-_components
-```
-
-***
-
-````plaintext 572 3
-```
-````
-
-```jsx 1623 4
-code
-```
-
-***
-
-````plaintext 572 3
-```
-````
-
-```jsx 1635 11
-_components
-```
-
-***
-
-````plaintext 572 3
-```
-````
-
-```jsx 1647 3
-pre
-```
-
-***
-
-````plaintext 579 3
-```
-````
-
-```jsx 1657 11
-_components
-```
-
-***
-
-````plaintext 579 3
-```
-````
-
-```jsx 1669 3
-pre
-```
-
-***
-
-````plaintext 579 3
-```
-````
-
-```jsx 1679 11
-_components
-```
-
-***
-
-````plaintext 579 3
-```
-````
-
-```jsx 1691 4
-code
-```
-
-***
-
-````plaintext 646 3
-```
-````
-
-```jsx 1703 11
-_components
-```
-
-***
-
-````plaintext 646 3
-```
-````
-
-```jsx 1715 4
-code
-```
-
-***
-
-````plaintext 646 3
-```
-````
-
-```jsx 1727 11
-_components
-```
-
-***
-
-````plaintext 646 3
-```
-````
-
-```jsx 1739 3
-pre
-```
-
-***
-
-````plaintext 653 3
-```
-````
-
-```jsx 1749 11
-_components
-```
-
-***
-
-````plaintext 653 3
-```
-````
-
-```jsx 1761 3
-pre
-```
-
-***
-
-````plaintext 653 3
-```
-````
-
-```jsx 1771 11
-_components
-```
-
-***
-
-````plaintext 653 3
-```
-````
-
-```jsx 1783 4
-code
-```
-
-***
-
-````plaintext 691 3
-```
-````
-
-```jsx 1795 11
-_components
-```
-
-***
-
-````plaintext 691 3
-```
-````
-
-```jsx 1807 4
-code
-```
-
-***
-
-````plaintext 691 3
-```
-````
-
-```jsx 1819 11
-_components
-```
-
-***
-
-````plaintext 691 3
-```
-````
-
-```jsx 1831 3
-pre
-```
+| Original |     | Virtual       |      | Features |
+| -------- | --: | ------------- | ---: | -------: |
+| ` ``` `  |   0 | `_components` |  911 |        0 |
+| ` ``` `  |   0 | `pre`         |  923 |  1048575 |
+| ` ``` `  |   0 | `_components` |  933 |        0 |
+| ` ``` `  |   0 | `code`        |  945 |  1048575 |
+| ` ``` `  |  39 | `_components` |  957 |        0 |
+| ` ``` `  |  39 | `code`        |  969 |  1048575 |
+| ` ``` `  |  39 | `_components` |  981 |        0 |
+| ` ``` `  |  39 | `pre`         |  993 |  1048575 |
+| ` ``` `  |  44 | `_components` | 1003 |        0 |
+| ` ``` `  |  44 | `pre`         | 1015 |  1048575 |
+| ` ``` `  |  44 | `_components` | 1025 |        0 |
+| ` ``` `  |  44 | `code`        | 1037 |  1048575 |
+| ` ``` `  | 151 | `_components` | 1049 |        0 |
+| ` ``` `  | 151 | `code`        | 1061 |  1048575 |
+| ` ``` `  | 151 | `_components` | 1073 |        0 |
+| ` ``` `  | 151 | `pre`         | 1085 |  1048575 |
+| ` ``` `  | 156 | `_components` | 1095 |        0 |
+| ` ``` `  | 156 | `pre`         | 1107 |  1048575 |
+| ` ``` `  | 156 | `_components` | 1117 |        0 |
+| ` ``` `  | 156 | `code`        | 1129 |  1048575 |
+| ` ``` `  | 212 | `_components` | 1141 |        0 |
+| ` ``` `  | 212 | `code`        | 1153 |  1048575 |
+| ` ``` `  | 212 | `_components` | 1165 |        0 |
+| ` ``` `  | 212 | `pre`         | 1177 |  1048575 |
+| ` ``` `  | 217 | `_components` | 1187 |        0 |
+| ` ``` `  | 217 | `pre`         | 1199 |  1048575 |
+| ` ``` `  | 217 | `_components` | 1209 |        0 |
+| ` ``` `  | 217 | `code`        | 1221 |  1048575 |
+| ` ``` `  | 252 | `_components` | 1233 |        0 |
+| ` ``` `  | 252 | `code`        | 1245 |  1048575 |
+| ` ``` `  | 252 | `_components` | 1257 |        0 |
+| ` ``` `  | 252 | `pre`         | 1269 |  1048575 |
+| ` ``` `  | 257 | `_components` | 1279 |        0 |
+| ` ``` `  | 257 | `pre`         | 1291 |  1048575 |
+| ` ``` `  | 257 | `_components` | 1301 |        0 |
+| ` ``` `  | 257 | `code`        | 1313 |  1048575 |
+| ` ``` `  | 291 | `_components` | 1325 |        0 |
+| ` ``` `  | 291 | `code`        | 1337 |  1048575 |
+| ` ``` `  | 291 | `_components` | 1349 |        0 |
+| ` ``` `  | 291 | `pre`         | 1361 |  1048575 |
+| ` ``` `  | 304 | `_components` | 1381 |        0 |
+| ` ``` `  | 304 | `pre`         | 1393 |  1048575 |
+| ` ``` `  | 304 | `_components` | 1403 |        0 |
+| ` ``` `  | 304 | `code`        | 1415 |  1048575 |
+| ` ``` `  | 347 | `_components` | 1427 |        0 |
+| ` ``` `  | 347 | `code`        | 1439 |  1048575 |
+| ` ``` `  | 347 | `_components` | 1451 |        0 |
+| ` ``` `  | 347 | `pre`         | 1463 |  1048575 |
+| ` ``` `  | 354 | `_components` | 1473 |        0 |
+| ` ``` `  | 354 | `pre`         | 1485 |  1048575 |
+| ` ``` `  | 354 | `_components` | 1495 |        0 |
+| ` ``` `  | 354 | `code`        | 1507 |  1048575 |
+| ` ``` `  | 448 | `_components` | 1519 |        0 |
+| ` ``` `  | 448 | `code`        | 1531 |  1048575 |
+| ` ``` `  | 448 | `_components` | 1543 |        0 |
+| ` ``` `  | 448 | `pre`         | 1555 |  1048575 |
+| ` ``` `  | 455 | `_components` | 1565 |        0 |
+| ` ``` `  | 455 | `pre`         | 1577 |  1048575 |
+| ` ``` `  | 455 | `_components` | 1587 |        0 |
+| ` ``` `  | 455 | `code`        | 1599 |  1048575 |
+| ` ``` `  | 572 | `_components` | 1611 |        0 |
+| ` ``` `  | 572 | `code`        | 1623 |  1048575 |
+| ` ``` `  | 572 | `_components` | 1635 |        0 |
+| ` ``` `  | 572 | `pre`         | 1647 |  1048575 |
+| ` ``` `  | 579 | `_components` | 1657 |        0 |
+| ` ``` `  | 579 | `pre`         | 1669 |  1048575 |
+| ` ``` `  | 579 | `_components` | 1679 |        0 |
+| ` ``` `  | 579 | `code`        | 1691 |  1048575 |
+| ` ``` `  | 646 | `_components` | 1703 |        0 |
+| ` ``` `  | 646 | `code`        | 1715 |  1048575 |
+| ` ``` `  | 646 | `_components` | 1727 |        0 |
+| ` ``` `  | 646 | `pre`         | 1739 |  1048575 |
+| ` ``` `  | 653 | `_components` | 1749 |        0 |
+| ` ``` `  | 653 | `pre`         | 1761 |  1048575 |
+| ` ``` `  | 653 | `_components` | 1771 |        0 |
+| ` ``` `  | 653 | `code`        | 1783 |  1048575 |
+| ` ``` `  | 691 | `_components` | 1795 |        0 |
+| ` ``` `  | 691 | `code`        | 1807 |  1048575 |
+| ` ``` `  | 691 | `_components` | 1819 |        0 |
+| ` ``` `  | 691 | `pre`         | 1831 |  1048575 |
 
 ## Diagnostics
 
@@ -917,8 +202,6 @@ console.log('Hello JavaScript!')
 console.log('Hello JavaScript!')
 
 ```
-
-## Non-verbatim mappings
 
 ## Text
 
@@ -944,8 +227,6 @@ export function getNumber() {
 
 ```
 
-## Non-verbatim mappings
-
 ## Text
 
 ```jsx
@@ -964,8 +245,6 @@ export function Component() {
 
 ```
 
-## Non-verbatim mappings
-
 ## Text
 
 ```cjs
@@ -979,8 +258,6 @@ module.exports = 'commonjs'
 module.exports = 'commonjs'
 
 ```
-
-## Non-verbatim mappings
 
 ## Text
 
@@ -996,8 +273,6 @@ export default 'ES module'
 
 ```
 
-## Non-verbatim mappings
-
 ## Text
 
 ```ts
@@ -1011,8 +286,6 @@ console.log('Hello TypeScript!')
 console.log('Hello TypeScript!')
 
 ```
-
-## Non-verbatim mappings
 
 ## Text
 
@@ -1039,8 +312,6 @@ export function getNumber(): number {
 }
 
 ```
-
-## Non-verbatim mappings
 
 ## Text
 
@@ -1074,8 +345,6 @@ export function Component(): ReactNode {
 
 ```
 
-## Non-verbatim mappings
-
 ## Text
 
 ```cts
@@ -1096,8 +365,6 @@ export = variable
 
 ```
 
-## Non-verbatim mappings
-
 ## Text
 
 ```mts
@@ -1111,5 +378,3 @@ export default 'ES module'
 export default 'ES module'
 
 ```
-
-## Non-verbatim mappings

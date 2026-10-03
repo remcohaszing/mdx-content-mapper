@@ -57,6 +57,4 @@ export default function MDXContent(props) {
 {Math.PI}
 ```
 
-## Non-verbatim mappings
-
 ## Diagnostics

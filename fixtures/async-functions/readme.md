@@ -113,35 +113,10 @@ export async function named() {
 
 ## Non-verbatim mappings
 
-```plaintext 65 1
-
-
-```
-
-```jsx 201 1
-;
-```
-
-***
-
-```plaintext 141 1
-
-
-```
-
-```jsx 279 1
-;
-```
-
-***
-
-```plaintext 204 1
-
-
-```
-
-```jsx 344 1
-;
-```
+| Original |     | Virtual |     | Features |
+| -------- | --: | ------- | --: | -------: |
+| `⏎`      |  65 | `;`     | 201 |        0 |
+| `⏎`      | 141 | `;`     | 279 |        0 |
+| `⏎`      | 204 | `;`     | 344 |        0 |
 
 ## Diagnostics

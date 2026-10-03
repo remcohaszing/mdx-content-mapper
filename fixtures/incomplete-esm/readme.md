@@ -65,13 +65,8 @@ export const variable =
 
 ## Non-verbatim mappings
 
-```plaintext 23 1
-
-
-```
-
-```jsx 173 1
-;
-```
+| Original |    | Virtual |     | Features |
+| -------- | -: | ------- | --: | -------: |
+| `⏎`      | 23 | `;`     | 173 |        0 |
 
 ## Diagnostics

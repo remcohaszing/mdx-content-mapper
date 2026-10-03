@@ -64,13 +64,8 @@ import { Planet } from './planet.js'
 
 ## Non-verbatim mappings
 
-```plaintext 36 1
-
-
-```
-
-```jsx 173 1
-;
-```
+| Original |    | Virtual |     | Features |
+| -------- | -: | ------- | --: | -------: |
+| `⏎`      | 36 | `;`     | 173 |        0 |
 
 ## Diagnostics

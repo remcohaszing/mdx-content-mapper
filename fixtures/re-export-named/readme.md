@@ -62,13 +62,8 @@ export { named } from './layout.js'
 
 ## Non-verbatim mappings
 
-```plaintext 35 1
-
-
-```
-
-```jsx 172 1
-;
-```
+| Original |    | Virtual |     | Features |
+| -------- | -: | ------- | --: | -------: |
+| `⏎`      | 35 | `;`     | 172 |        0 |
 
 ## Diagnostics

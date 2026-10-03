@@ -64,22 +64,9 @@ export default function MDXContent(props) {
 
 ## Non-verbatim mappings
 
-```plaintext 0 1
-#
-```
-
-```jsx 913 11
-_components
-```
-
-***
-
-```plaintext 0 1
-#
-```
-
-```jsx 925 2
-h1
-```
+| Original |    | Virtual       |     | Features |
+| -------- | -: | ------------- | --: | -------: |
+| `#`      |  0 | `_components` | 913 |        0 |
+| `#`      |  0 | `h1`          | 925 |  1048575 |
 
 ## Diagnostics

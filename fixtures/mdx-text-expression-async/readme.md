@@ -61,6 +61,4 @@ export default function MDXContent(props) {
 {await Promise.resolve(Math.PI)}
 ```
 
-## Non-verbatim mappings
-
 ## Diagnostics

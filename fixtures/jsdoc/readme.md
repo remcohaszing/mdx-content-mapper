@@ -94,6 +94,4 @@ export default function MDXContent(props) {
 {/** @type {string} */ (props.name)}
 ```
 
-## Non-verbatim mappings
-
 ## Diagnostics

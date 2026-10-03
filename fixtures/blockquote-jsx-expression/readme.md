@@ -230,42 +230,11 @@ props.multipleNewlines
 
 ## Non-verbatim mappings
 
-```plaintext 0 1
->
-```
-
-```jsx 911 11
-_components
-```
-
-***
-
-```plaintext 0 1
->
-```
-
-```jsx 923 10
-blockquote
-```
-
-***
-
-```plaintext 161 2
-> 
-```
-
-```jsx 1138 11
-_components
-```
-
-***
-
-```plaintext 161 2
-> 
-```
-
-```jsx 1150 10
-blockquote
-```
+| Original |     | Virtual       |      | Features |
+| -------- | --: | ------------- | ---: | -------: |
+| `>`      |   0 | `_components` |  911 |        0 |
+| `>`      |   0 | `blockquote`  |  923 |  1048575 |
+| `> `     | 161 | `_components` | 1138 |        0 |
+| `> `     | 161 | `blockquote`  | 1150 |  1048575 |
 
 ## Diagnostics

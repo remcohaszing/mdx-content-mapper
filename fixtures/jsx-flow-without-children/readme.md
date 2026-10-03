@@ -89,13 +89,8 @@ Injected
 
 ## Non-verbatim mappings
 
-```plaintext 27 1
-
-
-```
-
-```jsx 163 1
-;
-```
+| Original |    | Virtual |     | Features |
+| -------- | -: | ------- | --: | -------: |
+| `⏎`      | 27 | `;`     | 163 |        0 |
 
 ## Diagnostics

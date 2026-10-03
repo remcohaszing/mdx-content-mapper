@@ -76,23 +76,9 @@ function MDXLayout() {}
 
 ## Non-verbatim mappings
 
-```plaintext 38 1
-
-
-```
-
-```jsx 760 1
-;
-```
-
-***
-
-```plaintext 0 38
-export default function MDXLayout() {}
-```
-
-```jsx 1947 9
-MDXLayout
-```
+| Original                                 |    | Virtual     |      | Features |
+| ---------------------------------------- | -: | ----------- | ---: | -------: |
+| `⏎`                                      | 38 | `;`         |  760 |        0 |
+| `export default function MDXLayout() {}` |  0 | `MDXLayout` | 1947 |  1048575 |
 
 ## Diagnostics

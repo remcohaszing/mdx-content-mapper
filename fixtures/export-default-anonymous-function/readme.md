@@ -74,23 +74,9 @@ function() {}
 
 ## Non-verbatim mappings
 
-```plaintext 28 1
-
-
-```
-
-```jsx 750 1
-;
-```
-
-***
-
-```plaintext 0 28
-export default function() {}
-```
-
-```jsx 1893 9
-MDXLayout
-```
+| Original                       |    | Virtual     |      | Features |
+| ------------------------------ | -: | ----------- | ---: | -------: |
+| `⏎`                            | 28 | `;`         |  750 |        0 |
+| `export default function() {}` |  0 | `MDXLayout` | 1893 |  1048575 |
 
 ## Diagnostics

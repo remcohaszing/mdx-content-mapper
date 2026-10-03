@@ -57,6 +57,4 @@ export default function MDXContent(props) {
 {(Component) => <Component />}
 ```
 
-## Non-verbatim mappings
-
 ## Diagnostics

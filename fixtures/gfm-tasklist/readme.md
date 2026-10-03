@@ -74,122 +74,19 @@ export default function MDXContent(props) {
 
 ## Non-verbatim mappings
 
-```plaintext 0 1
--
-```
-
-```jsx 911 11
-_components
-```
-
-***
-
-```plaintext 0 1
--
-```
-
-```jsx 923 2
-ul
-```
-
-***
-
-```plaintext 0 1
--
-```
-
-```jsx 932 11
-_components
-```
-
-***
-
-```plaintext 0 1
--
-```
-
-```jsx 944 2
-li
-```
-
-***
-
-```plaintext 2 3
-[ ]
-```
-
-```jsx 961 11
-_components
-```
-
-***
-
-```plaintext 2 3
-[ ]
-```
-
-```jsx 973 5
-input
-```
-
-***
-
-```plaintext 16 1
--
-```
-
-```jsx 1094 11
-_components
-```
-
-***
-
-```plaintext 16 1
--
-```
-
-```jsx 1106 2
-ul
-```
-
-***
-
-```plaintext 16 1
--
-```
-
-```jsx 1115 11
-_components
-```
-
-***
-
-```plaintext 16 1
--
-```
-
-```jsx 1127 2
-li
-```
-
-***
-
-```plaintext 18 3
-[x]
-```
-
-```jsx 1144 11
-_components
-```
-
-***
-
-```plaintext 18 3
-[x]
-```
-
-```jsx 1156 5
-input
-```
+| Original |    | Virtual       |      | Features |
+| -------- | -: | ------------- | ---: | -------: |
+| `-`      |  0 | `_components` |  911 |        0 |
+| `-`      |  0 | `ul`          |  923 |  1048575 |
+| `-`      |  0 | `_components` |  932 |        0 |
+| `-`      |  0 | `li`          |  944 |  1048575 |
+| `[ ]`    |  2 | `_components` |  961 |        0 |
+| `[ ]`    |  2 | `input`       |  973 |  1048575 |
+| `-`      | 16 | `_components` | 1094 |        0 |
+| `-`      | 16 | `ul`          | 1106 |  1048575 |
+| `-`      | 16 | `_components` | 1115 |        0 |
+| `-`      | 16 | `li`          | 1127 |  1048575 |
+| `[x]`    | 18 | `_components` | 1144 |        0 |
+| `[x]`    | 18 | `input`       | 1156 |  1048575 |
 
 ## Diagnostics

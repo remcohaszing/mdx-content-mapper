@@ -75,23 +75,9 @@ export {
 
 ## Non-verbatim mappings
 
-```plaintext 44 1
-
-
-```
-
-```jsx 222 1
-;
-```
-
-***
-
-```plaintext 9 7
-default
-```
-
-```jsx 1365 9
-MDXLayout
-```
+| Original  |    | Virtual     |      | Features |
+| --------- | -: | ----------- | ---: | -------: |
+| `⏎`       | 44 | `;`         |  222 |        0 |
+| `default` |  9 | `MDXLayout` | 1365 |  1048575 |
 
 ## Diagnostics

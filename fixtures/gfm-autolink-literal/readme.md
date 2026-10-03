@@ -69,122 +69,19 @@ export default function MDXContent(props) {
 
 ## Non-verbatim mappings
 
-```plaintext 0 19
-https://example.com
-```
-
-```jsx 919 11
-_components
-```
-
-***
-
-```plaintext 0 19
-https://example.com
-```
-
-```jsx 931 1
-a
-```
-
-***
-
-```plaintext 0 19
-https://example.com
-```
-
-```jsx 949 11
-_components
-```
-
-***
-
-```plaintext 0 19
-https://example.com
-```
-
-```jsx 961 1
-a
-```
-
-***
-
-```plaintext 21 15
-www.example.com
-```
-
-```jsx 986 11
-_components
-```
-
-***
-
-```plaintext 21 15
-www.example.com
-```
-
-```jsx 998 1
-a
-```
-
-***
-
-```plaintext 21 15
-www.example.com
-```
-
-```jsx 1016 11
-_components
-```
-
-***
-
-```plaintext 21 15
-www.example.com
-```
-
-```jsx 1028 1
-a
-```
-
-***
-
-```plaintext 38 18
-user@email.example
-```
-
-```jsx 1053 11
-_components
-```
-
-***
-
-```plaintext 38 18
-user@email.example
-```
-
-```jsx 1065 1
-a
-```
-
-***
-
-```plaintext 38 18
-user@email.example
-```
-
-```jsx 1083 11
-_components
-```
-
-***
-
-```plaintext 38 18
-user@email.example
-```
-
-```jsx 1095 1
-a
-```
+| Original              |    | Virtual       |      | Features |
+| --------------------- | -: | ------------- | ---: | -------: |
+| `https://example.com` |  0 | `_components` |  919 |        0 |
+| `https://example.com` |  0 | `a`           |  931 |  1048575 |
+| `https://example.com` |  0 | `_components` |  949 |        0 |
+| `https://example.com` |  0 | `a`           |  961 |  1048575 |
+| `www.example.com`     | 21 | `_components` |  986 |        0 |
+| `www.example.com`     | 21 | `a`           |  998 |  1048575 |
+| `www.example.com`     | 21 | `_components` | 1016 |        0 |
+| `www.example.com`     | 21 | `a`           | 1028 |  1048575 |
+| `user@email.example`  | 38 | `_components` | 1053 |        0 |
+| `user@email.example`  | 38 | `a`           | 1065 |  1048575 |
+| `user@email.example`  | 38 | `_components` | 1083 |        0 |
+| `user@email.example`  | 38 | `a`           | 1095 |  1048575 |
 
 ## Diagnostics
