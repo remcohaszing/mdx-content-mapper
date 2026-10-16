@@ -66,6 +66,7 @@
     "@types/node": "^26.0.0",
     "@types/react": "^19.0.0",
     "@types/vscode": "^1.0.0",
+    "@typescript/native": "npm:typescript@next",
     "@vscode/vsce": "^3.0.0",
     "filter-obj": "^6.0.0",
     "mdast-util-gfm": "^3.0.0",
@@ -80,7 +81,6 @@
     "remark-parse": "^11.0.0",
     "remark-preset-remcohaszing": "^3.0.0",
     "snapshot-fixtures": "^1.0.0",
-    "typescript": "npm:@typescript/typescript6@^6.0.0",
-    "typescript7": "npm:typescript@next"
+    "typescript": "npm:@typescript/typescript6@^6.0.0"
   }
 }
