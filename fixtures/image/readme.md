@@ -69,19 +69,19 @@ export default function MDXContent(props) {
 | Original                                                                                                                        |     | Virtual       |      | Features |
 | ------------------------------------------------------------------------------------------------------------------------------- | --: | ------------- | ---: | -------: |
 | `![]()`                                                                                                                         |   0 | `_components` |  919 |        0 |
-| `![]()`                                                                                                                         |   0 | `img`         |  931 |  1048575 |
-| ``                                                                                                                              |   2 | `alt`         |  935 |  1048575 |
+| `![]()`                                                                                                                         |   0 | `img`         |  931 |          |
+| ``                                                                                                                              |   2 | `alt`         |  935 |          |
 | `![alt text]()`                                                                                                                 |   7 | `_components` |  974 |        0 |
-| `![alt text]()`                                                                                                                 |   7 | `img`         |  986 |  1048575 |
-| `alt text`                                                                                                                      |   9 | `alt`         |  990 |  1048575 |
+| `![alt text]()`                                                                                                                 |   7 | `img`         |  986 |          |
+| `alt text`                                                                                                                      |   9 | `alt`         |  990 |          |
 | `![](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png)`                 |  22 | `_components` | 1029 |        0 |
-| `![](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png)`                 |  22 | `img`         | 1041 |  1048575 |
-| ``                                                                                                                              |  24 | `alt`         | 1045 |  1048575 |
-| `https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png`                      |  26 | `src`         | 1052 |  1048575 |
+| `![](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png)`                 |  22 | `img`         | 1041 |          |
+| ``                                                                                                                              |  24 | `alt`         | 1045 |          |
+| `https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png`                      |  26 | `src`         | 1052 |          |
 | `![alt text](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png 'title')` | 133 | `_components` | 1084 |        0 |
-| `![alt text](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png 'title')` | 133 | `img`         | 1096 |  1048575 |
-| `alt text`                                                                                                                      | 135 | `alt`         | 1100 |  1048575 |
-| `https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png`                      | 145 | `src`         | 1107 |  1048575 |
-| `'title'`                                                                                                                       | 250 | `title`       | 1114 |  1048575 |
+| `![alt text](https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png 'title')` | 133 | `img`         | 1096 |          |
+| `alt text`                                                                                                                      | 135 | `alt`         | 1100 |          |
+| `https://raw.githubusercontent.com/mdx-js/mdx-analyzer/refs/heads/main/packages/vscode-mdx/assets/mdx.png`                      | 145 | `src`         | 1107 |          |
+| `'title'`                                                                                                                       | 250 | `title`       | 1114 |          |
 
 ## Diagnostics

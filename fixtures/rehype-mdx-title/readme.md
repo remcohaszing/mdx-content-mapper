@@ -64,6 +64,6 @@ export default function MDXContent(props) {
 | Original |    | Virtual       |      | Features |
 | -------- | -: | ------------- | ---: | -------: |
 | `#`      |  0 | `_components` | 1049 |        0 |
-| `#`      |  0 | `h1`          | 1061 |  1048575 |
+| `#`      |  0 | `h1`          | 1061 |          |
 
 ## Diagnostics

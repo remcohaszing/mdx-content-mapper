@@ -72,16 +72,16 @@ export default function MDXContent(props) {
 | Original              |    | Virtual       |      | Features |
 | --------------------- | -: | ------------- | ---: | -------: |
 | `https://example.com` |  0 | `_components` |  919 |        0 |
-| `https://example.com` |  0 | `a`           |  931 |  1048575 |
+| `https://example.com` |  0 | `a`           |  931 |          |
 | `https://example.com` |  0 | `_components` |  949 |        0 |
-| `https://example.com` |  0 | `a`           |  961 |  1048575 |
+| `https://example.com` |  0 | `a`           |  961 |          |
 | `www.example.com`     | 21 | `_components` |  986 |        0 |
-| `www.example.com`     | 21 | `a`           |  998 |  1048575 |
+| `www.example.com`     | 21 | `a`           |  998 |          |
 | `www.example.com`     | 21 | `_components` | 1016 |        0 |
-| `www.example.com`     | 21 | `a`           | 1028 |  1048575 |
+| `www.example.com`     | 21 | `a`           | 1028 |          |
 | `user@email.example`  | 38 | `_components` | 1053 |        0 |
-| `user@email.example`  | 38 | `a`           | 1065 |  1048575 |
+| `user@email.example`  | 38 | `a`           | 1065 |          |
 | `user@email.example`  | 38 | `_components` | 1083 |        0 |
-| `user@email.example`  | 38 | `a`           | 1095 |  1048575 |
+| `user@email.example`  | 38 | `a`           | 1095 |          |
 
 ## Diagnostics

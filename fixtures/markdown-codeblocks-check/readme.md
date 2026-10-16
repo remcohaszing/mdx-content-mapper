@@ -97,85 +97,85 @@ export default function MDXContent(props) {
 | Original |     | Virtual       |      | Features |
 | -------- | --: | ------------- | ---: | -------: |
 | ` ``` `  |   0 | `_components` |  911 |        0 |
-| ` ``` `  |   0 | `pre`         |  923 |  1048575 |
+| ` ``` `  |   0 | `pre`         |  923 |          |
 | ` ``` `  |   0 | `_components` |  933 |        0 |
-| ` ``` `  |   0 | `code`        |  945 |  1048575 |
+| ` ``` `  |   0 | `code`        |  945 |          |
 | ` ``` `  |  39 | `_components` |  957 |        0 |
-| ` ``` `  |  39 | `code`        |  969 |  1048575 |
+| ` ``` `  |  39 | `code`        |  969 |          |
 | ` ``` `  |  39 | `_components` |  981 |        0 |
-| ` ``` `  |  39 | `pre`         |  993 |  1048575 |
+| ` ``` `  |  39 | `pre`         |  993 |          |
 | ` ``` `  |  44 | `_components` | 1003 |        0 |
-| ` ``` `  |  44 | `pre`         | 1015 |  1048575 |
+| ` ``` `  |  44 | `pre`         | 1015 |          |
 | ` ``` `  |  44 | `_components` | 1025 |        0 |
-| ` ``` `  |  44 | `code`        | 1037 |  1048575 |
+| ` ``` `  |  44 | `code`        | 1037 |          |
 | ` ``` `  | 151 | `_components` | 1049 |        0 |
-| ` ``` `  | 151 | `code`        | 1061 |  1048575 |
+| ` ``` `  | 151 | `code`        | 1061 |          |
 | ` ``` `  | 151 | `_components` | 1073 |        0 |
-| ` ``` `  | 151 | `pre`         | 1085 |  1048575 |
+| ` ``` `  | 151 | `pre`         | 1085 |          |
 | ` ``` `  | 156 | `_components` | 1095 |        0 |
-| ` ``` `  | 156 | `pre`         | 1107 |  1048575 |
+| ` ``` `  | 156 | `pre`         | 1107 |          |
 | ` ``` `  | 156 | `_components` | 1117 |        0 |
-| ` ``` `  | 156 | `code`        | 1129 |  1048575 |
+| ` ``` `  | 156 | `code`        | 1129 |          |
 | ` ``` `  | 212 | `_components` | 1141 |        0 |
-| ` ``` `  | 212 | `code`        | 1153 |  1048575 |
+| ` ``` `  | 212 | `code`        | 1153 |          |
 | ` ``` `  | 212 | `_components` | 1165 |        0 |
-| ` ``` `  | 212 | `pre`         | 1177 |  1048575 |
+| ` ``` `  | 212 | `pre`         | 1177 |          |
 | ` ``` `  | 217 | `_components` | 1187 |        0 |
-| ` ``` `  | 217 | `pre`         | 1199 |  1048575 |
+| ` ``` `  | 217 | `pre`         | 1199 |          |
 | ` ``` `  | 217 | `_components` | 1209 |        0 |
-| ` ``` `  | 217 | `code`        | 1221 |  1048575 |
+| ` ``` `  | 217 | `code`        | 1221 |          |
 | ` ``` `  | 252 | `_components` | 1233 |        0 |
-| ` ``` `  | 252 | `code`        | 1245 |  1048575 |
+| ` ``` `  | 252 | `code`        | 1245 |          |
 | ` ``` `  | 252 | `_components` | 1257 |        0 |
-| ` ``` `  | 252 | `pre`         | 1269 |  1048575 |
+| ` ``` `  | 252 | `pre`         | 1269 |          |
 | ` ``` `  | 257 | `_components` | 1279 |        0 |
-| ` ``` `  | 257 | `pre`         | 1291 |  1048575 |
+| ` ``` `  | 257 | `pre`         | 1291 |          |
 | ` ``` `  | 257 | `_components` | 1301 |        0 |
-| ` ``` `  | 257 | `code`        | 1313 |  1048575 |
+| ` ``` `  | 257 | `code`        | 1313 |          |
 | ` ``` `  | 291 | `_components` | 1325 |        0 |
-| ` ``` `  | 291 | `code`        | 1337 |  1048575 |
+| ` ``` `  | 291 | `code`        | 1337 |          |
 | ` ``` `  | 291 | `_components` | 1349 |        0 |
-| ` ``` `  | 291 | `pre`         | 1361 |  1048575 |
+| ` ``` `  | 291 | `pre`         | 1361 |          |
 | ` ``` `  | 296 | `_components` | 1371 |        0 |
-| ` ``` `  | 296 | `pre`         | 1383 |  1048575 |
+| ` ``` `  | 296 | `pre`         | 1383 |          |
 | ` ``` `  | 296 | `_components` | 1393 |        0 |
-| ` ``` `  | 296 | `code`        | 1405 |  1048575 |
+| ` ``` `  | 296 | `code`        | 1405 |          |
 | ` ``` `  | 335 | `_components` | 1417 |        0 |
-| ` ``` `  | 335 | `code`        | 1429 |  1048575 |
+| ` ``` `  | 335 | `code`        | 1429 |          |
 | ` ``` `  | 335 | `_components` | 1441 |        0 |
-| ` ``` `  | 335 | `pre`         | 1453 |  1048575 |
+| ` ``` `  | 335 | `pre`         | 1453 |          |
 | ` ``` `  | 340 | `_components` | 1463 |        0 |
-| ` ``` `  | 340 | `pre`         | 1475 |  1048575 |
+| ` ``` `  | 340 | `pre`         | 1475 |          |
 | ` ``` `  | 340 | `_components` | 1485 |        0 |
-| ` ``` `  | 340 | `code`        | 1497 |  1048575 |
+| ` ``` `  | 340 | `code`        | 1497 |          |
 | ` ``` `  | 426 | `_components` | 1509 |        0 |
-| ` ``` `  | 426 | `code`        | 1521 |  1048575 |
+| ` ``` `  | 426 | `code`        | 1521 |          |
 | ` ``` `  | 426 | `_components` | 1533 |        0 |
-| ` ``` `  | 426 | `pre`         | 1545 |  1048575 |
+| ` ``` `  | 426 | `pre`         | 1545 |          |
 | ` ``` `  | 431 | `_components` | 1555 |        0 |
-| ` ``` `  | 431 | `pre`         | 1567 |  1048575 |
+| ` ``` `  | 431 | `pre`         | 1567 |          |
 | ` ``` `  | 431 | `_components` | 1577 |        0 |
-| ` ``` `  | 431 | `code`        | 1589 |  1048575 |
+| ` ``` `  | 431 | `code`        | 1589 |          |
 | ` ``` `  | 538 | `_components` | 1601 |        0 |
-| ` ``` `  | 538 | `code`        | 1613 |  1048575 |
+| ` ``` `  | 538 | `code`        | 1613 |          |
 | ` ``` `  | 538 | `_components` | 1625 |        0 |
-| ` ``` `  | 538 | `pre`         | 1637 |  1048575 |
+| ` ``` `  | 538 | `pre`         | 1637 |          |
 | ` ``` `  | 543 | `_components` | 1647 |        0 |
-| ` ``` `  | 543 | `pre`         | 1659 |  1048575 |
+| ` ``` `  | 543 | `pre`         | 1659 |          |
 | ` ``` `  | 543 | `_components` | 1669 |        0 |
-| ` ``` `  | 543 | `code`        | 1681 |  1048575 |
+| ` ``` `  | 543 | `code`        | 1681 |          |
 | ` ``` `  | 604 | `_components` | 1693 |        0 |
-| ` ``` `  | 604 | `code`        | 1705 |  1048575 |
+| ` ``` `  | 604 | `code`        | 1705 |          |
 | ` ``` `  | 604 | `_components` | 1717 |        0 |
-| ` ``` `  | 604 | `pre`         | 1729 |  1048575 |
+| ` ``` `  | 604 | `pre`         | 1729 |          |
 | ` ``` `  | 609 | `_components` | 1739 |        0 |
-| ` ``` `  | 609 | `pre`         | 1751 |  1048575 |
+| ` ``` `  | 609 | `pre`         | 1751 |          |
 | ` ``` `  | 609 | `_components` | 1761 |        0 |
-| ` ``` `  | 609 | `code`        | 1773 |  1048575 |
+| ` ``` `  | 609 | `code`        | 1773 |          |
 | ` ``` `  | 643 | `_components` | 1785 |        0 |
-| ` ``` `  | 643 | `code`        | 1797 |  1048575 |
+| ` ``` `  | 643 | `code`        | 1797 |          |
 | ` ``` `  | 643 | `_components` | 1809 |        0 |
-| ` ``` `  | 643 | `pre`         | 1821 |  1048575 |
+| ` ``` `  | 643 | `pre`         | 1821 |          |
 
 ## Diagnostics
 
@@ -188,7 +188,7 @@ console.log('Hello JavaScript!')
 
 ## Verbatim mappings
 
-```jsx 0 33 6 33 0 1048575
+```jsx 0 33 6 33 0
 console.log('Hello JavaScript!')
 
 ```
@@ -207,7 +207,7 @@ export function getNumber() {
 
 ## Verbatim mappings
 
-```jsx 0 93 58 93 0 1048575
+```jsx 0 93 58 93 0
 /**
  * @returns {number}
  */
@@ -228,7 +228,7 @@ export function Component() {
 
 ## Verbatim mappings
 
-```jsx 0 49 163 49 0 1048575
+```jsx 0 49 163 49 0
 export function Component() {
   return <div />
 }
@@ -244,7 +244,7 @@ module.exports = 'commonjs'
 
 ## Verbatim mappings
 
-```jsx 0 28 224 28 0 1048575
+```jsx 0 28 224 28 0
 module.exports = 'commonjs'
 
 ```
@@ -258,7 +258,7 @@ export default 'ES module'
 
 ## Verbatim mappings
 
-```jsx 0 27 264 27 0 1048575
+```jsx 0 27 264 27 0
 export default 'ES module'
 
 ```
@@ -272,7 +272,7 @@ console.log('Hello TypeScript!')
 
 ## Verbatim mappings
 
-```jsx 0 33 302 33 0 1048575
+```jsx 0 33 302 33 0
 console.log('Hello TypeScript!')
 
 ```
@@ -288,7 +288,7 @@ export function getNumber(): number {
 
 ## Verbatim mappings
 
-```jsx 0 72 354 72 0 1048575
+```jsx 0 72 354 72 0
 export function getNumber(): number {
   return 'This is not a number'
 }
@@ -307,12 +307,12 @@ export function Component(): ReactNode {
 
 ## Verbatim mappings
 
-```jsx 0 39 438 39 0 1048575
+```jsx 0 39 438 39 0
 import type { ReactNode } from 'react'
 
 ```
 
-```jsx 39 60 478 60 0 1048575
+```jsx 39 60 478 60 0
 export function Component(): ReactNode {
   return <div />
 }
@@ -329,7 +329,7 @@ export = variable
 
 ## Verbatim mappings
 
-```jsx 0 54 550 54 0 1048575
+```jsx 0 54 550 54 0
 declare const variable = 'commonjs'
 export = variable
 
@@ -344,7 +344,7 @@ export default 'ES module'
 
 ## Verbatim mappings
 
-```jsx 0 27 616 27 0 1048575
+```jsx 0 27 616 27 0
 export default 'ES module'
 
 ```

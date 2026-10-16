@@ -69,44 +69,44 @@ Injected
 
 ## Verbatim mappings
 
-```jsx 135 27 0 27 0 1048575
+```jsx 135 27 0 27 0
 export function Local() {}
 
 ```
 
-```jsx 976 34 28 34 0 1048575
+```jsx 976 34 28 34 0
 <div local={<Local />} injected={<
 ```
 
-```jsx 1022 39 62 39 0 1048575
+```jsx 1022 39 62 39 0
 Injected />} string="string" boolean />
 ```
 
-```jsx 1066 46 103 46 0 1048575
+```jsx 1066 46 103 46 0
 <div local={<Local>{null}</Local>} injected={<
 ```
 
-```jsx 1124 17 149 17 0 1048575
+```jsx 1124 17 149 17 0
 Injected>{null}</
 ```
 
-```jsx 1153 35 166 35 0 1048575
+```jsx 1153 35 166 35 0
 Injected>} string="string" boolean>
 ```
 
-```jsx 1219 6 214 6 0 1048575
+```jsx 1219 6 214 6 0
 </div>
 ```
 
-```jsx 1778 8 62 8 0 1048575
+```jsx 1778 8 62 8 0
 Injected
 ```
 
-```jsx 1801 8 149 8 0 1048575
+```jsx 1801 8 149 8 0
 Injected
 ```
 
-```jsx 1824 8 166 8 0 1048575
+```jsx 1824 8 166 8 0
 Injected
 ```
 

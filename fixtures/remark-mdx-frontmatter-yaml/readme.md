@@ -91,7 +91,7 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 1684 13 360 13 0 1048575
+```jsx 1684 13 360 13 0
 {frontmatter}
 ```
 
@@ -99,43 +99,43 @@ export default function MDXContent(props) {
 
 | Original                              |     | Virtual                         |     | Features |
 | ------------------------------------- | --: | ------------------------------- | --: | -------: |
-| `key`                                 | 175 | `"key"`                         | 316 |  1048575 |
-| `value`                               | 180 | `"value"`                       | 323 |  1048575 |
-| `nested`                              | 188 | `"nested"`                      | 336 |  1048575 |
-| `key`                                 | 200 | `"key"`                         | 354 |  1048575 |
-| `value`                               | 205 | `"value"`                       | 361 |  1048575 |
-| `1`                                   | 254 | `1`                             | 422 |  1048575 |
-| `true`                                | 260 | `true`                          | 429 |  1048575 |
-| `false`                               | 269 | `false`                         | 439 |  1048575 |
-| `yes`                                 | 279 | `"yes"`                         | 450 |  1048575 |
-| `no`                                  | 287 | `"no"`                          | 461 |  1048575 |
-| ``                                    | 293 | `null`                          | 471 |  1048575 |
-| `string`                              |   4 | `"string"`                      | 518 |  1048575 |
-| `this is a string`                    |  12 | `"this is a string"`            | 528 |  1048575 |
-| `singleQuote`                         |  29 | `"singleQuote"`                 | 552 |  1048575 |
-| `'This is also a string'`             |  42 | `"This is also a string"`       | 567 |  1048575 |
-| `doubleQuote`                         |  66 | `"doubleQuote"`                 | 596 |  1048575 |
-| `"This is also a string"`             |  79 | `"This is also a string"`       | 611 |  1048575 |
-| `multiline`                           | 103 | `"multiline"`                   | 640 |  1048575 |
-| `\|⏎  This⏎  is⏎  also⏎  a⏎  string⏎` | 114 | `"This\nis\nalso\na\nstring\n"` | 653 |  1048575 |
-| `number`                              | 148 | `"number"`                      | 688 |  1048575 |
-| `42`                                  | 156 | `42`                            | 698 |  1048575 |
-| `object`                              | 159 | `"object"`                      | 706 |  1048575 |
-| `&on=e`                               | 167 | `on_e`                          | 716 |  1048575 |
-| `alsoObject`                          | 211 | `"alsoObject"`                  | 726 |  1048575 |
-| `key`                                 | 225 | `"key"`                         | 748 |  1048575 |
-| `value`                               | 230 | `"value"`                       | 755 |  1048575 |
-| `array`                               | 238 | `"array"`                       | 774 |  1048575 |
-| `&two`                                | 245 | `two`                           | 783 |  1048575 |
-| `alsoArray`                           | 294 | `"alsoArray"`                   | 792 |  1048575 |
-| `1`                                   | 306 | `1`                             | 813 |  1048575 |
-| `0xbeef`                              | 309 | `48879`                         | 822 |  1048575 |
-| `'3'`                                 | 317 | `"3"`                           | 835 |  1048575 |
-| `first`                               | 322 | `"first"`                       | 850 |  1048575 |
-| `*on=e`                               | 329 | `on_e`                          | 859 |  1048575 |
-| `second`                              | 335 | `"second"`                      | 869 |  1048575 |
-| `*two`                                | 343 | `two`                           | 879 |  1048575 |
-| ``                                    | 348 | `null`                          | 888 |  1048575 |
-| `null`                                | 350 | `null`                          | 894 |  1048575 |
+| `key`                                 | 175 | `"key"`                         | 316 |          |
+| `value`                               | 180 | `"value"`                       | 323 |          |
+| `nested`                              | 188 | `"nested"`                      | 336 |          |
+| `key`                                 | 200 | `"key"`                         | 354 |          |
+| `value`                               | 205 | `"value"`                       | 361 |          |
+| `1`                                   | 254 | `1`                             | 422 |          |
+| `true`                                | 260 | `true`                          | 429 |          |
+| `false`                               | 269 | `false`                         | 439 |          |
+| `yes`                                 | 279 | `"yes"`                         | 450 |          |
+| `no`                                  | 287 | `"no"`                          | 461 |          |
+| ``                                    | 293 | `null`                          | 471 |          |
+| `string`                              |   4 | `"string"`                      | 518 |          |
+| `this is a string`                    |  12 | `"this is a string"`            | 528 |          |
+| `singleQuote`                         |  29 | `"singleQuote"`                 | 552 |          |
+| `'This is also a string'`             |  42 | `"This is also a string"`       | 567 |          |
+| `doubleQuote`                         |  66 | `"doubleQuote"`                 | 596 |          |
+| `"This is also a string"`             |  79 | `"This is also a string"`       | 611 |          |
+| `multiline`                           | 103 | `"multiline"`                   | 640 |          |
+| `\|⏎  This⏎  is⏎  also⏎  a⏎  string⏎` | 114 | `"This\nis\nalso\na\nstring\n"` | 653 |          |
+| `number`                              | 148 | `"number"`                      | 688 |          |
+| `42`                                  | 156 | `42`                            | 698 |          |
+| `object`                              | 159 | `"object"`                      | 706 |          |
+| `&on=e`                               | 167 | `on_e`                          | 716 |          |
+| `alsoObject`                          | 211 | `"alsoObject"`                  | 726 |          |
+| `key`                                 | 225 | `"key"`                         | 748 |          |
+| `value`                               | 230 | `"value"`                       | 755 |          |
+| `array`                               | 238 | `"array"`                       | 774 |          |
+| `&two`                                | 245 | `two`                           | 783 |          |
+| `alsoArray`                           | 294 | `"alsoArray"`                   | 792 |          |
+| `1`                                   | 306 | `1`                             | 813 |          |
+| `0xbeef`                              | 309 | `48879`                         | 822 |          |
+| `'3'`                                 | 317 | `"3"`                           | 835 |          |
+| `first`                               | 322 | `"first"`                       | 850 |          |
+| `*on=e`                               | 329 | `on_e`                          | 859 |          |
+| `second`                              | 335 | `"second"`                      | 869 |          |
+| `*two`                                | 343 | `two`                           | 879 |          |
+| ``                                    | 348 | `null`                          | 888 |          |
+| `null`                                | 350 | `null`                          | 894 |          |
 
 ## Diagnostics

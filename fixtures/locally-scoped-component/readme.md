@@ -53,7 +53,7 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 910 30 0 30 0 1048575
+```jsx 910 30 0 30 0
 {(Component) => <Component />}
 ```
 

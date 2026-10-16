@@ -62,19 +62,19 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 910 5 0 5 0 1048575
+```jsx 910 5 0 5 0
 <div>
 ```
 
-```jsx 1002 6 8 6 0 1048575
+```jsx 1002 6 8 6 0
 </div>
 ```
 
-```jsx 1021 5 15 5 0 1048575
+```jsx 1021 5 15 5 0
 <div>
 ```
 
-```jsx 1040 6 21 6 0 1048575
+```jsx 1040 6 21 6 0
 </div>
 ```
 
@@ -83,6 +83,6 @@ export default function MDXContent(props) {
 | Original |    | Virtual       |     | Features |
 | -------- | -: | ------------- | --: | -------: |
 | `>`      |  6 | `_components` | 921 |        0 |
-| `>`      |  6 | `blockquote`  | 933 |  1048575 |
+| `>`      |  6 | `blockquote`  | 933 |          |
 
 ## Diagnostics

@@ -60,15 +60,15 @@ export default function MDXContent(props) {
 './layout.js'
 ```
 
-```jsx 135 16 0 16 0 1048575
+```jsx 135 16 0 16 0
 export { named, 
 ```
 
-```jsx 151 21 23 21 0 1048575
+```jsx 151 21 23 21 0
  } from './layout.js'
 ```
 
-```jsx 221 1 44 1 0 1048575
+```jsx 221 1 44 1 0
 
 
 ```
@@ -78,6 +78,6 @@ export { named,
 | Original  |    | Virtual     |      | Features |
 | --------- | -: | ----------- | ---: | -------: |
 | `⏎`       | 44 | `;`         |  223 |        0 |
-| `default` | 16 | `MDXLayout` | 1366 |  1048575 |
+| `default` | 16 | `MDXLayout` | 1366 |          |
 
 ## Diagnostics

@@ -69,7 +69,7 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 735 24 15 24 0 1048575
+```jsx 735 24 15 24 0
 function MDXLayout() {}
 
 ```
@@ -79,6 +79,6 @@ function MDXLayout() {}
 | Original                                 |    | Virtual     |      | Features |
 | ---------------------------------------- | -: | ----------- | ---: | -------: |
 | `⏎`                                      | 38 | `;`         |  760 |        0 |
-| `export default function MDXLayout() {}` |  0 | `MDXLayout` | 1947 |  1048575 |
+| `export default function MDXLayout() {}` |  0 | `MDXLayout` | 1947 |          |
 
 ## Diagnostics

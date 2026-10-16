@@ -78,36 +78,36 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 135 65 0 65 0 1048575
+```jsx 135 65 0 65 0
 export const arrow = async () => {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 203 75 66 75 0 1048575
+```jsx 203 75 66 75 0
 export const expression = async function() {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 281 62 142 62 0 1048575
+```jsx 281 62 142 62 0
 export async function named() {
   await Promise.resolve(42)
 }
 
 ```
 
-```jsx 1275 43 205 43 0 1048575
+```jsx 1275 43 205 43 0
 {async () => { await Promise.resolve(42) }}
 ```
 
-```jsx 1323 48 249 48 0 1048575
+```jsx 1323 48 249 48 0
 {async function() { await Promise.resolve(42) }}
 ```
 
-```jsx 1376 54 298 54 0 1048575
+```jsx 1376 54 298 54 0
 {async function local() { await Promise.resolve(42) }}
 ```
 
