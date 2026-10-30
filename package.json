@@ -34,6 +34,11 @@
     "test": "node --test",
     "typecheck": "../typescript-go/built/local/tsgo --build fixtures --runExternalCode"
   },
+  "allowScripts": {
+    "@vscode/vsce-sign": false,
+    "keytar": false,
+    "unrs-resolver": false
+  },
   "dependencies": {
     "acorn": "^8.0.0",
     "acorn-jsx": "^5.0.0",
@@ -56,7 +61,7 @@
     "smol-toml": "^1.0.0",
     "unified": "^11.0.0",
     "vfile-message": "^4.0.0",
-    "vscode-jsonrpc": "^9.0.0",
+    "vscode-jsonrpc": "^10.0.0",
     "yaml": "^2.0.0"
   },
   "devDependencies": {
