@@ -60,10 +60,8 @@ export { named } from './layout.js'
 
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |    | Virtual |     | Features |
-| -------- | -: | ------- | --: | -------: |
-| `⏎`      | 35 | `;`     | 172 |        0 |
-
-## Diagnostics
+| Original |    | Virtual |     |
+| -------- | -: | ------- | --: |
+| `⏎`      | 35 | `;`     | 172 |

@@ -63,10 +63,8 @@ export const variable =
 
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |    | Virtual |     | Features |
-| -------- | -: | ------- | --: | -------: |
-| `⏎`      | 23 | `;`     | 173 |        0 |
-
-## Diagnostics
+| Original |    | Virtual |     |
+| -------- | -: | ------- | --: |
+| `⏎`      | 23 | `;`     | 173 |

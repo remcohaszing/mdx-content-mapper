@@ -93,5 +93,3 @@ export default function MDXContent(props) {
 ```jsx 1042 36 67 36 0
 {/** @type {string} */ (props.name)}
 ```
-
-## Diagnostics

@@ -70,23 +70,19 @@ export default function MDXContent(props) {
 
 ```
 
-## Verbatim mappings
+## Alias mappings
 
-## Non-verbatim mappings
-
-| Original |    | Virtual       |      | Features |
-| -------- | -: | ------------- | ---: | -------: |
-| `-`      |  0 | `_components` |  911 |        0 |
-| `-`      |  0 | `ul`          |  923 |          |
-| `-`      |  0 | `_components` |  932 |        0 |
-| `-`      |  0 | `li`          |  944 |          |
-| `[ ]`    |  2 | `_components` |  961 |        0 |
-| `[ ]`    |  2 | `input`       |  973 |          |
-| `-`      | 16 | `_components` | 1094 |        0 |
-| `-`      | 16 | `ul`          | 1106 |          |
-| `-`      | 16 | `_components` | 1115 |        0 |
-| `-`      | 16 | `li`          | 1127 |          |
-| `[x]`    | 18 | `_components` | 1144 |        0 |
-| `[x]`    | 18 | `input`       | 1156 |          |
-
-## Diagnostics
+| Original |    | Virtual       |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
+| -------- | -: | ------------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
+| `-`      |  0 | `_components` |  911 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `-`      |  0 | `ul`          |  923 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| `-`      |  0 | `_components` |  932 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `-`      |  0 | `li`          |  944 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| `[ ]`    |  2 | `_components` |  961 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `[ ]`    |  2 | `input`       |  973 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| `-`      | 16 | `_components` | 1094 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `-`      | 16 | `ul`          | 1106 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| `-`      | 16 | `_components` | 1115 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `-`      | 16 | `li`          | 1127 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| `[x]`    | 18 | `_components` | 1144 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `[x]`    | 18 | `input`       | 1156 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |

@@ -111,12 +111,10 @@ export async function named() {
 {async function local() { await Promise.resolve(42) }}
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |     | Virtual |     | Features |
-| -------- | --: | ------- | --: | -------: |
-| `⏎`      |  65 | `;`     | 201 |        0 |
-| `⏎`      | 141 | `;`     | 279 |        0 |
-| `⏎`      | 204 | `;`     | 344 |        0 |
-
-## Diagnostics
+| Original |     | Virtual |     |
+| -------- | --: | ------- | --: |
+| `⏎`      |  65 | `;`     | 201 |
+| `⏎`      | 141 | `;`     | 279 |
+| `⏎`      | 204 | `;`     | 344 |

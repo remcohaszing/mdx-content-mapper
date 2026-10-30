@@ -73,11 +73,9 @@ export { named,
 
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original  |    | Virtual     |      | Features |
-| --------- | -: | ----------- | ---: | -------: |
-| `⏎`       | 44 | `;`         |  223 |        0 |
-| `default` | 16 | `MDXLayout` | 1366 |          |
-
-## Diagnostics
+| Original  |    | Virtual     |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
+| --------- | -: | ----------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
+| `⏎`       | 44 | `;`         |  223 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `default` | 16 | `MDXLayout` | 1366 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |

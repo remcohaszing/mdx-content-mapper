@@ -228,13 +228,11 @@ props.multipleNewlines
 }
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |     | Virtual       |      | Features |
-| -------- | --: | ------------- | ---: | -------: |
-| `>`      |   0 | `_components` |  911 |        0 |
-| `>`      |   0 | `blockquote`  |  923 |          |
-| `> `     | 161 | `_components` | 1138 |        0 |
-| `> `     | 161 | `blockquote`  | 1150 |          |
-
-## Diagnostics
+| Original |     | Virtual       |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
+| -------- | --: | ------------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
+| `>`      |   0 | `_components` |  911 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `>`      |   0 | `blockquote`  |  923 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| `> `     | 161 | `_components` | 1138 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `> `     | 161 | `blockquote`  | 1150 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |

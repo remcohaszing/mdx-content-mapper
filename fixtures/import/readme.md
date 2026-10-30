@@ -62,10 +62,8 @@ import { Planet } from './planet.js'
 
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |    | Virtual |     | Features |
-| -------- | -: | ------- | --: | -------: |
-| `⏎`      | 36 | `;`     | 173 |        0 |
-
-## Diagnostics
+| Original |    | Virtual |     |
+| -------- | -: | ------- | --: |
+| `⏎`      | 36 | `;`     | 173 |

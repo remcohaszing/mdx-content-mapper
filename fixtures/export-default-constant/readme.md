@@ -61,11 +61,9 @@ export default function MDXContent(props) {
 
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original                |    | Virtual     |      | Features |
-| ----------------------- | -: | ----------- | ---: | -------: |
-| `⏎`                     | 21 | `;`         |  162 |        0 |
-| `export default 'main'` |  0 | `MDXLayout` | 1305 |          |
-
-## Diagnostics
+| Original                |    | Virtual     |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
+| ----------------------- | -: | ----------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
+| `⏎`                     | 21 | `;`         |  162 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `export default 'main'` |  0 | `MDXLayout` | 1305 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |

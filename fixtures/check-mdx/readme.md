@@ -50,7 +50,3 @@ export default function MDXContent(props) {
 /** @typedef {(void extends Props ? {} : Props) & {components?: {}}} MDXContentProps */
 
 ```
-
-## Verbatim mappings
-
-## Diagnostics

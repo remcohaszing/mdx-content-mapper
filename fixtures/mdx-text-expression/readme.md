@@ -60,5 +60,3 @@ export default function MDXContent(props) {
 ```jsx 927 9 4 9 0
 {Math.PI}
 ```
-
-## Diagnostics

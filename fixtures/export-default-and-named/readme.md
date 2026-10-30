@@ -78,11 +78,9 @@ export function named() {}
 
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original                                 |    | Virtual     |      | Features |
-| ---------------------------------------- | -: | ----------- | ---: | -------: |
-| `⏎`                                      | 65 | `;`         |  787 |        0 |
-| `export default function MDXLayout() {}` |  0 | `MDXLayout` | 2010 |          |
-
-## Diagnostics
+| Original                                 |    | Virtual     |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
+| ---------------------------------------- | -: | ----------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
+| `⏎`                                      | 65 | `;`         |  787 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `export default function MDXLayout() {}` |  0 | `MDXLayout` | 2010 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |

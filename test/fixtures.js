@@ -1,16 +1,9 @@
-/**
- * @import { MappedOutput } from '../lib/protocol.js'
- * @import { Root, RootContent, Table } from 'mdast'
- */
-
-import assert from 'node:assert/strict'
 import { readdir, readFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { test } from 'node:test'
 
+import { transformResultToMarkdown } from 'content-mapper-test-utils'
 import { includeKeys } from 'filter-obj'
-import { gfmToMarkdown } from 'mdast-util-gfm'
-import { toMarkdown } from 'mdast-util-to-markdown'
 import { assertEqual, testFixturesDirectory } from 'snapshot-fixtures'
 import typescript from 'typescript'
 
@@ -20,102 +13,6 @@ import { transform } from '../lib/requests/transform.js'
 import pkg from '../package.json' with { type: 'json' }
 
 const directory = new URL('../fixtures/', import.meta.url)
-
-/**
- * Render mapped output to markdown.
- *
- * @param {string} original
- *   The original content.
- * @param {MappedOutput} output
- *   The content provided by the content mapper.
- * @returns {RootContent[]}
- *   A markdown representation of the mapped output.
- */
-function mappedOutputToMdast(original, output) {
-  const { extension, mappings, text } = output
-
-  assert.ok(mappings)
-
-  /** @type {RootContent[]} */
-  const verbatimMappings = []
-
-  /** @type {Table | undefined} */
-  let nonVerbatimMappings
-
-  for (const mapping of mappings) {
-    const [generatedStart, generatedLength, originalStart, originalLength, kind, features] = mapping
-    const generatedSlice = text.slice(generatedStart, generatedStart + generatedLength)
-    const originalSlice = original.slice(originalStart, originalStart + originalLength)
-    if (kind === 0) {
-      assertEqual(generatedSlice, originalSlice)
-      verbatimMappings.push({
-        type: 'code',
-        lang: 'jsx',
-        meta: mapping.join(' '),
-        value: generatedSlice
-      })
-    } else {
-      nonVerbatimMappings ||= {
-        type: 'table',
-        align: [null, 'right', null, 'right', 'right'],
-        children: [
-          {
-            type: 'tableRow',
-            children: [
-              { type: 'tableCell', children: [{ type: 'text', value: 'Original' }] },
-              { type: 'tableCell', children: [] },
-              { type: 'tableCell', children: [{ type: 'text', value: 'Virtual' }] },
-              { type: 'tableCell', children: [] },
-              { type: 'tableCell', children: [{ type: 'text', value: 'Features' }] }
-            ]
-          }
-        ]
-      }
-      nonVerbatimMappings.children.push({
-        type: 'tableRow',
-        children: [
-          {
-            type: 'tableCell',
-            children: [{ type: 'inlineCode', value: originalSlice.replaceAll('\n', '⏎') }]
-          },
-          {
-            type: 'tableCell',
-            children: [{ type: 'text', value: String(originalStart) }]
-          },
-          {
-            type: 'tableCell',
-            children: [{ type: 'inlineCode', value: generatedSlice.replaceAll('\n', '⏎') }]
-          },
-          {
-            type: 'tableCell',
-            children: [{ type: 'text', value: String(generatedStart) }]
-          },
-          {
-            type: 'tableCell',
-            children: [{ type: 'text', value: String(features ?? '') }]
-          }
-        ]
-      })
-    }
-  }
-
-  /** @type {RootContent[]} */
-  const result = [
-    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Text' }] },
-    { type: 'code', lang: extension.slice(1), value: text },
-    { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Verbatim mappings' }] },
-    ...verbatimMappings
-  ]
-
-  if (nonVerbatimMappings) {
-    result.push(
-      { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Non-verbatim mappings' }] },
-      nonVerbatimMappings
-    )
-  }
-
-  return result
-}
 
 let count = 0
 
@@ -156,41 +53,7 @@ testFixturesDirectory({
       })
       closeProject({ projectHandle })
 
-      /** @type {Root} */
-      const root = {
-        type: 'root',
-        children: [
-          ...mappedOutputToMdast(original, result),
-          { type: 'heading', depth: 2, children: [{ type: 'text', value: 'Diagnostics' }] }
-        ]
-      }
-
-      if (result.diagnostics) {
-        root.children.push({
-          type: 'list',
-          children: result.diagnostics.map((diagnostic) => ({
-            type: 'listItem',
-            children: [
-              {
-                type: 'paragraph',
-                children: [
-                  { type: 'inlineCode', value: `${diagnostic.start}:${diagnostic.length}` },
-                  { type: 'text', value: ': ' },
-                  { type: 'inlineCode', value: diagnostic.messageText }
-                ]
-              }
-            ]
-          }))
-        })
-      }
-
-      if (result.supplemental) {
-        for (const supplemental of result.supplemental) {
-          root.children.push(...mappedOutputToMdast(original, supplemental))
-        }
-      }
-
-      return toMarkdown(root, { bullet: '-', emphasis: '_', extensions: [gfmToMarkdown()] })
+      return transformResultToMarkdown(original, result)
     }
   }
 })

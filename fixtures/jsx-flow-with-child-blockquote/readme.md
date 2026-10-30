@@ -78,11 +78,9 @@ export default function MDXContent(props) {
 </div>
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |    | Virtual       |     | Features |
-| -------- | -: | ------------- | --: | -------: |
-| `>`      |  6 | `_components` | 921 |        0 |
-| `>`      |  6 | `blockquote`  | 933 |          |
-
-## Diagnostics
+| Original |    | Virtual       |     | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
+| -------- | -: | ------------- | --: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
+| `>`      |  6 | `_components` | 921 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
+| `>`      |  6 | `blockquote`  | 933 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |

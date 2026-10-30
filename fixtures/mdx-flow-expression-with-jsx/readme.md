@@ -222,10 +222,8 @@ Injected
 Injected
 ```
 
-## Non-verbatim mappings
+## Alias mappings
 
-| Original |    | Virtual |     | Features |
-| -------- | -: | ------- | --: | -------: |
-| `⏎`      | 27 | `;`     | 163 |        0 |
-
-## Diagnostics
+| Original |    | Virtual |     |
+| -------- | -: | ------- | --: |
+| `⏎`      | 27 | `;`     | 163 |
