@@ -26,6 +26,7 @@
     { "path": "./jsx-local-injected-flow-in-attributes/tsconfig.json" },
     { "path": "./jsx-local-injected-flow-in-expression/tsconfig.json" },
     { "path": "./jsx-text-without-children/tsconfig.json" },
+    { "path": "./link/tsconfig.json" },
     { "path": "./locally-scoped-component/tsconfig.json" },
     { "path": "./markdown-codeblocks-check/tsconfig.json" },
     { "path": "./markdown-codeblocks-nocheck/tsconfig.json" },
