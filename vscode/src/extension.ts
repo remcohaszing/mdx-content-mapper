@@ -1,3 +1,4 @@
+import type { ExtensionAPI } from '@typescript/native/vscode'
 import type { Disposable, ExtensionContext } from 'vscode'
 
 import { extensions } from 'vscode'
@@ -18,7 +19,7 @@ export async function activate(context: ExtensionContext): Promise<undefined> {
   }
 
   const register = async (): Promise<undefined> => {
-    const extension = extensions.getExtension('TypescriptTeam.vscode-typescript')
+    const extension = extensions.getExtension<ExtensionAPI>('typescriptteam.native-preview')
 
     if (!extension) {
       unregister()
@@ -44,7 +45,6 @@ export async function activate(context: ExtensionContext): Promise<undefined> {
       {
         extensions: ['.mdx'],
         inferredProjectContribution: {
-          options: {},
           manifest: {
             name,
             version,

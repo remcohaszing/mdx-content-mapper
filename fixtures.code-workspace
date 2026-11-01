@@ -1,7 +1,12 @@
 {
+  "extensions": {
+    "recommendations": ["typescriptteam.native-preview"]
+  },
   "settings": {
     "chat.disableAIFeatures": true,
-    "js/ts.tsdk.path": "../node_modules/typescript/lib"
+    "js/ts.tsserver.tracing.enabled": true,
+    "js/ts.tsdk.path": "node_modules/@typescript/native/lib",
+    "js/ts.experimental.useTsgo": true
   },
   "folders": [
     {
