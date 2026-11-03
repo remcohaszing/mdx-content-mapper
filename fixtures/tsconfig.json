@@ -18,7 +18,6 @@
     { "path": "./headings/tsconfig.json" },
     { "path": "./image/tsconfig.json" },
     { "path": "./import/tsconfig.json" },
-    { "path": "./incomplete-esm/tsconfig.json" },
     { "path": "./jsdoc/tsconfig.json" },
     { "path": "./jsx-flow-with-child-blockquote/tsconfig.json" },
     { "path": "./jsx-flow-with-children/tsconfig.json" },

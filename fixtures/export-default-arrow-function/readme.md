@@ -17,7 +17,7 @@ import { Fragment as _Fragment } from 'react/jsx-runtime'
  *   The [props](https://mdxjs.com/docs/using-mdx/#props) that have been passed to the MDX component.
  *   In addition, the MDX layout receives the `children` prop, which contains the rendered MDX content.
  */
-const MDXLayout = () => {}
+const MDXLayout = ({ children }) => <div>{children}</div>
 
 ;
 
@@ -67,14 +67,14 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 735 9 15 9 0
-() => {}
+```jsx 735 40 15 40 0
+({ children }) => <div>{children}</div>
 
 ```
 
 ## Alias mappings
 
-| Original                  |    | Virtual     |      | Hover | Definition | TypeDefinition | DocumentHighlights |
-| ------------------------- | -: | ----------- | ---: | :---: | :--------: | :------------: | :----------------: |
-| `⏎`                       | 23 | `;`         |  745 |       |            |                |                    |
-| `export default () => {}` |  0 | `MDXLayout` | 1888 |   ✓   |      ✓     |        ✓       |          ✓         |
+| Original                                                 |    | Virtual     |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------------------------------------------------------- | -: | ----------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `⏎`                                                      | 54 | `;`         |  776 |       |            |                |                    |
+| `export default ({ children }) => <div>{children}</div>` |  0 | `MDXLayout` | 1919 |   ✓   |      ✓     |        ✓       |          ✓         |
