@@ -76,7 +76,7 @@ function MDXLayout(properties) {}
 
 ## Alias mappings
 
-| Original                                           |    | Virtual     |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
-| -------------------------------------------------- | -: | ----------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
-| `⏎`                                                | 48 | `;`         |  775 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
-| `export default function MDXLayout(properties) {}` |  0 | `MDXLayout` | 1962 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| Original                                           |    | Virtual     |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------------------------------------------------- | -: | ----------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `⏎`                                                | 48 | `;`         |  775 |       |            |                |                    |
+| `export default function MDXLayout(properties) {}` |  0 | `MDXLayout` | 1962 |   ✓   |      ✓     |        ✓       |          ✓         |

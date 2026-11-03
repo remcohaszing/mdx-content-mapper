@@ -75,7 +75,7 @@ export {
 
 ## Alias mappings
 
-| Original  |    | Virtual     |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
-| --------- | -: | ----------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
-| `⏎`       | 44 | `;`         |  222 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
-| `default` |  9 | `MDXLayout` | 1365 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| Original  |    | Virtual     |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| --------- | -: | ----------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `⏎`       | 44 | `;`         |  222 |       |            |                |                    |
+| `default` |  9 | `MDXLayout` | 1365 |   ✓   |      ✓     |        ✓       |          ✓         |

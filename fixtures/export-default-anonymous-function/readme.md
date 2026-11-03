@@ -74,7 +74,7 @@ function() {}
 
 ## Alias mappings
 
-| Original                       |    | Virtual     |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
-| ------------------------------ | -: | ----------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
-| `⏎`                            | 28 | `;`         |  750 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
-| `export default function() {}` |  0 | `MDXLayout` | 1893 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| Original                       |    | Virtual     |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| ------------------------------ | -: | ----------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `⏎`                            | 28 | `;`         |  750 |       |            |                |                    |
+| `export default function() {}` |  0 | `MDXLayout` | 1893 |   ✓   |      ✓     |        ✓       |          ✓         |

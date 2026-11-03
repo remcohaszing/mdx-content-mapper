@@ -80,7 +80,7 @@ export default function MDXContent(props) {
 
 ## Alias mappings
 
-| Original |    | Virtual       |     | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
-| -------- | -: | ------------- | --: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
-| `>`      |  6 | `_components` | 921 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
-| `>`      |  6 | `blockquote`  | 933 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| Original |    | Virtual       |     | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------- | -: | ------------- | --: | :---: | :--------: | :------------: | :----------------: |
+| `>`      |  6 | `_components` | 921 |       |            |                |                    |
+| `>`      |  6 | `blockquote`  | 933 |   ✓   |      ✓     |        ✓       |          ✓         |

@@ -66,7 +66,7 @@ export default function MDXContent(props) {
 
 ## Alias mappings
 
-| Original |    | Virtual       |      | Hover | SignatureHelp | Completion | Definition | TypeDefinition | Implementation | References | DocumentHighlights | Rename | CallHierarchy | CodeActions | Formatting | InlayHints | SemanticTokens | FoldingRanges | SelectionRanges | LinkedEditing | AutoInsert | DocumentSymbols | CodeLens |
-| -------- | -: | ------------- | ---: | :---: | :-----------: | :--------: | :--------: | :------------: | :------------: | :--------: | :----------------: | :----: | :-----------: | :---------: | :--------: | :--------: | :------------: | :-----------: | :-------------: | :-----------: | :--------: | :-------------: | :------: |
-| `#`      |  0 | `_components` | 1018 |       |               |            |            |                |                |            |                    |        |               |             |            |            |                |               |                 |               |            |                 |          |
-| `#`      |  0 | `h1`          | 1030 |   ✓   |       ✓       |      ✓     |      ✓     |        ✓       |        ✓       |      ✓     |          ✓         |    ✓   |       ✓       |      ✓      |      ✓     |      ✓     |        ✓       |       ✓       |        ✓        |       ✓       |      ✓     |        ✓        |     ✓    |
+| Original |    | Virtual       |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------- | -: | ------------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `#`      |  0 | `_components` | 1018 |       |            |                |                    |
+| `#`      |  0 | `h1`          | 1030 |   ✓   |      ✓     |        ✓       |          ✓         |
