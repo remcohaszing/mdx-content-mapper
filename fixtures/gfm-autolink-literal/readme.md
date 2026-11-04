@@ -67,17 +67,11 @@ export default function MDXContent(props) {
 
 ## Alias mappings
 
-| Original              |    | Virtual       |      | Hover | Definition | TypeDefinition | DocumentHighlights |
-| --------------------- | -: | ------------- | ---: | :---: | :--------: | :------------: | :----------------: |
-| `https://example.com` |  0 | `_components` |  919 |       |            |                |                    |
-| `https://example.com` |  0 | `a`           |  931 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `https://example.com` |  0 | `_components` |  949 |       |            |                |                    |
-| `https://example.com` |  0 | `a`           |  961 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `www.example.com`     | 21 | `_components` |  986 |       |            |                |                    |
-| `www.example.com`     | 21 | `a`           |  998 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `www.example.com`     | 21 | `_components` | 1016 |       |            |                |                    |
-| `www.example.com`     | 21 | `a`           | 1028 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `user@email.example`  | 38 | `_components` | 1053 |       |            |                |                    |
-| `user@email.example`  | 38 | `a`           | 1065 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `user@email.example`  | 38 | `_components` | 1083 |       |            |                |                    |
-| `user@email.example`  | 38 | `a`           | 1095 |   ✓   |      ✓     |        ✓       |          ✓         |
+| Original              |    | Virtual |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| --------------------- | -: | ------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `https://example.com` |  0 | `a`     |  931 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `https://example.com` |  0 | `a`     |  961 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `www.example.com`     | 21 | `a`     |  998 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `www.example.com`     | 21 | `a`     | 1028 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `user@email.example`  | 38 | `a`     | 1065 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `user@email.example`  | 38 | `a`     | 1095 |   ✓   |      ✓     |        ✓       |          ✓         |

@@ -72,17 +72,11 @@ export default function MDXContent(props) {
 
 ## Alias mappings
 
-| Original |    | Virtual       |      | Hover | Definition | TypeDefinition | DocumentHighlights |
-| -------- | -: | ------------- | ---: | :---: | :--------: | :------------: | :----------------: |
-| `-`      |  0 | `_components` |  911 |       |            |                |                    |
-| `-`      |  0 | `ul`          |  923 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `-`      |  0 | `_components` |  932 |       |            |                |                    |
-| `-`      |  0 | `li`          |  944 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `[ ]`    |  2 | `_components` |  961 |       |            |                |                    |
-| `[ ]`    |  2 | `input`       |  973 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `-`      | 16 | `_components` | 1094 |       |            |                |                    |
-| `-`      | 16 | `ul`          | 1106 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `-`      | 16 | `_components` | 1115 |       |            |                |                    |
-| `-`      | 16 | `li`          | 1127 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `[x]`    | 18 | `_components` | 1144 |       |            |                |                    |
-| `[x]`    | 18 | `input`       | 1156 |   ✓   |      ✓     |        ✓       |          ✓         |
+| Original |    | Virtual |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------- | -: | ------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `-`      |  0 | `ul`    |  923 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `-`      |  0 | `li`    |  944 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `[ ]`    |  2 | `input` |  973 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `-`      | 16 | `ul`    | 1106 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `-`      | 16 | `li`    | 1127 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `[x]`    | 18 | `input` | 1156 |   ✓   |      ✓     |        ✓       |          ✓         |

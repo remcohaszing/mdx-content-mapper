@@ -59,7 +59,6 @@ export default function MDXContent(props) {
 
 ## Alias mappings
 
-| Original |    | Virtual       |      | Hover | Definition | TypeDefinition | DocumentHighlights |
-| -------- | -: | ------------- | ---: | :---: | :--------: | :------------: | :----------------: |
-| `#`      |  0 | `_components` | 1049 |       |            |                |                    |
-| `#`      |  0 | `h1`          | 1061 |   ✓   |      ✓     |        ✓       |          ✓         |
+| Original |    | Virtual |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------- | -: | ------- | ---: | :---: | :--------: | :------------: | :----------------: |
+| `#`      |  0 | `h1`    | 1061 |   ✓   |      ✓     |        ✓       |          ✓         |

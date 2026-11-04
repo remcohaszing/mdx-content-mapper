@@ -230,9 +230,7 @@ props.multipleNewlines
 
 ## Alias mappings
 
-| Original |     | Virtual       |      | Hover | Definition | TypeDefinition | DocumentHighlights |
-| -------- | --: | ------------- | ---: | :---: | :--------: | :------------: | :----------------: |
-| `>`      |   0 | `_components` |  911 |       |            |                |                    |
-| `>`      |   0 | `blockquote`  |  923 |   ✓   |      ✓     |        ✓       |          ✓         |
-| `> `     | 161 | `_components` | 1138 |       |            |                |                    |
-| `> `     | 161 | `blockquote`  | 1150 |   ✓   |      ✓     |        ✓       |          ✓         |
+| Original |     | Virtual      |      | Hover | Definition | TypeDefinition | DocumentHighlights |
+| -------- | --: | ------------ | ---: | :---: | :--------: | :------------: | :----------------: |
+| `>`      |   0 | `blockquote` |  923 |   ✓   |      ✓     |        ✓       |          ✓         |
+| `> `     | 161 | `blockquote` | 1150 |   ✓   |      ✓     |        ✓       |          ✓         |
