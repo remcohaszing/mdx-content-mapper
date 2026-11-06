@@ -71,7 +71,7 @@
     "@types/vscode": "^1.0.0",
     "@typescript/native": "npm:typescript@next",
     "@vscode/vsce": "^3.0.0",
-    "content-mapper-test-utils": "^0.0.1",
+    "content-mapper-test-utils": "^0.0.2",
     "filter-obj": "^6.0.0",
     "mdx-content-mapper": "file:.",
     "micromark-extension-gfm": "^3.0.0",

@@ -57,6 +57,6 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 942 32 4 32 0
+```jsx 942-32 4-32 All
 {await Promise.resolve(Math.PI)}
 ```

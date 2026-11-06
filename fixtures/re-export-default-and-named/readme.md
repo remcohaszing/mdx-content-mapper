@@ -56,19 +56,19 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 207 13 31 13 0 0
+```jsx 207-13 31-13
 './layout.js'
 ```
 
-```jsx 135 9 0 9 0
+```jsx 135-9 0-9 All
 export { 
 ```
 
-```jsx 144 27 17 27 0
+```jsx 144-27 17-27 All
  named } from './layout.js'
 ```
 
-```jsx 220 1 44 1 0
+```jsx 220-1 44-1 All
 
 
 ```

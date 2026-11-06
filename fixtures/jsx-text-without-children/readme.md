@@ -70,28 +70,28 @@ Injected
 
 ## Verbatim mappings
 
-```jsx 135 27 0 27 0
+```jsx 135-27 0-27 All
 export function Local() {}
 
 ```
 
-```jsx 993 7 30 7 0
+```jsx 993-7 30-7 All
 <div />
 ```
 
-```jsx 1023 1 51 1 0
+```jsx 1023-1 51-1 All
 <
 ```
 
-```jsx 1036 11 52 11 0
+```jsx 1036-11 52-11 All
 Injected />
 ```
 
-```jsx 1070 9 76 9 0
+```jsx 1070-9 76-9 All
 <Local />
 ```
 
-```jsx 1650 8 52 8 0
+```jsx 1650-8 52-8 All
 Injected
 ```
 

@@ -65,14 +65,14 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 135 79 0 79 0
+```jsx 135-79 0-79 All
 export const a = 1
 /** @typedef {{ name: string }} Props */
 export const b = 2
 
 ```
 
-```jsx 1065 12 86 12 0
+```jsx 1065-12 86-12 All
 {props.name}
 ```
 

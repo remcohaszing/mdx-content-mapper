@@ -146,7 +146,7 @@ console.log('Hello JavaScript!')
 
 ### Verbatim mappings
 
-```jsx 0 33 6 33 0
+```jsx 0-33 6-33 All
 console.log('Hello JavaScript!')
 
 ```
@@ -165,7 +165,7 @@ export function getNumber() {
 
 ### Verbatim mappings
 
-```jsx 0 93 58 93 0
+```jsx 0-93 58-93 All
 /**
  * @returns {number}
  */
@@ -186,7 +186,7 @@ export function Component() {
 
 ### Verbatim mappings
 
-```jsx 0 49 163 49 0
+```jsx 0-49 163-49 All
 export function Component() {
   return <div />
 }
@@ -202,7 +202,7 @@ module.exports = 'commonjs'
 
 ### Verbatim mappings
 
-```jsx 0 28 224 28 0
+```jsx 0-28 224-28 All
 module.exports = 'commonjs'
 
 ```
@@ -216,7 +216,7 @@ export default 'ES module'
 
 ### Verbatim mappings
 
-```jsx 0 27 264 27 0
+```jsx 0-27 264-27 All
 export default 'ES module'
 
 ```
@@ -230,7 +230,7 @@ console.log('Hello TypeScript!')
 
 ### Verbatim mappings
 
-```jsx 0 33 302 33 0
+```jsx 0-33 302-33 All
 console.log('Hello TypeScript!')
 
 ```
@@ -246,7 +246,7 @@ export function getNumber(): number {
 
 ### Verbatim mappings
 
-```jsx 0 72 354 72 0
+```jsx 0-72 354-72 All
 export function getNumber(): number {
   return 'This is not a number'
 }
@@ -265,12 +265,12 @@ export function Component(): ReactNode {
 
 ### Verbatim mappings
 
-```jsx 0 39 438 39 0
+```jsx 0-39 438-39 All
 import type { ReactNode } from 'react'
 
 ```
 
-```jsx 39 60 478 60 0
+```jsx 39-60 478-60 All
 export function Component(): ReactNode {
   return <div />
 }
@@ -287,7 +287,7 @@ export = variable
 
 ### Verbatim mappings
 
-```jsx 0 54 550 54 0
+```jsx 0-54 550-54 All
 declare const variable = 'commonjs'
 export = variable
 
@@ -302,7 +302,7 @@ export default 'ES module'
 
 ### Verbatim mappings
 
-```jsx 0 27 616 27 0
+```jsx 0-27 616-27 All
 export default 'ES module'
 
 ```

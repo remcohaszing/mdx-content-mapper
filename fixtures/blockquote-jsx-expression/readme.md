@@ -88,143 +88,143 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 939 16 1 16 0
+```jsx 939-16 1-16 All
 {props.oneliner}
 ```
 
-```jsx 960 2 21 2 0
+```jsx 960-2 21-2 All
 {
 
 ```
 
-```jsx 962 19 26 19 0
+```jsx 962-19 26-19 All
 props.newlineStart}
 ```
 
-```jsx 986 18 49 18 0
+```jsx 986-18 49-18 All
 {props.newlineEnd
 
 ```
 
-```jsx 1004 1 68 1 0
+```jsx 1004-1 68-1 All
 }
 ```
 
-```jsx 1010 2 73 2 0
+```jsx 1010-2 73-2 All
 {
 
 ```
 
-```jsx 1012 12 78 12 0
+```jsx 1012-12 78-12 All
 props.value
 
 ```
 
-```jsx 1024 10 94 10 0
+```jsx 1024-10 94-10 All
  ? 'true'
 
 ```
 
-```jsx 1034 11 108 11 0
+```jsx 1034-11 108-11 All
  : 'false'
 
 ```
 
-```jsx 1045 1 120 1 0
+```jsx 1045-1 120-1 All
 }
 ```
 
-```jsx 1051 2 125 2 0
+```jsx 1051-2 125-2 All
 {
 
 ```
 
-```jsx 1053 1 128 1 0
+```jsx 1053-1 128-1 All
 
 
 ```
 
-```jsx 1054 23 130 23 0
+```jsx 1054-23 130-23 All
 props.multipleNewlines
 
 ```
 
-```jsx 1077 1 154 1 0
+```jsx 1077-1 154-1 All
 
 
 ```
 
-```jsx 1078 1 156 1 0
+```jsx 1078-1 156-1 All
 }
 ```
 
-```jsx 1166 16 163 16 0
+```jsx 1166-16 163-16 All
 {props.oneliner}
 ```
 
-```jsx 1187 2 184 2 0
+```jsx 1187-2 184-2 All
 {
 
 ```
 
-```jsx 1189 19 190 19 0
+```jsx 1189-19 190-19 All
 props.newlineStart}
 ```
 
-```jsx 1213 18 214 18 0
+```jsx 1213-18 214-18 All
 {props.newlineEnd
 
 ```
 
-```jsx 1231 1 234 1 0
+```jsx 1231-1 234-1 All
 }
 ```
 
-```jsx 1237 2 240 2 0
+```jsx 1237-2 240-2 All
 {
 
 ```
 
-```jsx 1239 12 246 12 0
+```jsx 1239-12 246-12 All
 props.value
 
 ```
 
-```jsx 1251 11 262 11 0
+```jsx 1251-11 262-11 All
   ? 'true'
 
 ```
 
-```jsx 1262 12 277 12 0
+```jsx 1262-12 277-12 All
   : 'false'
 
 ```
 
-```jsx 1274 1 291 1 0
+```jsx 1274-1 291-1 All
 }
 ```
 
-```jsx 1280 2 297 2 0
+```jsx 1280-2 297-2 All
 {
 
 ```
 
-```jsx 1282 1 300 1 0
+```jsx 1282-1 300-1 All
 
 
 ```
 
-```jsx 1283 23 303 23 0
+```jsx 1283-23 303-23 All
 props.multipleNewlines
 
 ```
 
-```jsx 1306 1 327 1 0
+```jsx 1306-1 327-1 All
 
 
 ```
 
-```jsx 1307 1 330 1 0
+```jsx 1307-1 330-1 All
 }
 ```
 

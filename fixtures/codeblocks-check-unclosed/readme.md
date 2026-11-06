@@ -74,7 +74,7 @@ console.log('Hello JavaScript!')
 
 ### Verbatim mappings
 
-```jsx 0 33 6 33 0
+```jsx 0-33 6-33 All
 console.log('Hello JavaScript!')
 
 ```

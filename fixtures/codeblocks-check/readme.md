@@ -94,11 +94,11 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 1370 5 296 5 0
+```jsx 1370-5 296-5 All
 <div>
 ```
 
-```jsx 1840 6 695 6 0
+```jsx 1840-6 695-6 All
 </div>
 ```
 
@@ -158,7 +158,7 @@ console.log('Hello JavaScript!')
 
 ### Verbatim mappings
 
-```jsx 0 33 6 33 0
+```jsx 0-33 6-33 All
 console.log('Hello JavaScript!')
 
 ```
@@ -177,7 +177,7 @@ export function getNumber() {
 
 ### Verbatim mappings
 
-```jsx 0 93 58 93 0
+```jsx 0-93 58-93 All
 /**
  * @returns {number}
  */
@@ -198,7 +198,7 @@ export function Component() {
 
 ### Verbatim mappings
 
-```jsx 0 49 163 49 0
+```jsx 0-49 163-49 All
 export function Component() {
   return <div />
 }
@@ -214,7 +214,7 @@ module.exports = 'commonjs'
 
 ### Verbatim mappings
 
-```jsx 0 28 224 28 0
+```jsx 0-28 224-28 All
 module.exports = 'commonjs'
 
 ```
@@ -228,7 +228,7 @@ export default 'ES module'
 
 ### Verbatim mappings
 
-```jsx 0 27 264 27 0
+```jsx 0-27 264-27 All
 export default 'ES module'
 
 ```
@@ -242,7 +242,7 @@ console.log('Hello TypeScript!')
 
 ### Verbatim mappings
 
-```jsx 0 33 312 33 0
+```jsx 0-33 312-33 All
 console.log('Hello TypeScript!')
 
 ```
@@ -258,17 +258,17 @@ export function getNumber(): number {
 
 ### Verbatim mappings
 
-```jsx 0 38 370 38 0
+```jsx 0-38 370-38 All
 export function getNumber(): number {
 
 ```
 
-```jsx 38 32 410 32 0
+```jsx 38-32 410-32 All
   return 'This is not a number'
 
 ```
 
-```jsx 70 2 444 2 0
+```jsx 70-2 444-2 All
 }
 
 ```
@@ -285,22 +285,22 @@ export function Component(): ReactNode {
 
 ### Verbatim mappings
 
-```jsx 0 39 464 39 0
+```jsx 0-39 464-39 All
 import type { ReactNode } from 'react'
 
 ```
 
-```jsx 39 41 506 41 0
+```jsx 39-41 506-41 All
 export function Component(): ReactNode {
 
 ```
 
-```jsx 80 17 549 17 0
+```jsx 80-17 549-17 All
   return <div />
 
 ```
 
-```jsx 97 2 568 2 0
+```jsx 97-2 568-2 All
 }
 
 ```
@@ -315,12 +315,12 @@ export = variable
 
 ### Verbatim mappings
 
-```jsx 0 36 588 36 0
+```jsx 0-36 588-36 All
 declare const variable = 'commonjs'
 
 ```
 
-```jsx 36 18 626 18 0
+```jsx 36-18 626-18 All
 export = variable
 
 ```
@@ -334,7 +334,7 @@ export default 'ES module'
 
 ### Verbatim mappings
 
-```jsx 0 27 662 27 0
+```jsx 0-27 662-27 All
 export default 'ES module'
 
 ```

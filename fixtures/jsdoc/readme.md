@@ -64,32 +64,32 @@ export default function MDXContent(props) {
 
 ## Verbatim mappings
 
-```jsx 135 57 1 57 0
+```jsx 135-57 1-57 All
 /**
   * @typedef Props
   * @property {string} [name]
   */
 ```
 
-```jsx 967 5 0 5 0
+```jsx 967-5 0-5 All
 {/**
 
 ```
 
-```jsx 972 17 7 17 0
+```jsx 972-17 7-17 All
 * @typedef Props
 
 ```
 
-```jsx 989 28 26 28 0
+```jsx 989-28 26-28 All
 * @property {string} [name]
 
 ```
 
-```jsx 1017 3 56 3 0
+```jsx 1017-3 56-3 All
 */}
 ```
 
-```jsx 1042 36 67 36 0
+```jsx 1042-36 67-36 All
 {/** @type {string} */ (props.name)}
 ```
