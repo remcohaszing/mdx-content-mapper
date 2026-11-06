@@ -5,6 +5,7 @@
     { "path": "./blockquote-jsx-expression/tsconfig.json" },
     { "path": "./check-mdx/tsconfig.json" },
     { "path": "./codeblocks-check/tsconfig.json" },
+    { "path": "./codeblocks-check-unclosed/tsconfig.json" },
     { "path": "./codeblocks-nocheck/tsconfig.json" },
     { "path": "./esm-comment-after/tsconfig.json" },
     { "path": "./esm-comment-between/tsconfig.json" },
