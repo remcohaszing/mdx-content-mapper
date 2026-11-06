@@ -9,7 +9,7 @@
       "package": "mdx-content-mapper",
       "extensions": [".mdx"],
       "options": {
-        "recmaPlugins": ["rehype-mdx-title"]
+        "rehypePlugins": ["rehype-mdx-title"]
       }
     }
   ]
