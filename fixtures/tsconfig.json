@@ -34,6 +34,8 @@
     { "path": "./markdown-codeblocks-check/tsconfig.json" },
     { "path": "./markdown-codeblocks-nocheck/tsconfig.json" },
     { "path": "./markdown-custom-extension/tsconfig.json" },
+    { "path": "./math/tsconfig.json" },
+    { "path": "./math-unclosed/tsconfig.json" },
     { "path": "./mdx-flow-expression/tsconfig.json" },
     { "path": "./mdx-flow-expression-empty/tsconfig.json" },
     { "path": "./mdx-flow-expression-with-jsx/tsconfig.json" },
