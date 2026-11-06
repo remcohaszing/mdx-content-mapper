@@ -6,6 +6,6 @@
     "module": "nodenext",
     "noEmit": true,
     "target": "esnext",
-    "types": ["node", "remark-parse"]
+    "types": ["node", "micromark-extension-math", "remark-parse"]
   }
 }
