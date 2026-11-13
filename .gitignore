@@ -2,6 +2,9 @@
 .react-router/
 dist/
 node_modules/
+*.d.*.ts
+*.d.cts
+*.d.mts
 *.d.ts
 *.tgz
 *.tsbuildinfo
